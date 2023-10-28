@@ -30,4 +30,4 @@ EDNA TORRES MUNILL
 
 ### IMAGES
 
-- Image by <a href="https://pixabay.com/users/felixmittermeier-4397258/">FelixMittermeier</a> from <a href="https://pixabay.com">Pixabay</a>
+- [Background Image](https://pixabay.com/photos/milky-way-stars-night-sky-2695569/) by <a href="https://pixabay.com/users/felixmittermeier-4397258/" target=_blank >FelixMittermeier</a> from <a href="https://pixabay.com">Pixabay</a>
