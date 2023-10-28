@@ -6,5 +6,5 @@ Edna Torres Munill
 
 # TABLE OF CONTENTS
 
-    [Author](#author)
+    - [Author](#author)
 
