@@ -1,0 +1,30 @@
+/* Asterisk wildcard selector to override default styles added by the browser */
+* {
+    padding: 0;
+    margin: 0;
+    /*height or width applied to whole element, including borders*/
+    box-sizing: border-box;
+}
+
+
+body {
+    background: purple;
+    padding: 70px 4%;
+}
+
+header {
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    color: aqua;
+    text-shadow: 5px 10px rgb(85, 0, 85);
+    font-size: 300%;
+}
+
+header p {
+    color: whitesmoke;
+    font-size: 300%;
+}
+
