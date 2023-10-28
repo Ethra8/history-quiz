@@ -7,7 +7,7 @@
 ## LIVE SITE
 The deployed site can be viewed [here]()
 
-# REPOSITORY
+## REPOSITORY
 Github repository can be viewed [here](https://github.com/Ethra8/history-quiz)
 
 ## AUTHOR
