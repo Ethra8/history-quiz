@@ -8,11 +8,11 @@
 
 ## LIVE SITE
 
-The deployed site can be viewed [here]()
+The deployed site can be viewed [here](https://englishgrows.com/historic-facts-quiz/)
 
 ## REPOSITORY
 
-Github repository can be viewed [here](https://github.com/Ethra8/history-quiz)
+Github repository can be viewed [here](https://github.com/Ethra8/historic-facts-quiz/)
 
 ## AUTHOR
 
