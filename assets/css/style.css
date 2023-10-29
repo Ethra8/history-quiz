@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Lobster&display=swap');
+
 /* Asterisk wildcard selector to override default styles added by the browser */
 * {
     padding: 0;
@@ -8,23 +10,102 @@
 
 
 body {
-    background: purple;
-    padding: 70px 4%;
+    background: url("../images/bg-image.jpg");
 }
 
 header {
     text-align: center;
+    background: rgba(85, 0, 119, 0.5);
+    padding: 35px 4%;
+    /* border-style: solid;
+    border-width: 20px;
+    border-color: rgba(255, 255, 255, 0.5); */
+}
+
+footer {
+    background: rgba(85, 0, 119, 0.5);
 }
 
 h1 {
     text-align: center;
-    color: aqua;
+    color: aquamarine;
     text-shadow: 5px 10px rgb(85, 0, 85);
-    font-size: 300%;
+    font-size: 500%;
+    font-family: 'Lobster', sans-serif;
+    font-weight: 400;
+    padding-bottom: 0;
 }
 
 header p {
     color: whitesmoke;
     font-size: 300%;
+    font-family: 'Bad Script', cursive;
+    transform: rotate(-5deg);
+    padding-top: 0;
+}
+
+.startQuiz {
+    padding: 70px 0;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.startQuiz button,
+#check {
+    align-self: center;
+    background-color: antiquewhite;
+    padding: 15px 30px;
+    margin: 0 auto;
+    font-family: 'Lobster', sans-serif;
+    font-size: 1.5rem;
+    border-radius: 50px;
+    border-style: outset;
+    border-width: 2px;
+    border-color: blueviolet;
+    transition: all 0.5s;
+}
+
+.startQuiz button:hover,
+#check:hover {
+    cursor: pointer;
+    background-color: aquamarine;
+    border-color: whitesmoke;
+}
+
+.count {
+    margin: 0 auto;
+}
+
+.count p {
+    text-align: center;
+    background-color: aliceblue;
+    flex-direction: row;
+    gap: 40px;
+    width: 70%;
+}
+
+#question {
+    display: none;
+    background-color: rgba(245, 245, 245, 0.8);
+    padding: 60px 5% 60px 10%;
+    font-family: 'Bad Script', cursive;
+    font-size: 150%;
+    font-weight: 600;
+}
+
+/* #question ul {
+    display: flex;
+    flex-wrap: wrap; 
+    text-align: center;
+} */
+
+#question li {
+    padding: 15px 5% 15px 10%;
+    /* text-align: center; */
+    list-style-type: none;
+}
+
+label {
+    padding-left: 15px;
 }
 
