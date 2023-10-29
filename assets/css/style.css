@@ -51,11 +51,10 @@ header p {
 }
 
 .startQuiz button,
-#check {
-    align-self: center;
+#btnCheckAnswer,
+#btnNextQuestion {
     background-color: antiquewhite;
     padding: 15px 30px;
-    margin: 0 auto;
     font-family: 'Lobster', sans-serif;
     font-size: 1.5rem;
     border-radius: 50px;
@@ -63,10 +62,22 @@ header p {
     border-width: 2px;
     border-color: blueviolet;
     transition: all 0.5s;
+    display: inline-flex;position: relative;
+}
+
+.startQuiz button {
+    align-self: center;
+    margin: 0 auto;
+
+}
+
+#btnNextQuestion {
+    margin-left: 25%;
 }
 
 .startQuiz button:hover,
-#check:hover {
+#btnCheckAnswer:hover,
+#btnNextQuestion:hover {
     cursor: pointer;
     background-color: aquamarine;
     border-color: whitesmoke;
@@ -74,14 +85,22 @@ header p {
 
 .count {
     margin: 0 auto;
+    /* align-self: center; */
+    width: 70%;
+    font-size: 1.2rem;
+    font-weight: 600;
+    display: flex;
+    flex-direction: row;
 }
 
 .count p {
+    font-family: 'Bad Script', cursive;
     text-align: center;
     background-color: aliceblue;
-    flex-direction: row;
-    gap: 40px;
-    width: 70%;
+    /* display: flex;
+    flex-direction: row; */
+    /* gap: 20px; */
+    padding: 0 60px;
 }
 
 #question {
@@ -91,6 +110,9 @@ header p {
     font-family: 'Bad Script', cursive;
     font-size: 150%;
     font-weight: 600;
+    width: 70%;
+    margin: 0 auto;
+    /* position: relative; */
 }
 
 /* #question ul {
@@ -100,7 +122,7 @@ header p {
 } */
 
 #question li {
-    padding: 15px 5% 15px 10%;
+    padding: 0 5% 0 10%;
     /* text-align: center; */
     list-style-type: none;
 }
