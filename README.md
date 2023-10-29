@@ -35,4 +35,4 @@ EDNA TORRES MUNILL
 - [Background Image](https://pixabay.com/photos/milky-way-stars-night-sky-2695569/) by <a href="https://pixabay.com/users/felixmittermeier-4397258/" target=_blank >FelixMittermeier</a> from <a href="https://pixabay.com">Pixabay</a>
 
 ### CODE
-- [How to get value of selected radio button](https://www.geeksforgeeks.org/how-to-get-value-of-selected-radio-button-using-javascript/);
+- [How to get value of selected radio button using JS](https://www.geeksforgeeks.org/how-to-get-value-of-selected-radio-button-using-javascript/);
