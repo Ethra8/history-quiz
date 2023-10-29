@@ -65,10 +65,13 @@ header p {
     display: inline-flex;position: relative;
 }
 
+.startQuiz {
+    visibility: visible;
+}
+
 .startQuiz button {
     align-self: center;
     margin: 0 auto;
-
 }
 
 #btnNextQuestion {
@@ -105,14 +108,17 @@ header p {
 
 #question {
     display: none;
-    background-color: rgba(245, 245, 245, 0.8);
-    padding: 60px 5% 60px 10%;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 40px 5% 40px 10%;
     font-family: 'Bad Script', cursive;
     font-size: 150%;
     font-weight: 600;
     width: 70%;
     margin: 0 auto;
-    /* position: relative; */
+    border-radius: 50px;
+    border-style:outset;
+    border-width: 2px;
+    border-color: aquamarine;
 }
 
 /* #question ul {

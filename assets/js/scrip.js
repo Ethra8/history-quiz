@@ -55,20 +55,26 @@ let questions = [
         option2: "option2.10"
     },];
 
-document.getElementsByTagName('button')[0].addEventListener('click', displayQuestion);
 
+document.getElementsByTagName('button')[0].addEventListener('click', displayQuestion);//Once user clicks on "Start Quiz" button, function displayQuestion is triggered to show 1st question of quiz
+let i =0;//pre-sets value of i (used for questions in quiz) to 0
+
+/**
+ * Once button 'start Quiz' is clicked, 1st question is displayed,
+ * elements is header reduce in size,
+ * Once the button Check Answer is clicked, tfunction displayRadioValue id triggered
+ * To check whether the correct answer was selected through radio btn.
+ */
 function displayQuestion() {
-    document.getElementsByTagName('button')[0].style.display = "none";
+    
+    document.getElementsByTagName('button')[0].style.display = "none";//hides "Start Quiz" button
+    document.getElementsByClassName("startQuiz")[0].style.display = "none";//hides parent div of "Start Quiz" button, to avoid it taking space
+    document.getElementsByTagName("h1")[0].style.fontSize = "300%";//reduce font-size of h1 in header
+    document.getElementsByTagName("p")[0].style.fontSize = "200%";// reduce font-size of header p
 
     let questionDiv = document.getElementById('question');
-    questionDiv.style.display = "block";
+    questionDiv.style.display = "block";//displays "question"
 
-    // let i = Math.floor(Math.random() * 10) ;
-
-    // console.log(i);
-
-   for (question of questions) {
-    let i = 0;//Math.floor(Math.random() * 10) ;
     questionDiv.innerHTML = `
         <p>${questions[i].question}</p>
         <ul>
@@ -80,23 +86,21 @@ function displayQuestion() {
         <button id="btnCheckAnswer">Check Answer</button><button id="btnNextQuestion" style="display:none;">Next Question</button>
     `;
     
-   }
-   let btnCheck = document.getElementById('btnCheckAnswer');
-   btnCheck.addEventListener('click', displayRadioValue);
-
-   if(displayRadioValue === true){
-    i++;
-    console.log(i);
-   }
+        let btnCheck = document.getElementById('btnCheckAnswer');
+        btnCheck.addEventListener('click', displayRadioValue);
+        
 }
 
-
+/**
+ * checks if correct answer radio btn was selected
+ * returns boolean, and triggers function addCorrectAnswerToCounter().
+ */
 function displayRadioValue() {
     var option = document.getElementsByName('option');
 
     for (i = 0; i < option.length; i++) {
         if (option[i].checked){
-            if( option[i].id === "answer") {
+            if(option[i].id === "answer") {
                 alert("That's right! You've got it!!");
                 addCorrectAnswerToCounter();
                 return true;
@@ -105,27 +109,60 @@ function displayRadioValue() {
                 addIncorrectAnswerToCounter();
                 return false;
             }
-           
         }
     }
 }
 
 /**
- * adds 1 point to score, disables btn to check answer, avoiding doubling points
- * for the same correct answer, displays btn next question
+ * Adds 1 point to score, disables btn "Check Answer", avoiding doubling points
+ * for the same correct answer. Displays btn "Next Question" with
+ * event listener "click" which triggers displayNextQuestion().
  */
 function addCorrectAnswerToCounter() {
 
     let oldScore = parseInt(document.getElementById("correct").innerHTML);
-    document.getElementById('correct').innerText = ++oldScore;
+    document.getElementById("correct").innerHTML = ++oldScore;//adds score to counter of correct answers
 
     let btnCheckAnswer = document.getElementById('btnCheckAnswer');
-    btnCheckAnswer.disabled = "true";
-    btnCheckAnswer.style.cursor = "auto";
+    btnCheckAnswer.disabled = "true";//disables btn to check answer, avoiding users to hit it a second time and get more points for same correct answer
+    btnCheckAnswer.style.cursor = "auto";//changes cursor:pointer which implies an action to the user, to "auto" (default mouse arrow)
 
     let btnNextQuestion = document.getElementById('btnNextQuestion');
-    btnNextQuestion.style.display = "inline-block";
-    btnNextQuestion.addEventListener('click', )
+    btnNextQuestion.style.display = "inline-block";//displays button "Next Question", and activates it
+    btnNextQuestion.addEventListener('click', displayNextQuestion)// Once "Next Question" btn is clicked, function displayNextQuestion() is triggered
+}
+
+
+function displayNextQuestion() {
+    ++i;
+    displayQuestion();
+
+//     document.getElementsByTagName('button')[0].style.display = "none";
+
+//     let questionDiv = document.getElementById('question');
+//     questionDiv.style.display = "block";
+
+//     // for (question of questions) {
+//     i++;//Math.floor(Math.random() * 10) ;
+//     questionDiv.innerHTML = `
+//         <p>${questions[i].question}</p>
+//         <ul>
+//             <li><input type="radio" name="option" id="answer"><label name="answer">${questions[i].answer}</label></li>
+//             <li><input type="radio" name="option" id="option2"><label name="option2">${questions[i].option1}</label></li>
+//             <li><input type="radio" name="option" id="option3"><label name="option3">${questions[i].option2}</label></li>
+//         </ul>
+//         <br>
+//         <button id="btnCheckAnswer">Check Answer</button><button id="btnNextQuestion" style="display:none;">Next Question</button>
+//     `;
+    
+// //    }
+//    let btnCheck = document.getElementById('btnCheckAnswer');
+//    btnCheck.addEventListener('click', displayRadioValue);
+
+//    if(displayRadioValue === true){
+//     i++;
+//     console.log(i);
+//    }
 }
 
 function addIncorrectAnswerToCounter() {
