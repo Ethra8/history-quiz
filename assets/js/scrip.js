@@ -98,7 +98,7 @@ function displayQuestion() {
 function displayRadioValue() {
     var option = document.getElementsByName('option');
 
-    for (x = 0; x < option.length; i++) {
+    for (let x = 0; x < option.length; i++) {
         if (option[x].checked){
             if(option[x].id === "answer") {
                 alert("That's right! You've got it!!");
