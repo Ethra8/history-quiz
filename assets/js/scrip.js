@@ -8,20 +8,20 @@ let questions = [
     },
     {
         question: "question2",
-        answer: "answer2",
         option1: "option1.2",
+        answer: "answer2",
         option2: "option2.2"
     },
     {
         question: "question3",
-        answer: "answer3",
         option1: "option1.3",
-        option2: "option2.3"
+        option2: "option2.3",
+        answer: "answer3"
     },
     {
         question: "question4",
-        answer: "answer4",
         option1: "option1.4",
+        answer: "answer4",
         option2: "option2.4"
     }, {
         question: "question5",
@@ -35,13 +35,13 @@ let questions = [
         option2: "option2.6"
     }, {
         question: "question7",
-        answer: "answer7",
         option1: "option1.7",
-        option2: "option2.7"
+        option2: "option2.7",
+        answer: "answer7",
     }, {
         question: "question8",
-        answer: "answer8",
         option1: "option1.8",
+        answer: "answer8",
         option2: "option2.8"
     }, {
         question: "question9",
@@ -50,9 +50,9 @@ let questions = [
         option2: "option2.9"
     }, {
         question: "question10",
-        answer: "answer10",
         option1: "option1.10",
-        option2: "option2.10"
+        option2: "option2.10",
+        answer: "answer10",
     },];
 
 
@@ -71,6 +71,7 @@ function displayQuestion() {
     document.getElementsByClassName("startQuiz")[0].style.display = "none";//hides parent div of "Start Quiz" button, to avoid it taking space
     document.getElementsByTagName("h1")[0].style.fontSize = "300%";//reduce font-size of h1 in header
     document.getElementsByTagName("p")[0].style.fontSize = "200%";// reduce font-size of header p
+    document.getElementsByClassName("count")[0].style.visibility = "visible";
 
     let questionDiv = document.getElementById('question');
     questionDiv.style.display = "block";//displays "question"
@@ -126,6 +127,7 @@ function addCorrectAnswerToCounter() {
     let btnCheckAnswer = document.getElementById('btnCheckAnswer');
     btnCheckAnswer.disabled = "true";//disables btn to check answer, avoiding users to hit it a second time and get more points for same correct answer
     btnCheckAnswer.style.cursor = "auto";//changes cursor:pointer which implies an action to the user, to "auto" (default mouse arrow)
+    btnCheckAnswer.id = "btnCheckAnswerDisabled";
 
     let btnNextQuestion = document.getElementById('btnNextQuestion');
     btnNextQuestion.style.display = "inline-block";//displays button "Next Question", and activates it
@@ -135,15 +137,39 @@ function addCorrectAnswerToCounter() {
 
 function displayNextQuestion() {
     ++i;
-    displayQuestion();
+    if(i < 10) {
+        displayQuestion();
+    } else if(i === 10){
+        let questionDiv = document.getElementById('question');
+        questionDiv.style.display = "block";//displays "question"
+        questionDiv.style.backgroundColor = "rgba(2, 24, 83, 0.6)";
+        let oldScore = parseInt(document.getElementById("correct").innerHTML);
+
+
+        questionDiv.innerHTML = `
+        <h1>Well done!!</h1>
+        <p class="finalMsg">Your final score is ${oldScore} / 10</p>
+    `;
+    }
+   
 
 }
+
 
 function addIncorrectAnswerToCounter() {
     let oldScore = parseInt(document.getElementById('incorrect').innerText); // also .textContent
     document.getElementById('incorrect').innerText = ++oldScore;// also oldScore + 1 -> putting the ++ incrementse by 1, but after the variable doesn't let user see increment, putting ++ before the variable, shows the increment to the user
-
+    
     let btnNextQuestion = document.getElementById('btnNextQuestion');
-    btnNextQuestion.style.display = "inline-block";//displays button "Next Question", and activates it
     btnNextQuestion.addEventListener('click', displayNextQuestion)// Once "Next Question" btn is clicked, function displayNextQuestion() is triggered
+    
+
+    let btnCheckAnswer = document.getElementById('btnCheckAnswer');
+    btnCheckAnswer.disabled = "true";//disables btn to check answer, avoiding users to hit it a second time and get more points for same correct answer
+    btnCheckAnswer.style.cursor = "auto";//changes cursor:pointer which implies an action to the user, to "auto" (default mouse arrow)
+    btnCheckAnswer.id = "btnCheckAnswerDisabled";
+
+    // btnNextQuestion.addEventListener('click', displayNextQuestion)// Once "Next Question" btn is clicked, function displayNextQuestion() is triggered
+    // let btnNextQuestion = document.getElementById('btnNextQuestion');
+    btnNextQuestion.style.display = "inline-block";//displays button "Next Question", and activates it
 }
