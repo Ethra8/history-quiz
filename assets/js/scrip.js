@@ -98,7 +98,7 @@ function displayQuestion() {
 function displayRadioValue() {
     var option = document.getElementsByName('option');
 
-    for (let x = 0; x < option.length; i++) {
+    for (let x = 0; x < option.length; x++) {
         if (option[x].checked){
             if(option[x].id === "answer") {
                 alert("That's right! You've got it!!");
@@ -137,32 +137,6 @@ function displayNextQuestion() {
     ++i;
     displayQuestion();
 
-//     document.getElementsByTagName('button')[0].style.display = "none";
-
-//     let questionDiv = document.getElementById('question');
-//     questionDiv.style.display = "block";
-
-//     // for (question of questions) {
-//     i++;//Math.floor(Math.random() * 10) ;
-//     questionDiv.innerHTML = `
-//         <p>${questions[i].question}</p>
-//         <ul>
-//             <li><input type="radio" name="option" id="answer"><label name="answer">${questions[i].answer}</label></li>
-//             <li><input type="radio" name="option" id="option2"><label name="option2">${questions[i].option1}</label></li>
-//             <li><input type="radio" name="option" id="option3"><label name="option3">${questions[i].option2}</label></li>
-//         </ul>
-//         <br>
-//         <button id="btnCheckAnswer">Check Answer</button><button id="btnNextQuestion" style="display:none;">Next Question</button>
-//     `;
-    
-// //    }
-//    let btnCheck = document.getElementById('btnCheckAnswer');
-//    btnCheck.addEventListener('click', displayRadioValue);
-
-//    if(displayRadioValue === true){
-//     i++;
-//     console.log(i);
-//    }
 }
 
 function addIncorrectAnswerToCounter() {
