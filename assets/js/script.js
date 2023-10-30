@@ -18,7 +18,7 @@ let questions = [
     {
         question: "4. Who was Hypatia of Alexandria, murdered in 415 AD by a Christian monks' militia?",
         correctAnswer: 2,
-        options: ["She was the adulterous wife of the Roman Governor of Alexandria", "She was a famous courtisan from the Roman Empire", "She was a famous mathematician, phisolopher and astronomer"]
+        options: ["She was the adulterous wife of the Roman Governor of Alexandria", "She was a famous courtisan from the Roman Empire", "She was a famous mathematician, philosopher and astronomer"]
     }, 
     {
         question: "question5",
