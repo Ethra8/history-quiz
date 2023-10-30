@@ -18,29 +18,35 @@ let questions = [
     {
         question: "Who was Hypatia of Alexandria, murdered in 415 AD by a Christian monks' militia?",
         correctAnswer: 2,
-        options: ["She was the wife of the Roman Governor of Alexandria", "She was a famous courtisan from the Roman Empire", "She was a famous mathematician, phisolopher and astronomer"]
-    }, {
+        options: ["She was the adulterous wife of the Roman Governor of Alexandria", "She was a famous courtisan from the Roman Empire", "She was a famous mathematician, phisolopher and astronomer"]
+    }, 
+    {
         question: "question5",
         correctAnswer: 0,
         options: ["answer", "option1", "option2"]
-    }, {
+    }, 
+    {
         question: "question6",
         correctAnswer: 2,
         options: ["option1", "option2", "answer"]
-    }, {
+    }, 
+    {
         question: "question7",
         option1: "option1.7",
         correctAnswer: 1,
         options: ["option1", "answer", "option2"]
-    }, {
+    }, 
+    {
         question: "question8",
         correctAnswer: 1,
         options: ["option1", "answer", "option2"]
-    }, {
+    }, 
+    {
         question: "question9",
         correctAnswer: 2,
         options: ["option1", "option2", "answer"]
-    }, {
+    }, 
+    {
         question: "question10",
         correctAnswer: 0,
         options: ["answer", "option1", "option2"]
