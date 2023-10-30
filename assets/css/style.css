@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Lobster&family=Roboto+Condensed:wght@300;400&display=swap');
 
 /* Asterisk wildcard selector to override default styles added by the browser */
 * {
@@ -39,6 +39,7 @@ h1 {
 header p {
     color: whitesmoke;
     font-size: 300%;
+    font-weight: 600;
     font-family: 'Bad Script', cursive;
     transform: rotate(-5deg);
     padding-top: 0;
@@ -131,6 +132,7 @@ header p {
 .count p {
     font-family: 'Bad Script', cursive;
     text-align: center;
+    font-size: 1.4rem;
     /* display: flex;
     flex-direction: row; */
     /* gap: 20px; */
@@ -140,22 +142,23 @@ header p {
 #correct {
     color: darkgreen;
     font-weight: 800;
-    font-size: 120%;
+    font-size: 1.4rem;
 }
 
 #incorrect {
     color: darkred;
     font-weight: 800;
-    font-size: 120%;
+    font-size: 1.4rem;
 }
 
 #question {
     display: none;
     background-color: rgba(0, 28, 59, 0.7);
     padding: 40px 8% 40px 8%;
-    font-family: 'Bad Script', cursive;
-    font-size: 150%;
-    font-weight: 500;
+    font-family: 'roboto', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.6;
     width: 70%;
     margin: 0 auto;
     border-top-right-radius: 50px;
@@ -168,8 +171,12 @@ header p {
 
 }
 
+#question ul {
+    margin: 25px auto;
+}
+
 #question li {
-    padding: 0 5% 0 10%;
+    padding: 10px 5% 10px 10%;
     /* text-align: center; */
     list-style-type: none;
     color: whitesmoke;
