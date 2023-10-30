@@ -86,6 +86,7 @@ header p {
 
 #btnNextQuestion {
     margin-left: 25%;
+    display: none;
 }
 
 .startQuiz button:hover,
