@@ -1,22 +1,22 @@
 //array of questions, where correctAnswer has value of the index of the correct answer in array of options.
 let questions = [
     {
-        question: "In what year was the Universal Declaration of Human Rights (UDHR) first declared by the United Nations?",
+        question: "1. In what year was the Universal Declaration of Human Rights (UDHR) first declared by the United Nations?",
         correctAnswer: 0,
         options: ["1948", "1953", "1967"]
     },
     {
-        question: `Which event preceded the <i>Magna Carta</i> (Charter of Liberties) signed by King John in 1215? `,
+        question: `2. Which event preceded the <i>Magna Carta</i> (Charter of Liberties) signed by King John in 1215? `,
         correctAnswer: 2,
         options: ["Victory against King Philip of France", "King John's coronation", "A revolt of the Barons"]
     },
     {
-        question: "Why was the Knights Templars' last Grand Master Jacques de Molay burnt at the stake in 1314?",
+        question: "3. Why was the Knights Templars' last Grand Master Jacques de Molay burnt at the stake in 1314?",
         correctAnswer: 1,
         options: ["Because he was accused of treason by the King of France", "Because the Templars had been accused of heresy", "Because he had insulted the King"]
     },
     {
-        question: "Who was Hypatia of Alexandria, murdered in 415 AD by a Christian monks' militia?",
+        question: "4. Who was Hypatia of Alexandria, murdered in 415 AD by a Christian monks' militia?",
         correctAnswer: 2,
         options: ["She was the adulterous wife of the Roman Governor of Alexandria", "She was a famous courtisan from the Roman Empire", "She was a famous mathematician, phisolopher and astronomer"]
     }, 
