@@ -1,4 +1,4 @@
-
+//array of questions, where correctAnswer has value of the index of the correct answer in array of options.
 let questions = [
     {
         question: "question1",
@@ -121,7 +121,6 @@ function displayRadioValue() {
         }
     }
 
-    return j;
 }
 
 
@@ -156,11 +155,28 @@ function displayNextQuestion() {
         questionDiv.style.backgroundColor = "rgba(2, 24, 83, 0.6)";
         let oldScore = parseInt(document.getElementById("correct").innerHTML);
 
-
-        questionDiv.innerHTML = `
-        <h1>Well done!!</h1>
-        <p class="finalMsg">Your final score is ${oldScore} / 10</p>
-    `;
+        if(oldScore <= 3){
+            questionDiv.innerHTML = `
+            <h1 style="font-size:300%">You could do much better...</h1>
+             <p class="finalMsg">Your final score is ${oldScore} / 10</p>
+            `;
+        } else if(oldScore <= 5){
+            questionDiv.innerHTML = `
+            <h1 style="font-size:300%">You could do better...</h1>
+            <p class="finalMsg">Your final score is ${oldScore} / 10</p>
+            `;
+        } else if (oldScore <= 8){
+            questionDiv.innerHTML = `
+            <h1 style="font-size:300%">Well done!</h1>
+            <p class="finalMsg">Your final score is ${oldScore} / 10</p>
+        `;
+        } else if (oldScore > 9){
+            questionDiv.innerHTML = `
+            <h1 style="font-size:300%">Wow! Great score!!</h1>
+            <p class="finalMsg">Your final score is ${oldScore} / 10</p>
+        `;
+        }
+        
     }
    
 
