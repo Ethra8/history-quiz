@@ -141,7 +141,7 @@ function addCorrectAnswerToCounter() {
 
     let btnNextQuestion = document.getElementById('btnNextQuestion');
     btnNextQuestion.style.display = "inline-block";//displays button "Next Question", and activates it
-    btnNextQuestion.addEventListener('click', displayNextQuestion)// Once "Next Question" btn is clicked, function displayNextQuestion() is triggered
+    btnNextQuestion.addEventListener('click', displayNextQuestion);// Once "Next Question" btn is clicked, function displayNextQuestion() is triggered
 }
 
 
@@ -170,13 +170,20 @@ function displayNextQuestion() {
             <h1 style="font-size:300%">Well done!</h1>
             <p class="finalMsg">Your final score is ${oldScore} / 10</p>
         `;
-        } else if (oldScore > 9){
+        } else if (oldScore >= 9){
             questionDiv.innerHTML = `
             <h1 style="font-size:300%">Wow! Great score!!</h1>
             <p class="finalMsg">Your final score is ${oldScore} / 10</p>
         `;
         }
         
+        let restartQuiz = document.getElementsByClassName('restartQuiz')[0];
+        restartQuiz.style.visibility = "visible";
+        restartQuiz.style.display = "block";
+        let restartQuizBtn = restartQuiz.children[0];
+
+        restartQuizBtn.addEventListener('click', startNewQuiz);
+
     }
    
 
@@ -199,4 +206,15 @@ function addIncorrectAnswerToCounter() {
     // btnNextQuestion.addEventListener('click', displayNextQuestion)// Once "Next Question" btn is clicked, function displayNextQuestion() is triggered
     // let btnNextQuestion = document.getElementById('btnNextQuestion');
     btnNextQuestion.style.display = "inline-block";//displays button "Next Question", and activates it
+}
+
+function startNewQuiz() {
+
+    i = 0;
+
+    document.getElementById('correct').innerHTML = "0";
+    document.getElementById('incorrect').innerHTML = "0";
+
+    displayQuestion();
+
 }

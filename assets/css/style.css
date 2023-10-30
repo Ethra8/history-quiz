@@ -44,7 +44,8 @@ header p {
     padding-top: 0;
 }
 
-.startQuiz {
+.startQuiz,
+.restartQuiz {
     padding: 70px 0;
     margin: 0 auto;
     text-align: center;
@@ -52,7 +53,8 @@ header p {
 
 .startQuiz button,
 #btnCheckAnswer,
-#btnNextQuestion {
+#btnNextQuestion,
+.restartQuiz button {
     background-color: antiquewhite;
     padding: 15px 30px;
     font-family: 'Lobster', sans-serif;
@@ -62,14 +64,21 @@ header p {
     border-width: 2px;
     border-color: blueviolet;
     transition: all 0.5s;
-    display: inline-flex;position: relative;
+    display: inline-flex;
+    position: relative;
 }
 
 .startQuiz {
     visibility: visible;
 }
 
-.startQuiz button {
+.restartQuiz {
+    visibility: hidden;
+    display: none;
+}
+
+.startQuiz button,
+.restartQuiz button {
     align-self: center;
     margin: 0 auto;
 }
@@ -80,7 +89,8 @@ header p {
 
 .startQuiz button:hover,
 #btnCheckAnswer:hover,
-#btnNextQuestion:hover {
+#btnNextQuestion:hover,
+.restartQuiz button:hover {
     cursor: pointer;
     background-color: aquamarine;
     border-color: whitesmoke;
