@@ -16,7 +16,7 @@ let questions = [
         options: ["Because he was accused of treason by the King of France", "Because the Templars had been accused of heresy", "Because he had insulted the King"]
     },
     {
-        question: "Who was Hypatia of Alexandria, murdered in 415 AD?",
+        question: "Who was Hypatia of Alexandria, murdered in 415 AD by a Christian monks' militia?",
         correctAnswer: 2,
         options: ["She was the wife of the Roman Governor of Alexandria", "She was a famous courtisan from the Roman Empire", "She was a famous mathematician, phisolopher and astronomer"]
     }, {
