@@ -2,53 +2,52 @@
 let questions = [
     {
         question: "1. In what year was the Universal Declaration of Human Rights (UDHR) first declared by the United Nations?",
-        correctAnswer: 0,
+        correctAnswerPosition: 0,
         options: ["1948", "1953", "1967"]
     },
     {
         question: `2. Which event preceded the <i>Magna Carta</i> (Charter of Liberties) signed by King John in 1215? `,
-        correctAnswer: 2,
+        correctAnswerPosition: 2,
         options: ["Victory against King Philip of France", "King John's coronation", "A revolt of the Barons"]
     },
     {
         question: "3. Why was the Knights Templars' last Grand Master Jacques de Molay burnt at the stake in 1314?",
-        correctAnswer: 1,
+        correctAnswerPosition: 1,
         options: ["Because he was accused of treason by the King of France", "Because the Templars had been accused of heresy", "Because he had insulted the King"]
     },
     {
         question: "4. Who was Hypatia of Alexandria, murdered in 415 AD by a Christian monks' militia?",
-        correctAnswer: 2,
+        correctAnswerPosition: 2,
         options: ["She was the adulterous wife of the Roman Governor of Alexandria", "She was a famous courtisan from the Roman Empire", "She was a famous mathematician, philosopher and astronomer"]
     }, 
     {
-        question: "How many State members does the United Nations currently comprise?",
-        correctAnswer: 0,
+        question: "5. How many State members does the United Nations currently comprise?",
+        correctAnswerPosition: 0,
         options: ["193", "122", "168"]
     }, 
     {
         question: "question6",
-        correctAnswer: 2,
+        correctAnswerPosition: 2,
         options: ["option1", "option2", "answer"]
     }, 
     {
         question: "question7",
-        option1: "option1.7",
-        correctAnswer: 1,
+        correctAnswerPosition: 1,
         options: ["option1", "answer", "option2"]
     }, 
     {
         question: "question8",
-        correctAnswer: 1,
+        correctAnswerPosition: 1,
         options: ["option1", "answer", "option2"]
     }, 
     {
         question: "question9",
-        correctAnswer: 2,
+        correctAnswerPosition: 2,
         options: ["option1", "option2", "answer"]
     }, 
     {
         question: "question10",
-        correctAnswer: 0,
+        correctAnswerPosition: 0,
         options: ["answer", "option1", "option2"]
     },];
 
@@ -57,10 +56,10 @@ document.getElementsByTagName('button')[0].addEventListener('click', displayQues
 let i =0;//pre-sets value of i (used for questions in quiz) to 0
 
 /**
- * Once button 'start Quiz' is clicked, 1st question is displayed,
- * elements is header reduce in size,
- * Once the button Check Answer is clicked, tfunction displayRadioValue id triggered
- * To check whether the correct answer was selected through radio btn.
+ * Once button 'start Quiz' is clicked, 1st question is displayed, and
+ * elements in header are reduced in size.
+ * Once the button Check Answer is clicked, function displayRadioValue() id triggered
+ * to check whether the correct answer was selected through radio btn.
  */
 function displayQuestion() {
     
@@ -82,7 +81,7 @@ function displayQuestion() {
             <li><input type="radio" name="option" id="${getId(2)}"><label for="${getId(2)}">${questions[i].options[2]}</label></li>
         </ul>
         <br>
-        <button id="btnCheckAnswer">Check Answer</button><button id="btnNextQuestion" style="display:none;">Next Question</button>
+        <button id="btnCheckAnswer">Check Answer</button><button id="btnNextQuestion">Next Question</button>
     `;
     
         let btnCheck = document.getElementById('btnCheckAnswer');
@@ -90,21 +89,21 @@ function displayQuestion() {
         
 }
 
+
 /**
  * Gets value of correctAnswer in questions[i], and
- * compares its value (0-2) to id parameter set in id from input type=radio, which is the same as set in label for .options[].
+ * compares its value (0-2) to id parameter set in id from input type=radio, which is the same as set to label .options[].
  * If values match, then it must be the correct answer, which exact position in the questions[i].options array is specified hardcoded in questions[i].correctAnswer's integer value.
  */
 function getId(id){
-    let correctAnswer = questions[i].correctAnswer;
-    
-    if(correctAnswer === id){
+    let correctAnswerPosition = questions[i].correctAnswerPosition;
+
+    if(correctAnswerPosition === id){
         return "answer";
     } else{
         return `option-${id}`;
     }
 }
-
 
 /**
  * checks if correct answer radio btn was selected
@@ -112,17 +111,21 @@ function getId(id){
  */
 function displayRadioValue() {
     let option = document.getElementsByName('option');
+    
+    let correctAnswerPosition = questions[i].correctAnswerPosition;
+    let a = correctAnswerPosition;
+
+    let correctAnswer = questions[i].options[a];
+    console.log(correctAnswer);
 
     for (let x = 0; x < option.length; x++) {
         if (option[x].checked){
             if(option[x].id === "answer") {
                 alert("That's right! You've got it!!");
                 addCorrectAnswerToCounter();
-                return true;
             } else {
-                alert(`Awwwwww ... you got it wrong this time!`);
+                alert(`Awwwwww ... you got it wrong this time. The correct answer is:\n ${correctAnswer}!`);
                 addIncorrectAnswerToCounter();
-                return false;
             }
         }
     }
