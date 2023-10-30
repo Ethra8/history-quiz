@@ -172,5 +172,6 @@ label {
 .finalMsg {
     text-align: center !important;
     color: whitesmoke;
+    font-size: 120%;
 }
 
