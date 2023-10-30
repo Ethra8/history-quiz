@@ -2,57 +2,48 @@
 let questions = [
     {
         question: "question1",
-        answer: "answer1",
-        option1: "option1.1",
-        option2: "option2.1"
+        correctAnswer: 0,
+        options: ["answer", "option1", "option2"]
     },
     {
         question: "question2",
-        option1: "option1.2",
-        answer: "answer2",
-        option2: "option2.2"
+        correctAnswer: 2,
+        options: ["option1", "option2", "answer"]
     },
     {
         question: "question3",
-        option1: "option1.3",
-        option2: "option2.3",
-        answer: "answer3"
+        correctAnswer: 1,
+        options: ["option1", "answer", "option2"]
     },
     {
         question: "question4",
-        option1: "option1.4",
-        answer: "answer4",
-        option2: "option2.4"
+        correctAnswer: 2,
+        options: ["option1", "option2", "answer"]
     }, {
         question: "question5",
-        answer: "answer5",
-        option1: "option1.5",
-        option2: "option2.5"
+        correctAnswer: 0,
+        options: ["answer", "option1", "option2"]
     }, {
         question: "question6",
-        answer: "answer6",
-        option1: "option1.6",
-        option2: "option2.6"
+        correctAnswer: 2,
+        options: ["option1", "option2", "answer"]
     }, {
         question: "question7",
         option1: "option1.7",
-        option2: "option2.7",
-        answer: "answer7",
+        correctAnswer: 1,
+        options: ["option1", "answer", "option2"]
     }, {
         question: "question8",
-        option1: "option1.8",
-        answer: "answer8",
-        option2: "option2.8"
+        correctAnswer: 1,
+        options: ["option1", "answer", "option2"]
     }, {
         question: "question9",
-        answer: "answer9",
-        option1: "option1.9",
-        option2: "option2.9"
+        correctAnswer: 2,
+        options: ["option1", "option2", "answer"]
     }, {
         question: "question10",
-        option1: "option1.10",
-        option2: "option2.10",
-        answer: "answer10",
+        correctAnswer: 0,
+        options: ["answer", "option1", "option2"]
     },];
 
 
@@ -76,12 +67,13 @@ function displayQuestion() {
     let questionDiv = document.getElementById('question');
     questionDiv.style.display = "block";//displays "question"
 
+
     questionDiv.innerHTML = `
         <p>${questions[i].question}</p>
         <ul>
-            <li><input type="radio" name="option" id="answer"><label name="answer">${questions[i].answer}</label></li>
-            <li><input type="radio" name="option" id="option2"><label name="option2">${questions[i].option1}</label></li>
-            <li><input type="radio" name="option" id="option3"><label name="option3">${questions[i].option2}</label></li>
+            <li><input type="radio" name="option" id="${getId(0)}"><label for="${getId(0)}">${questions[i].options[0]}</label></li>
+            <li><input type="radio" name="option" id="${getId(1)}"><label for="${getId(1)}">${questions[i].options[1]}</label></li>
+            <li><input type="radio" name="option" id="${getId(2)}"><label for="${getId(2)}">${questions[i].options[2]}</label></li>
         </ul>
         <br>
         <button id="btnCheckAnswer">Check Answer</button><button id="btnNextQuestion" style="display:none;">Next Question</button>
@@ -93,11 +85,27 @@ function displayQuestion() {
 }
 
 /**
+ * Gets value of correctAnswer in questions[i], and
+ * compares its value (0-2) to id parameter set in id from input type=radio, which is the same as set in label for .options[].
+ * If values match, then it must be the correct answer, which exact position in the questions[i].options array is specified hardcoded in questions[i].correctAnswer's integer value.
+ */
+function getId(id){
+    let correctAnswer = questions[i].correctAnswer;
+    
+    if(correctAnswer === id){
+        return "answer";
+    } else{
+        return `option-${id}`;
+    }
+}
+
+
+/**
  * checks if correct answer radio btn was selected
  * returns boolean, and triggers function addCorrectAnswerToCounter().
  */
 function displayRadioValue() {
-    var option = document.getElementsByName('option');
+    let option = document.getElementsByName('option');
 
     for (let x = 0; x < option.length; x++) {
         if (option[x].checked){
@@ -106,13 +114,16 @@ function displayRadioValue() {
                 addCorrectAnswerToCounter();
                 return true;
             } else {
-                alert("Awwwwww ... you got it wrong this time!");
+                alert(`Awwwwww ... you got it wrong this time!`);
                 addIncorrectAnswerToCounter();
                 return false;
             }
         }
     }
+
+    return j;
 }
+
 
 /**
  * Adds 1 point to score, disables btn "Check Answer", avoiding doubling points
