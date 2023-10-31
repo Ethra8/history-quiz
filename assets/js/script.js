@@ -81,7 +81,9 @@ function displayQuestion() {
             <li><input type="radio" name="option" id="${getId(2)}"><label for="${getId(2)}">${questions[i].options[2]}</label></li>
         </ul>
         <br>
+        <div class="btnsDiv">
         <button id="btnCheckAnswer">Check Answer</button><button id="btnNextQuestion">Next Question</button>
+        </div>
     `;
     
         let btnCheck = document.getElementById('btnCheckAnswer');
@@ -124,7 +126,7 @@ function displayRadioValue() {
                 alert("That's right! You've got it!!");
                 addCorrectAnswerToCounter();
             } else {
-                alert(`Awwwwww ... you got it wrong this time. The correct answer is:\n ${correctAnswer}!`);
+                alert(`Awwwwww ... you got it wrong this time.\n\n The correct answer is:\n ${correctAnswer}`);
                 addIncorrectAnswerToCounter();
             }
         }

@@ -56,7 +56,7 @@ header p {
 #btnCheckAnswer,
 #btnNextQuestion,
 .restartQuiz button {
-    background-color: antiquewhite;
+    background-color: aquamarine;
     padding: 15px 30px;
     font-family: 'Lobster', sans-serif;
     font-size: 1.5rem;
@@ -65,8 +65,8 @@ header p {
     border-width: 2px;
     border-color: blueviolet;
     transition: all 0.5s;
-    display: inline-flex;
     position: relative;
+    text-align: center;
 }
 
 .startQuiz {
@@ -80,12 +80,13 @@ header p {
 
 .startQuiz button,
 .restartQuiz button {
-    align-self: center;
     margin: 0 auto;
+    width: 220px;
+    font-size: 1.8rem;
 }
 
 #btnNextQuestion {
-    margin-left: 25%;
+    margin-left: 50px;
     display: none;
 }
 
@@ -94,8 +95,8 @@ header p {
 #btnNextQuestion:hover,
 .restartQuiz button:hover {
     cursor: pointer;
-    background-color: aquamarine;
-    border-color: whitesmoke;
+    background-color: whitesmoke;
+    border-color: aquamarine;
 }
 
 #btnCheckAnswerDisabled {
@@ -108,7 +109,6 @@ header p {
     border-width: 1px;
     border-color: blueviolet;
     transition: all 0.5s;
-    display: inline-flex;
     position: relative;
 }
 
@@ -127,16 +127,12 @@ header p {
     border-width: 2px;
     border-color: aquamarine;
     background-color: rgba(255, 255, 255, 0.9);
-
 }
 
 .count p {
     font-family: 'Bad Script', cursive;
     text-align: center;
     font-size: 1.4rem;
-    /* display: flex;
-    flex-direction: row; */
-    /* gap: 20px; */
     padding: 0 60px;
 }
 
@@ -155,7 +151,7 @@ header p {
 #question {
     display: none;
     background-color: rgba(0, 28, 59, 0.7);
-    padding: 40px 8% 40px 8%;
+    padding: 50px 8%;
     font-family: 'roboto', sans-serif;
     font-size: 1.2rem;
     font-weight: 400;
@@ -169,11 +165,10 @@ header p {
     border-color: aquamarine;
     border-bottom: none;
     color: whitesmoke;
-
 }
 
 #question ul {
-    margin: 25px auto;
+    margin: 25px auto 0;
 }
 
 #question li {
@@ -181,6 +176,12 @@ header p {
     /* text-align: center; */
     list-style-type: none;
     color: whitesmoke;
+}
+
+.btnsDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
 }
 
 label {
@@ -192,5 +193,97 @@ label {
     color: whitesmoke;
     font-size: 120%;
     font-family: 'Bad Script', cursive;
+}
+
+
+/* X-SMALL to LARGE MOBILE *****/
+@media only screen and (max-width: 576px) {
+
+    h1 {
+        font-size: 320%;
+        font-weight: 400;
+        padding: 0 20px;
+    }
+
+    header p {
+        font-weight: lighter;
+    }
+    
+    #question {
+        width: 95%;
+    }
+
+    .count {
+        width: 95%;
+        font-size: 1.2rem;
+        font-weight: 600;
+        display: flex;
+        flex-direction: column !important;    
+    }
+
+    .count p {
+        text-align: center;
+        font-size: 1.4rem;
+        padding: 0 30px;
+    }
+
+    .btnsDiv {
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        flex-wrap: wrap;
+    }
+
+    #btnNextQuestion{
+        margin: 40px 0 0 0;
+    }
+    
+}
+
+
+/** MEDIUM DEVICES - TABLETS PORTRAIT **/
+@media only screen and (min-width: 577px) and (max-width: 768px){
+
+    .count {
+        display: flex;
+        flex-direction: column;    
+        flex-wrap: wrap;
+    }
+
+    .btnsDiv {
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        flex-wrap: wrap;
+    }
+
+    #btnCheckAnswer,
+    #btnCheckAnswerDisabled {
+        width: 80%;
+        margin: 0 auto;
+
+    }
+
+    #btnNextQuestion{
+        margin: 40px auto;
+        width: 80%;
+
+    }
+
+}
+
+
+/** LARGE TABLETS - LANDSCAPE **/
+@media only screen and (min-width: 767px) and (max-width: 992px) {
+
+    #question {
+        width: 85%;
+    }
+
+    .count {
+        width: 85%;
+    }
+
+
 }
 
