@@ -16,22 +16,22 @@ let questions = [
         options: ["Because he was accused of treason by the King of France", "Because the Templars had been accused of heresy", "Because he had insulted the King"]
     },
     {
-        question: "4. Who was Hypatia of Alexandria, murdered in 415 AD by a Christian monks' militia?",
+        question: "4. Who was Hypatia of Alexandria, murdered in 415 AD by a militia of Christian fanatics?",
         correctAnswerPosition: 2,
         options: ["She was the adulterous wife of the Roman Governor of Alexandria", "She was a famous courtisan from the Roman Empire", "She was a famous mathematician, philosopher and astronomer"]
     }, 
     {
-        question: "5. How many State members does the United Nations currently comprise?",
+        question: "5. How many member States does the United Nations currently comprise?",
         correctAnswerPosition: 0,
         options: ["193", "122", "168"]
     }, 
     {
-        question: "question6",
+        question: "6. The Egyptian considered Anubis, depicted as a jackal, or a man with the head of a jackal, as the god of ...",
         correctAnswerPosition: 2,
-        options: ["option1", "option2", "answer"]
+        options: [`the skys, war and hunting, also considered the embodiment of divine kingship.`, `the underworld, symbolizing death, resurrection, and the cycles of the river Nile which brought fertility.`, `funerary rites, guardian of tombs and considered the god of the dead in the Ancient Kingdom.`],
     }, 
     {
-        question: "question7",
+        question: "7. ",
         correctAnswerPosition: 1,
         options: ["option1", "answer", "option2"]
     }, 
