@@ -69,6 +69,7 @@ function displayQuestion() {
 
     document.getElementsByTagName('button')[0].style.display = "none";//hides "Start Quiz" button
     document.getElementsByClassName("startQuiz")[0].style.display = "none";//hides parent div of "Start Quiz" button, to avoid it taking space
+    document.getElementsByTagName("header")[0].style.padding = "20px 4%";
     document.getElementsByTagName("h1")[0].style.fontSize = "300%";//reduce font-size of h1 in header
     document.getElementsByTagName("p")[0].style.fontSize = "200%";// reduce font-size of header p
     document.getElementsByClassName("count")[0].style.visibility = "visible";
@@ -156,12 +157,19 @@ function addCorrectAnswerToCounter() {
 
     let btnNextQuestion = document.getElementById('btnNextQuestion');
     btnNextQuestion.style.display = "inline-block";//displays button "Next Question", and activates it
+    
+    if(i === 9){
+        btnNextQuestion.innerText = "Final Results";
+    }
+
     btnNextQuestion.addEventListener('click', displayNextQuestion);// Once "Next Question" btn is clicked, function displayNextQuestion() is triggered
 }
 
-
+/**
+ * Adds +1 to i, and displays next question if i< total number of Qs, or displays final message when i === to final question.
+ */
 function displayNextQuestion() {
-    ++i;
+    ++i; //increments i so that next question (or final results div with message) is displayed
     if(i < 10) {
         displayQuestion();
     } else if(i === 10){
@@ -200,8 +208,6 @@ function displayNextQuestion() {
         restartQuizBtn.addEventListener('click', startNewQuiz);
 
     }
-   
-
 }
 
 
@@ -218,10 +224,15 @@ function addIncorrectAnswerToCounter() {
     btnCheckAnswer.style.cursor = "auto";//changes cursor:pointer which implies an action to the user, to "auto" (default mouse arrow)
     btnCheckAnswer.id = "btnCheckAnswerDisabled";
 
-    // btnNextQuestion.addEventListener('click', displayNextQuestion)// Once "Next Question" btn is clicked, function displayNextQuestion() is triggered
-    // let btnNextQuestion = document.getElementById('btnNextQuestion');
     btnNextQuestion.style.display = "inline-block";//displays button "Next Question", and activates it
+   
+    if(i === 9){
+        btnNextQuestion.innerText = "Final Results";
+    }
+
 }
+
+
 
 function startNewQuiz() {
 
