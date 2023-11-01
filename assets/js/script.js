@@ -52,7 +52,11 @@ let questions = [
     },];
 
 
+document.getElementsByTagName('button')[1].addEventListener('click', displayQuestion);//Once user clicks on "Start Quiz" button, function displayQuestion is triggered to show 1st question of quiz
 document.getElementsByTagName('button')[0].addEventListener('click', displayQuestion);//Once user clicks on "Start Quiz" button, function displayQuestion is triggered to show 1st question of quiz
+
+//document.getElementById('navRestartBtn').addEventListener('click', displayQuestion);
+
 let i = 0;//pre-sets value of i (used for questions in quiz) to 0
 
 /**
@@ -70,13 +74,9 @@ function displayQuestion() {
     nav.style.visibility = "visible";
     nav.style.display = "flex";
 
-    document.getElementsByTagName('button')[0].style.display = "none";//hides "Start Quiz" button
+    document.getElementsByTagName('button')[1].style.display = "none";//hides "Start Quiz" button
     document.getElementsByClassName("startQuiz")[0].style.display = "none";//hides parent div of "Start Quiz" button, to avoid it taking space
     document.getElementsByTagName("header")[0].style.display = "none";
-
-    // document.getElementsByTagName("header")[0].style.padding = "20px 4%";
-    // document.getElementsByTagName("h1")[0].style.fontSize = "300%";//reduce font-size of h1 in header
-    // document.getElementsByTagName("p")[1].style.fontSize = "200%";// reduce font-size of header p
     document.getElementsByClassName("count")[0].style.visibility = "visible";
 
     let questionDiv = document.getElementById('question');
@@ -101,6 +101,7 @@ function displayQuestion() {
         
 }
 
+document.getElementById('navRestartBtn').addEventListener('click', displayQuestion);
 
 /**
  * Gets value of correctAnswer in questions[i], and
@@ -252,4 +253,13 @@ function startNewQuiz() {
 
     displayQuestion();
 
+}
+
+/**
+ * displays nav on 404.html
+ */
+function displayNav() {
+    let nav = document.getElementsByTagName('nav')[0];
+    nav.style.visibility = "visible";
+    nav.style.display = "block"; 
 }

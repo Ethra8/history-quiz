@@ -16,7 +16,6 @@ body {
 nav {
     background-color: rgba(0, 28, 59, 0.7);
     display: none;
-    justify-content: space-between;
     padding: 15px 4%;
     visibility: hidden;
 }
@@ -28,6 +27,7 @@ nav p {
     font-family: 'Bad Script', cursive;
     transform: rotate(-5deg);
     padding-top: 0;
+    text-align: left !important;
 }
 
 header {
@@ -66,10 +66,12 @@ header p {
     text-align: center;
 }
 
+
 .startQuiz button,
 #btnCheckAnswer,
 #btnNextQuestion,
-.restartQuiz button {
+.restartQuiz button,
+#goToHomePage {
     background-color: aquamarine;
     padding: 15px 30px;
     font-family: 'Lobster', sans-serif;
@@ -83,8 +85,38 @@ header p {
     text-align: center;
 }
 
+#navRestartBtn {
+    position: absolute;
+    right: 4%;
+    text-decoration: none;
+    padding: 7px 15px;
+    color: black;
+    background-color: rgb(169, 255, 226);
+    font-family: 'Lobster', sans-serif;
+    font-size: 1.5rem;
+    border-radius: 50px;
+    border-style: outset;
+    border-width: 2px;
+    border-color: blueviolet;
+    transition: all 0.5s;
+    text-align: center;
+}
+
 .startQuiz {
     visibility: visible;
+}
+
+.startQuiz button,
+#goToHomePage {
+    margin: 40px auto !important;
+    width: 240px;
+    font-size: 1.8rem;
+}
+
+#goToHomePage a {
+    text-decoration: none;
+    width: 240px;
+    color: black;
 }
 
 .restartQuiz {
@@ -92,7 +124,6 @@ header p {
     display: none;
 }
 
-.startQuiz button,
 .restartQuiz button {
     margin: 0 auto;
     width: 220px;
@@ -107,7 +138,8 @@ header p {
 .startQuiz button:hover,
 #btnCheckAnswer:hover,
 #btnNextQuestion:hover,
-.restartQuiz button:hover {
+.restartQuiz button:hover,
+#goToHomePage:hover {
     cursor: pointer;
     background-color: whitesmoke;
     border-color: aquamarine;
@@ -206,6 +238,7 @@ label {
     color: whitesmoke;
     font-size: 120%;
     font-family: 'Bad Script', cursive;
+    font-weight: 600;
 }
 
 
@@ -225,6 +258,11 @@ label {
     header p {
         font-weight: lighter;
     }
+
+    #navRestartBtn {
+        top: 70px;
+    }
+    
     
     #question {
         width: 95%;
