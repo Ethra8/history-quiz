@@ -257,13 +257,13 @@ You can download the code to your computer, making a copy of the code at the exa
 - **Codespaces**
   1.  You will be requested to be signed in to Codespaces, and once you are, the repository will be cloned on your Codespaces account.
 
-## CREDITS
+# CREDITS
 
-### IMAGERY
+## IMAGERY
 
 - [Background Image](https://pixabay.com/photos/milky-way-stars-night-sky-2695569/) by <a href="https://pixabay.com/users/felixmittermeier-4397258/" target=_blank >FelixMittermeier</a> from <a href="https://pixabay.com">Pixabay</a>.
 
-### CONTENT
+## CONTENT
 
 To include accurate historic answers to the questions in this quiz, the following sites have been consulted:
 
@@ -288,7 +288,7 @@ To include accurate historic answers to the questions in this quiz, the followin
 - **QUESTION 10**
   - [Ratial segregation in the US](https://www.senate.gov/artandhistory/history/civil_rights/background.htm#:~:text=Passage%20of%20the%20Civil%20Rights,in%20public%20and%20private%20facilities.) at the [United States Senate](https://www.senate.gov) official site.
 
-## ACKNOWLEDGEMENTS
+# ACKNOWLEDGEMENTS
 
 - [How to get value of selected radio button using JS](https://www.geeksforgeeks.org/how-to-get-value-of-selected-radio-button-using-javascript/) at [Geeksforgeeks](www.geeksforgeeks.org) site.
 - [W3Schools](https://www.w3schools.com/): Their documentation has been very useful when wanting to implement new features or animations.
