@@ -1,52 +1,52 @@
 //array of questions, where correctAnswer has value of the index of the correct answer in the array of options.
 let questions = [
     {
-        question: "1. In what year was the Universal Declaration of Human Rights (UDHR) first declared by the United Nations?",
+        question: "In what year was the Universal Declaration of Human Rights (UDHR) first declared by the United Nations?",
         correctAnswerPosition: 0,
         options: ["1948", "1953", "1967"]
     },
     {
-        question: `2. Which event preceded the <i>Magna Carta</i> (Charter of Liberties) signed by King John in 1215? `,
+        question: `Which event preceded the <i>Magna Carta</i> (Charter of Liberties) signed by King John in 1215? `,
         correctAnswerPosition: 2,
         options: ["Victory against King Philip of France", "King John's coronation", "A revolt of the Barons"]
     },
     {
-        question: "3. Why was the Knights Templars' last Grand Master Jacques de Molay burnt at the stake in 1314?",
+        question: "Why was the Knights Templars' last Grand Master Jacques de Molay burnt at the stake in 1314?",
         correctAnswerPosition: 1,
         options: ["Because he was accused of treason by the King of France", "Because the Templars had been accused of heresy", "Because he had insulted the King"]
     },
     {
-        question: "4. Who was Hypatia of Alexandria, murdered in 415 AD by a militia of Christian fanatics?",
+        question: "Who was Hypatia of Alexandria, murdered in 415 AD by a militia of Christian fanatics?",
         correctAnswerPosition: 2,
         options: ["She was the adulterous wife of the Roman Governor of Alexandria", "She was a famous courtisan from the Roman Empire", "She was a famous mathematician, philosopher and astronomer"]
     }, 
     {
-        question: "5. How many member States does the United Nations currently comprise?",
+        question: "How many member States does the United Nations currently comprise?",
         correctAnswerPosition: 0,
         options: ["193", "122", "168"]
     }, 
     {
-        question: "6. The Egyptian considered Anubis, depicted as a jackal, or a man with the head of a jackal, as the god of ...",
+        question: "The Egyptian considered Anubis, depicted as a jackal, or a man with the head of a jackal, as the god of ...",
         correctAnswerPosition: 2,
         options: [`the skys, war and hunting, also considered the embodiment of divine kingship.`, `the underworld, symbolizing death, resurrection, and the cycles of the river Nile which brought fertility.`, `funerary rites, guardian of tombs and considered the god of the dead in the Ancient Kingdom.`],
     }, 
     {
-        question: "7. Which was the first self-governing country that granted the vote to all adult women in 1893?",
+        question: "Which was the first self-governing country that granted the vote to all adult women in 1893?",
         correctAnswerPosition: 1,
         options: ["Finland", "New Zealand", "Canada"]
     }, 
     {
-        question: "8. In 1969, when Spanish king Juan Carlos I, grown up in fascist Spain, was appointed by fascist dictator Franco to be his successor, what did Juan Carlos do?",
+        question: "In 1969, when Spanish king Juan Carlos I, grown up in fascist Spain, was appointed by fascist dictator Franco to be his successor, what did Juan Carlos do?",
         correctAnswerPosition: 1,
         options: ["He solemny declared he would reinstore democracy after decades of a murderous fascist regime, fruit of the 1936's military coup supported by the Nazis to the young Spanish Republic.", "He took an oath before the fascist regime, which was never after officially broken.", "He rejected the fascist dictator's appointment, and made a glorious return when the mass-murderer peacefully died at age 83, in 1975."]
     }, 
     {
-        question: "9. In which year was the first provisional government of the freed self-governing Republic of Ireland installed",
+        question: "In which year was the first provisional government of the freed self-governing Republic of Ireland installed",
         correctAnswerPosition: 2,
         options: ["1918", "1931", "1922"]
     }, 
     {
-        question: "10. In which year was the Civil Rights Act passed by the US Senate, which extended 'civil, political, and legal rights and protections to African Americans, including former slaves and their descendants, to end segregation in public and private facilities.'?",
+        question: "In which year was the Civil Rights Act passed by the US Senate, which extended 'civil, political, and legal rights and protections to African Americans, including former slaves and their descendants, to end segregation in public and private facilities.'?",
         correctAnswerPosition: 0,
         options: ["1964", "1973", "1951"]
     },];
@@ -84,7 +84,8 @@ function displayQuestion() {
 
 
     questionDiv.innerHTML = `
-        <p>${questions[i].question}</p>
+        <p><span id="questionNum">Question ${i+1}</span><br><br>
+         ${questions[i].question}</p>
         <ul>
             <li><input type="radio" name="option" id="${getId(0)}"><label for="${getId(0)}">${questions[i].options[0]}</label></li>
             <li><input type="radio" name="option" id="${getId(1)}"><label for="${getId(1)}">${questions[i].options[1]}</label></li>

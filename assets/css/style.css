@@ -212,6 +212,13 @@ header p {
     color: whitesmoke;
 }
 
+#questionNum {
+    font-family: 'Bad Script', cursive;
+    font-size: 180%;
+    color: aquamarine;
+    font-weight: 500;
+}
+
 #question ul {
     margin: 25px auto 0;
 }
@@ -232,6 +239,21 @@ header p {
 label {
     padding-left: 15px;
 }
+
+input[type=radio]{
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-clip: content-box;
+    /* border: 2px solid aquamarine; */
+    background-color: whitesmoke;
+  }
+  
+  input[type="radio"]:checked {
+    background-color: blueviolet;
+    border: 2px solid whitesmoke;
+  }
 
 .finalMsg {
     text-align: center !important;
