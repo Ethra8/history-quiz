@@ -79,7 +79,7 @@ header p {
     border-radius: 50px;
     border-style: outset;
     border-width: 2px;
-    border-color: blueviolet;
+    border-color: rgb(85, 0, 85);
     transition: all 0.5s;
     position: relative;
     text-align: center;
@@ -97,7 +97,7 @@ header p {
     border-radius: 50px;
     border-style: outset;
     border-width: 2px;
-    border-color: blueviolet;
+    border-color: rgb(85, 0, 85);
     transition: all 0.5s;
     text-align: center;
 }
@@ -153,7 +153,7 @@ header p {
     border-radius: 50px;
     border-style: outset;
     border-width: 1px;
-    border-color: blueviolet;
+    border-color: rgb(85, 0, 85);
     transition: all 0.5s;
     position: relative;
 }
@@ -251,7 +251,7 @@ input[type=radio]{
   }
   
   input[type="radio"]:checked {
-    background-color: blueviolet;
+    background-color: rgb(85, 0, 85);
     border: 2px solid whitesmoke;
   }
 
