@@ -169,7 +169,9 @@ function addCorrectAnswerToCounter() {
  * Adds +1 to i, and displays next question if i< total number of Qs, or displays final message when i === to final question.
  */
 function displayNextQuestion() {
+
     ++i; //increments i so that next question (or final results div with message) is displayed
+    
     if(i < 10) {
         displayQuestion();
     } else if(i === 10){
@@ -212,6 +214,7 @@ function displayNextQuestion() {
 
 
 function addIncorrectAnswerToCounter() {
+
     let oldScore = parseInt(document.getElementById('incorrect').innerText); // also .textContent
     document.getElementById('incorrect').innerText = ++oldScore;// also oldScore + 1 -> putting the ++ incrementse by 1, but after the variable doesn't let user see increment, putting ++ before the variable, shows the increment to the user
     
@@ -232,8 +235,9 @@ function addIncorrectAnswerToCounter() {
 
 }
 
-
-
+/**
+ * resets scores to 0 and questions to 1st
+ */
 function startNewQuiz() {
 
     i = 0;
