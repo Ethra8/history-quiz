@@ -53,9 +53,8 @@ let questions = [
 
 
 document.getElementsByTagName('button')[1].addEventListener('click', displayQuestion);//Once user clicks on "Start Quiz" button, function displayQuestion is triggered to show 1st question of quiz
-document.getElementsByTagName('button')[0].addEventListener('click', displayQuestion);//Once user clicks on "Start Quiz" button, function displayQuestion is triggered to show 1st question of quiz
 
-//document.getElementById('navRestartBtn').addEventListener('click', displayQuestion);
+document.getElementById('navRestartBtn').addEventListener('click', startNewQuiz);//user can restart quiz anytime from navbar
 
 let i = 0;//pre-sets value of i (used for questions in quiz) to 0
 
@@ -82,7 +81,6 @@ function displayQuestion() {
     let questionDiv = document.getElementById('question');
     questionDiv.style.display = "block";//displays "question"
 
-
     questionDiv.innerHTML = `
         <p><span id="questionNum">Question ${i+1}</span><br><br>
          ${questions[i].question}</p>
@@ -102,7 +100,7 @@ function displayQuestion() {
         
 }
 
-document.getElementById('navRestartBtn').addEventListener('click', displayQuestion);
+
 
 /**
  * Gets value of correctAnswer in questions[i], and
@@ -243,7 +241,7 @@ function addIncorrectAnswerToCounter() {
 }
 
 /**
- * resets scores to 0 and questions to 1st
+ * resets scores to 0 and displays 1st question to restart quiz
  */
 function startNewQuiz() {
 
