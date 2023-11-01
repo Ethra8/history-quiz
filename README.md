@@ -175,7 +175,7 @@ All fonts have been selected from **Gloogle Fonts**.
 To counteract the implied seriousness of a quiz, and make it more appealing to younger users, as well as to adults, fonts like ***Lobster* and *Bad Script* have been selected. For the questions' text itself, *Roboto* has been selected to make the text easily readable. 
 
 ## IMAGERY
-The only image used in this site has been one of the Milky Way, set as the site's background, as follows (refer to the *credits* section for more details):
+The only image used in this site has been one of the Milky Way, set as the site's background, including the 404 error page - (refer to the *credits* section for more details):
 
 ![image](https://github.com/Ethra8/history-quiz/assets/80659091/d9082d15-5622-4b73-a107-8a3e6f02088c)
 
