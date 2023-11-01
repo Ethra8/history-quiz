@@ -70,7 +70,7 @@ header p {
 
 .startQuiz,
 .restartQuiz {
-    padding: 70px 0;
+    padding: 70px 0 auto;
     margin: 0 auto;
     text-align: center;
 }
@@ -118,7 +118,7 @@ header p {
 
 .startQuiz button,
 #goToHomePage {
-    margin: 40px auto !important;
+    margin: -40px auto auto!important;
     width: 240px;
     font-size: 1.8rem;
 }
