@@ -37,7 +37,7 @@ header {
     text-align: center;
     background-color: rgba(0, 28, 59, 0.7);
     padding: 8% 4%;
-    min-height: 250px;
+    height: 50vh;
 }
 
 footer {
