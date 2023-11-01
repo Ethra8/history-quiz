@@ -207,12 +207,12 @@ function displayNextQuestion() {
         `;
         }
         
-        let restartQuiz = document.getElementsByClassName('restartQuiz')[0];
-        restartQuiz.style.visibility = "visible";
-        restartQuiz.style.display = "block";
-        let restartQuizBtn = restartQuiz.children[0];
+        // let restartQuiz = document.getElementsByClassName('restartQuiz')[0];
+        // restartQuiz.style.visibility = "visible";
+        // restartQuiz.style.display = "block";
+        // let restartQuizBtn = restartQuiz.children[0];
 
-        restartQuizBtn.addEventListener('click', startNewQuiz);
+        // restartQuizBtn.addEventListener('click', startNewQuiz);
 
     }
 }
