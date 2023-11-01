@@ -36,14 +36,14 @@ let questions = [
         options: ["Finland", "New Zealand", "Canada"]
     }, 
     {
-        question: "question8",
+        question: "8. In 1969, when Spanish king Juan Carlos I, grown up in fascist Spain, was appointed by fascist dictator Franco to be his successor, what did Juan Carlos do?",
         correctAnswerPosition: 1,
-        options: ["option1", "answer", "option2"]
+        options: ["He solemny declared he would reinstore democracy after decades of a murderous fascist regime, fruit of the 1936's military coup supported by the Nazis to the young Spanish Republic.", "He took an oath before the fascist regime, which was never after officially broken.", "He rejected the fascist dictator's appointment, and made a glorious return when the mass-murderer peacefully died at age 83, in 1975."]
     }, 
     {
-        question: "question9",
+        question: "9. In which year was the first provisional government of the freed self-governing Republic of Ireland installed",
         correctAnswerPosition: 2,
-        options: ["option1", "option2", "answer"]
+        options: ["1918", "1931", "1922"]
     }, 
     {
         question: "question10",

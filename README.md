@@ -3,16 +3,17 @@
 ## PROJECT OVERVIEW
 
 - **History Quiz** is a website that aims at testing the user's knowledge on general history facts from around the globe.
-- This website is useful to anyone interested in history.
+- This site is useful to anyone interested in history.
 - It might also prove useful to anyone wanting to increase their knowledge on global history facts.
+- This site might also prove of great use to secondary students wanting to reinforce their knowledge on history.
 
 ## LIVE SITE
 
-The deployed site can be viewed [here](https://englishgrows.com/historic-facts-quiz/)
+The deployed site can be viewed [here](https://englishgrows.com/historic-facts-quiz/).
 
 ## REPOSITORY
 
-Github repository can be viewed [here](https://github.com/Ethra8/historic-facts-quiz/)
+Github repository can be viewed [here](https://github.com/Ethra8/historic-facts-quiz/).
 
 ## AUTHOR
 
@@ -48,7 +49,7 @@ To include accurate historic answers to the questions in this quiz, the followin
 - **QUESTION 2**
   - [Magna Carta, England 1215](https://www.britannica.com/topic/Magna-Carta) at [Encyclopaedia Britannica](https://www.britannica.com/) site.
 - **QUESTION 3**
-  - [Jacques de Molay, Grand Master of Knights Tamplar](https://www.britannica.com/topic/Templars) at [Encyclopaedia Britannica](https://www.britannica.com/) site.
+  - [Jacques de Molay, Grand Master of Knights Templar](https://www.britannica.com/topic/Templars) at [Encyclopaedia Britannica](https://www.britannica.com/) site.
 - **QUESTION 4**
   - [Hypatia of Alexandria](https://www.britannica.com/biography/Hypatia) at [Encyclopaedia Britannica](https://www.britannica.com/) site.
 - **QUESTION 5**
@@ -58,3 +59,8 @@ To include accurate historic answers to the questions in this quiz, the followin
 - **QUESTION 7**
   - [Women suffrage](https://nzhistory.govt.nz/politics/womens-suffrage/world-suffrage-timeline#:~:text=First%20in%20the%20world,vote%20to%20all%20adult%20women.) at [New Zealand government](https://nzhistory.govt.nz/politics/womens-suffrage/) site.
 - **QUESTION 8**
+  - [King Juan Carlos](https://en.wikipedia.org/wiki/Juan_Carlos_I#:~:text=He%20swore%20using%20the%20following%20formula%3A%20%22I%20swear%20to%20God%20and%20the%20Gospels%20to%20comply%20and%20enforce%20compliance%20to%20the%20Fundamental%20Laws%20of%20the%20Realm%20and%20to%20remain%20loyal%20to%20the%20Principles%20of%20the%20National%20Movement%22) oath to the fascist national movement, referrenced in the Wikipedia to Bernecker, Walter L. (1996), ['The Political Role of King Juan Carlos During the Transition'](https://dialnet.unirioja.es/descarga/articulo/27390.pdf) (in Spanish), p.120.
+- **QUESTION 9**
+  - [The Republic of Ireland's first government](https://www.historyireland.com/an-independence-day-for-ireland/#:~:text=on%20the%20day%20the%20Provisional%20Government%20was%20installed%2C%2016%20January%201922) at [History Ireland](https://www.historyireland.com) site.
+- **QUESTION 10**
+  -
