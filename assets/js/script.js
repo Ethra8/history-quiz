@@ -31,9 +31,9 @@ let questions = [
         options: [`the skys, war and hunting, also considered the embodiment of divine kingship.`, `the underworld, symbolizing death, resurrection, and the cycles of the river Nile which brought fertility.`, `funerary rites, guardian of tombs and considered the god of the dead in the Ancient Kingdom.`],
     }, 
     {
-        question: "7. ",
+        question: "7. Which was the first self-governing country that granted the vote to all adult women in 1893?",
         correctAnswerPosition: 1,
-        options: ["option1", "answer", "option2"]
+        options: ["Finland", "New Zealand", "Canada"]
     }, 
     {
         question: "question8",
