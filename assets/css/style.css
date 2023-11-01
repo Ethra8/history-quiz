@@ -17,9 +17,6 @@ header {
     text-align: center;
     background-color: rgba(0, 28, 59, 0.7);
     padding: 35px 4%;
-    /* border-style: solid;
-    border-width: 20px;
-    border-color: rgba(255, 255, 255, 0.5); */
 }
 
 footer {
@@ -114,7 +111,6 @@ header p {
 
 .count {
     margin: 0 auto;
-    /* align-self: center; */
     width: 70%;
     font-size: 1.2rem;
     font-weight: 600;
@@ -199,8 +195,12 @@ label {
 /* X-SMALL to LARGE MOBILE *****/
 @media only screen and (max-width: 576px) {
 
+    header {
+        padding: 80px 4%;
+    }
+    
     h1 {
-        font-size: 320%;
+        font-size: 360%;
         font-weight: 400;
         padding: 0 20px;
     }
