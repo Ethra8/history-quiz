@@ -154,6 +154,56 @@ EDNA TORRES MUNILL
 
 - [Acknowledgements](#acknowledgements)
 
+# TECHNOLOGIES USED
+
+## LANGUAGES
+- HTML5
+- CSS3
+- JS
+
+# FRAMEWORKS, LIBRARIES AND PROGRAMS USED
+
+
+
+# DEPLOYMENT
+
+I'm the owner of the Google Domain _englishgrows.com_, which is linked to this Github account EdnaTMunill, with nickname [Ethra8](https://github.com/Ethra8).
+
+## DEPLOY TO GITHUB PAGES
+
+### PRODUCTION
+
+1. Click **Settings** tab:
+2. In the left-hand menu, click on the **Pages** link:
+3. In the **Build and Deployment** section, select **Branch**. Click on the dropdown menu and select **main**:
+4. Click **Save**:
+5. Wait about 3 minutes, and refresh the page. Then the link to the deployed site will show up like this:
+
+## FORKING THE REPOSITORY
+
+In case you wish to use the code, you can easily fork it. This will make a copy of this current repository at the precise time of the fork, and store it in your own Github account, in case you want to have it handy to review it or to make any changes you wish. This, without affecting the original repository. To do so:
+
+1. Copy the link to this repository (browser url)
+2. Sign in to your Github account
+3. Above the repository options, click on the **Fork** button, on the top-right, just below Github navigation bar
+4. A copy of the repository will be directly included in your own account.
+
+## CLONING THE REPOSITORY
+
+You can download the code to your computer, making a copy of the code at the exact time of the clone, and make a _pull request_ in case you want to upgrade it in the future, and contribute to the project. To do so:
+
+1. Copy the link to this repository (browser url)
+2. Sign in to your Github account
+3. Click on the green button "Code", and the below options will appear:
+
+- **Local**
+  1.  HTTPS: Copy link to use Git or checkout with SVN using the web URL.
+  2.  GitHUb CLI: Copy the command to insert in your CLI
+  3.  Open with GitHub Desktop app
+  4.  Download as a ZIP
+- **Codespaces**
+  1.  You will be requested to be signed in to Codespaces, and once you are, the repository will be cloned on your Codespaces account.
+
 ## CREDITS
 
 ### IMAGERY
@@ -188,6 +238,5 @@ To include accurate historic answers to the questions in this quiz, the followin
 ## ACKNOWLEDGEMENTS
 
 - [How to get value of selected radio button using JS](https://www.geeksforgeeks.org/how-to-get-value-of-selected-radio-button-using-javascript/) at [Geeksforgeeks](www.geeksforgeeks.org) site.
-
 - [W3Schools](https://www.w3schools.com/): Their documentation has been very useful when wanting to implement new features or animations.
 - [Mozilla Web Docs](https://developer.mozilla.org/en-US/): Their documentation has been checked to clear some doubts along the way.
