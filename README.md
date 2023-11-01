@@ -44,9 +44,11 @@ EDNA TORRES MUNILL
 - [DESIGN CHOICES](#design-choices)
 
   - [Colors](#colors)
+
     - [Colors Rationale of Use](#colors-rationale-of-use)
 
   - [Typography](#typography)
+
     - [Typography Rationale of Use](#typography-rationale-of-use)
 
   - [Imagery](#imagery)
@@ -155,30 +157,35 @@ EDNA TORRES MUNILL
 # DESIGN CHOICES
 
 ## COLORS
-- **Aquamarine** (***#7fffd4***) - Used as background for all buttons, for the h1 on the header, for the logo, for the favicon, the title of each question, the border of the checked radio buttons, the border of the questions' container, and for the final message.
-- **Whitesmoke** (***#f5f5f5***) - Used for the "Quiz" word from the header and the navbar, for the questions content text, and options. Also used for the background of the buttons on hover, and when disabled, as well as for the final results.
-- **Palatinate** (***#550055***) - Used for the text shadow of the h1 on the header and the navbar, as well as the text shadow of the favicon. It has also been used for the border of all buttons, and for the background of the checked radio buttons.
-- **Oxford Blue** (***001c3b***) - Used for the background of the header, the footer, the questions' container, and the navbar. All set with a light transparency, so the background starred sky with the milkyway is still visible, but does not affect contrast.
+
+- **Aquamarine** (**_#7fffd4_**) - Used as background for all buttons, for the h1 on the header, for the logo, for the favicon, the title of each question, the border of the checked radio buttons, the border of the questions' container, and for the final message.
+- **Whitesmoke** (**_#f5f5f5_**) - Used for the "Quiz" word from the header and the navbar, for the questions content text, and options. Also used for the background of the buttons on hover, and when disabled, as well as for the final results.
+- **Palatinate** (**_#550055_**) - Used for the text shadow of the h1 on the header and the navbar, as well as the text shadow of the favicon. It has also been used for the border of all buttons, and for the background of the checked radio buttons.
+- **Oxford Blue** (**_001c3b_**) - Used for the background of the header, the footer, the questions' container, and the navbar. All set with a light transparency, so the background starred sky with the milkyway is still visible, but does not affect contrast.
 
 ![History Quiz Color Palette](https://github.com/Ethra8/history-quiz/assets/80659091/25bc497d-cbd8-4dc8-a449-57074efc300f)
 
 ### COLORS RATIONALE OF USE
+
 The colors have been selected after selecting the background fixed image for the site, with is the night starred sky showing the milky way. To contrast with the site's dark background, light colors have been selected for the fonts, and darker tones of violet and Oxford blue have been selected for buttons borders and containers' backgrounds.
 
 ## TYPOGRAPHY
+
 All fonts have been selected from **Gloogle Fonts**.
-- [Lobster](https://fonts.google.com/specimen/Lobster?query=lobster), with a fall-back to *sans-serif* - Has been used for the h1 in the header, that is, the title of the site, for the logo on the top-right of the navigtion bar, for the "Q" of the favicon (initial from quizz), for the text of the buttons, and the main final message, once the quiz is completed.
-- [Bad Script](https://fonts.google.com/specimen/Bad+Script?query=bad+script), with a fall-back to *cursive* - Has been used for the word "quiz" at the header and navbar, for the title of each question displayed, for the text and numbers of incorrect and correct answers displayed, and for the final results.
+
+- [Lobster](https://fonts.google.com/specimen/Lobster?query=lobster), with a fall-back to _sans-serif_ - Has been used for the h1 in the header, that is, the title of the site, for the logo on the top-right of the navigtion bar, for the "Q" of the favicon (initial from quizz), for the text of the buttons, and the main final message, once the quiz is completed.
+- [Bad Script](https://fonts.google.com/specimen/Bad+Script?query=bad+script), with a fall-back to _cursive_ - Has been used for the word "quiz" at the header and navbar, for the title of each question displayed, for the text and numbers of incorrect and correct answers displayed, and for the final results.
 - [Roboto condensed](https://fonts.google.com/specimen/Roboto+Condensed?query=roboto) - Has been used for each question's text and options.
 
 ### TYPOGRAPHY RATIONALE OF USE
-To counteract the implied seriousness of a quiz, and make it more appealing to younger users, as well as to adults, fonts like ***Lobster* and *Bad Script* have been selected. For the questions' text itself, *Roboto* has been selected to make the text easily readable. 
+
+To counteract the implied seriousness of a quiz, and make it more appealing to younger users, as well as to adults, fonts like _\*\*Lobster_ and _Bad Script_ have been selected. For the questions' text itself, _Roboto_ has been selected to make the text easily readable.
 
 ## IMAGERY
-The only image used in this site has been one of the Milky Way, set as the site's background, including the 404 error page - (refer to the *credits* section for more details):
+
+The only image used in this site has been one of the Milky Way, set as the site's background, including the 404 error page - (refer to the _credits_ section for more details):
 
 ![image](https://github.com/Ethra8/history-quiz/assets/80659091/d9082d15-5622-4b73-a107-8a3e6f02088c)
-
 
 # TECHNOLOGIES USED
 
@@ -279,7 +286,7 @@ To include accurate historic answers to the questions in this quiz, the followin
 - **QUESTION 9**
   - [The Republic of Ireland's first government](https://www.historyireland.com/an-independence-day-for-ireland/#:~:text=on%20the%20day%20the%20Provisional%20Government%20was%20installed%2C%2016%20January%201922) at [History Ireland](https://www.historyireland.com) site.
 - **QUESTION 10**
-  - [Ration segregation in the US](https://www.senate.gov/artandhistory/history/civil_rights/background.htm#:~:text=Passage%20of%20the%20Civil%20Rights,in%20public%20and%20private%20facilities.) at the [United States Senate](https://www.senate.gov) official site.
+  - [Ratial segregation in the US](https://www.senate.gov/artandhistory/history/civil_rights/background.htm#:~:text=Passage%20of%20the%20Civil%20Rights,in%20public%20and%20private%20facilities.) at the [United States Senate](https://www.senate.gov) official site.
 
 ## ACKNOWLEDGEMENTS
 
