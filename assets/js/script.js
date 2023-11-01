@@ -62,7 +62,11 @@ let i = 0;//pre-sets value of i (used for questions in quiz) to 0
  * to check whether the correct answer was selected through radio btn.
  */
 function displayQuestion() {
-    
+    //after completing quiz once, if user clicks on "Restart Quiz" btn, turn the "restart Quiz" button invisible again once quiz is restarted.
+    let restartQuiz = document.getElementsByClassName('restartQuiz')[0];
+    restartQuiz.style.visibility = "invisible";
+    restartQuiz.style.display = "none";
+
     document.getElementsByTagName('button')[0].style.display = "none";//hides "Start Quiz" button
     document.getElementsByClassName("startQuiz")[0].style.display = "none";//hides parent div of "Start Quiz" button, to avoid it taking space
     document.getElementsByTagName("h1")[0].style.fontSize = "300%";//reduce font-size of h1 in header
