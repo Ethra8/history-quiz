@@ -46,9 +46,9 @@ let questions = [
         options: ["1918", "1931", "1922"]
     }, 
     {
-        question: "question10",
+        question: "10. In which year was the Civil Rights Act passed by the US Senate, which extended 'civil, political, and legal rights and protections to African Americans, including former slaves and their descendants, to end segregation in public and private facilities.'?",
         correctAnswerPosition: 0,
-        options: ["answer", "option1", "option2"]
+        options: ["1964", "1973", "1951"]
     },];
 
 
