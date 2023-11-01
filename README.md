@@ -148,20 +148,17 @@ EDNA TORRES MUNILL
   - [Cloning the Repository](#cloning-the-repository)
 
 - [Credits](#credits)
+
   - [Imagery](#imagery)
-  - [Code](#code)
   - [Content](#content)
-  - [Acknowledgements](#acknowledgements)
+
+- [Acknowledgements](#acknowledgements)
 
 ## CREDITS
 
 ### IMAGERY
 
 - [Background Image](https://pixabay.com/photos/milky-way-stars-night-sky-2695569/) by <a href="https://pixabay.com/users/felixmittermeier-4397258/" target=_blank >FelixMittermeier</a> from <a href="https://pixabay.com">Pixabay</a>.
-
-### CODE
-
-- [How to get value of selected radio button using JS](https://www.geeksforgeeks.org/how-to-get-value-of-selected-radio-button-using-javascript/).
 
 ### CONTENT
 
@@ -187,3 +184,10 @@ To include accurate historic answers to the questions in this quiz, the followin
   - [The Republic of Ireland's first government](https://www.historyireland.com/an-independence-day-for-ireland/#:~:text=on%20the%20day%20the%20Provisional%20Government%20was%20installed%2C%2016%20January%201922) at [History Ireland](https://www.historyireland.com) site.
 - **QUESTION 10**
   - [Ration segregation in the US](https://www.senate.gov/artandhistory/history/civil_rights/background.htm#:~:text=Passage%20of%20the%20Civil%20Rights,in%20public%20and%20private%20facilities.) at the [United States Senate](https://www.senate.gov) official site.
+
+## ACKNOWLEDGEMENTS
+
+- [How to get value of selected radio button using JS](https://www.geeksforgeeks.org/how-to-get-value-of-selected-radio-button-using-javascript/) at [Geeksforgeeks](www.geeksforgeeks.org) site.
+
+- [W3Schools](https://www.w3schools.com/): Their documentation has been very useful when wanting to implement new features or animations.
+- [Mozilla Web Docs](https://developer.mozilla.org/en-US/): Their documentation has been checked to clear some doubts along the way.
