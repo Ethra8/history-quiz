@@ -162,7 +162,7 @@ EDNA TORRES MUNILL
 - CSS3
 - JS
 
-# FRAMEWORKS, LIBRARIES AND PROGRAMS USED
+## FRAMEWORKS, LIBRARIES AND PROGRAMS USED
 
 - The following have been used:
   - [Visual Studio Code](https://code.visualstudio.com/) - To begin coding the site from scratch. I already had VScode installed previously, due to a previous personal freelance project called englishgrows.com, and I think is a great tool for coding.
