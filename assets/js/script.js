@@ -1,4 +1,4 @@
-//array of questions, where correctAnswer has value of the index of the correct answer in array of options.
+//array of questions, where correctAnswer has value of the index of the correct answer in the array of options.
 let questions = [
     {
         question: "1. In what year was the Universal Declaration of Human Rights (UDHR) first declared by the United Nations?",
@@ -53,7 +53,7 @@ let questions = [
 
 
 document.getElementsByTagName('button')[0].addEventListener('click', displayQuestion);//Once user clicks on "Start Quiz" button, function displayQuestion is triggered to show 1st question of quiz
-let i =0;//pre-sets value of i (used for questions in quiz) to 0
+let i = 0;//pre-sets value of i (used for questions in quiz) to 0
 
 /**
  * Once button 'start Quiz' is clicked, 1st question is displayed, and
@@ -108,7 +108,7 @@ function getId(id){
 }
 
 /**
- * checks if correct answer radio btn was selected
+ * Checks if correctAnswer radio btn was selected
  * returns boolean, and triggers function addCorrectAnswerToCounter().
  */
 function displayRadioValue() {
@@ -183,7 +183,7 @@ function displayNextQuestion() {
         `;
         } else if (oldScore >= 9){
             questionDiv.innerHTML = `
-            <h1 style="font-size:300%">Wow! Great score!!</h1>
+            <h1 style="font-size:300%">Wow! Do you have a PhD in history?</h1>
             <p class="finalMsg">Your final score is ${oldScore} / 10</p>
         `;
         }
