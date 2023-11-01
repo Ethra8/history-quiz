@@ -306,7 +306,7 @@ footer .social_media {
 @media only screen and (max-width: 576px) {
 
     header {
-        padding: 70px 4%;
+        padding: 10vh 4%;
         height: 75vh;
     }
     
@@ -372,6 +372,9 @@ footer .social_media {
 /** MEDIUM DEVICES - TABLETS PORTRAIT **/
 @media only screen and (min-width: 577px) and (max-width: 768px){
 
+    header {
+        padding: 10vh 4%;
+    }
 
     .count {
         display: flex;
