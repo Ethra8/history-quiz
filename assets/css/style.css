@@ -304,8 +304,75 @@ footer .social_media {
 }
 
 
-/* X-SMALL to LARGE MOBILE *****/
-@media only screen and (max-width: 576px) {
+/* X-SMALL & SMALL MOBILE ****/
+@media only screen and (max-width: 375px) {
+    
+    header {
+        padding: 10vh 4%;
+        height: 75vh;
+    }
+    
+    h1 {
+        font-size: 360%;
+        font-weight: 400;
+        padding: 0 20px;
+    }
+
+    header p {
+        font-weight: lighter;
+    }
+
+    #navRestartBtn {
+        top: 70px;
+    }
+    
+    
+    #question {
+        width: 95%;
+    }
+
+    .count {
+        width: 95%;
+        font-size: 1.2rem;
+        font-weight: 600;
+        display: flex;
+        flex-direction: column !important;    
+    }
+
+    .count p {
+        text-align: center;
+        font-size: 1.4rem;
+        padding: 0 30px;
+    }
+
+    .btnsDiv {
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        flex-wrap: wrap;
+    }
+
+    #btnNextQuestion{
+        margin: 40px 0 0 0;
+    }
+
+    footer .social_media {
+        flex-direction: column;
+    }
+
+    footer .fab,
+    footer .fa {
+    padding: 30px;
+    font-size: 30px;
+    transition: all 0.15s linear;
+    }
+
+}
+
+
+
+/* MEDIUM to LARGE MOBILE *****/
+@media only screen and (min-width:376) and (max-width: 576px) {
 
     header {
         padding: 25vh 4%;
