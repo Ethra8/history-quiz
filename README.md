@@ -27,6 +27,148 @@ EDNA TORRES MUNILL
 - [Live Site](#live-site)
 - [Repository](#repository)
 - [Author](#author)
+- [UX](#ux)
+    * [Target Audience](#target-audience)
+    * [Project Goals](#project-goal)
+    * [User Stories](#user-stories)
+    * [User Profiles](#user-profiles)
+
+- [UI](#ui)
+    * [Footer](#ui---footer)
+    * [Home Page](#ui---home-page)
+
+- [DESIGN CHOICES](#design-choices)
+
+    * [Colors](#colors)
+
+    * [Typography](#typography)
+        + [Fonts Used](#fonts-used)
+        + [Rationale of Use](#rationale-of-use)
+
+    * [Imagery](#imagery)
+        + [Home Page Imagery](#home-page-imagery)
+        + [404 Page Imagery](#404-page-imagery)
+
+    * [Animations and Transitions](#animations-and-transitions)
+        + [Hover](#hover)
+            - [Home Page Hover](#home-page-hover)
+            - [Footer Icons Hover](#footer-icons-hover)
+            - [Footer Email Link Hover](#footer-email-link---hover)
+        + [Transitions](#transitions)
+            - [Home Page Transitions](#home-page-transitions)
+            - [Footer Transitions](#footer-transitions)
+        + [Animations](#animations)
+            - [Footer Icons Animation](#footer-icons-animation)
+
+    * [Design Elements](#design-elements)
+        + [Audio](#audio)
+        + [Video](#video)
+        + [Icons](#icons)
+        + [Interactive Map](#interactive-map)
+        + [Form](#form)
+
+- [STRUCTURE](#structure)
+    
+    * [Content Structure](#content-structure)
+        + [Navigation Bar - Structure](#navigation-bar---structure)
+        + [Footer - Structure](#footer---structure)
+        + [Home Page - Structure](#home-page---structure)
+        + [Arthur I Page - Structure](#arthur-i-page---structure)
+        + [Avalon Page - Structure](#avalon-page---structure)
+        + [Sign-up Page - Structure](#sign-up-page---structure)
+        + [404 Page - Structure](#404-page---structure)
+   
+    * [Wireframes](#wireframes)
+        + [Home Page](#home-page---wireframes)
+            - [Mobile and Tablet Portrait](#home-page---mobile-and-tablet-portrait)
+            - [Desktop and Tablet Landscape](#home-page---desktop-and-tblet-landscape)
+        + [Arthur I Page](#arthur-i-page---wireframes)
+            - [Mobile and Tablet Portrait](#arthur-i-page---mobile-and-tablet-portrait)
+            - [Desktop and Tablet Landscape](#arthur-i-page---desktop-and-tblet-landscape)
+        + [Avalon Page](#avalon-page---wireframes)
+            - [Mobile and Tablet Portrait](#avalon-page---mobile-and-tablet-portrait)
+            - [Desktop and Tablet Landscape](#avalon-page---desktop-and-tblet-landscape)
+        + [Sign-up Page](#sign-up-page---wireframes)
+            - [Mobile and Tablet Portrait](#sign-up-page---mobile-and-tablet-portrait)
+            - [Desktop and Tablet Landscape](#sign-up-page---desktop-and-tblet-landscape)
+
+- [FEATURES](#features)
+
+    * [Implemented Features](#implemented-features)
+        + [Responsiveness](#responsiveness)
+        + [Navigation Bar Features](#navigation-bar-features)
+        + [Header Features](#header-features)
+        + [Footer Features](#footer-features)
+        + [Home Page - Features](#home-page---features)
+        + [Arthur I Page - Features](#arthur-I-page---features)
+        + [Avalon Page - Features](#avalon-page---features)
+        + [Sign-up Page - Features](#sign-up-page---features)
+        + [404 Page - Features](#404-error-page---features)
+
+    * [Future Features](#future-features)
+        + [Add Content Pages](#add-content-pages)
+        + [Caroussel](#caroussel)
+        + [Online Shop](#online-shop)
+        + [Online Booking](#online-booking)
+
+- [TESTING](#testing)
+
+    * [Validation Testing](#validation-testing)
+        + [CSS Validation](#css-validation)
+        + [HTML Validation](#html-validation)
+
+    * [Compatibility and Responsive Testing](#compatibility-and-responsive-testing)
+        + [Preselecting Testing Targets](#preselecting-testing-targets)
+        + [Testing Targets Table](#testing-targets-table)
+        + [Test Recordings and Results](#test-recordings-and-results)
+
+    * [Manual Testing](#manual-testing)
+        + [Sign-up Form](#sign-up-form)
+
+    * [Defect Tracking](#defect-tracking)
+        + [Github Issues](#github-issues)
+
+    * [Defects of Note](#defects-of-note)
+
+    * [Outstanding Defects](#outstanding-defects)
+
+    * [Core Web Vitals](#core-web-vitals)
+        + [Lighthouse Reports](#lighthouse-reports)
+    
+    * [Accessibility Testing](#accessibility-testing)
+        + [Accessibility Audits](#accessibility-audits)
+            - [WCAG 2.1 Validation](#wcag-2.1-validation)
+            - [General Accessibility Reports](#general-accessibility-reports)
+        + [Keyboard Navigation](#keyboard-navigation)
+        + [Chrome Vox Reader](#chrome-vox-reader)
+  
+- [TECHNOLOGIES USED](#technologies-used)
+
+    * [Languages](#languages)
+
+    * [Frameworks, Libraries and Programs Used](#frameworks-libraries-and-programs-used)
+    
+- [DEPLOYMENT](#deployment)
+
+    * [Deploy to Github Pages](#deploy-to-github-pages)
+        + [Production](#production)
+    * [Forking the Repository](#forking-the-repository)
+    * [Cloning the Repository](#cloning-the-repository)
+
+- [CREDITS](#credits)
+
+    * [Content](#content)
+        * [Arthur I Page](#arthur-i-page---content)
+        * [Avalon Page](#avalon-page---content)
+
+    * [Media](#media)
+        + [Home Page](#home-page---media)
+        + [Arthur I Page](#arthur-i-page---media)
+        + [Avalon Page](#avalon-page---media)
+        + [Sign-up Page](#sign-up-page---media)
+        + [404 Error Page](#404-error-page---media)
+
+    * [Acknowledgements](#acknowledgements)
 - [Credits](#credits)
   - [Imagery](#imagery)
   - [Code](#code)

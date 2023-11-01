@@ -64,14 +64,19 @@ let i = 0;//pre-sets value of i (used for questions in quiz) to 0
 function displayQuestion() {
     //after completing quiz once, if user clicks on "Restart Quiz" btn, turn the "restart Quiz" button invisible again once quiz is restarted.
     let restartQuiz = document.getElementsByClassName('restartQuiz')[0];
+    let nav = document.getElementsByTagName('nav')[0];
     restartQuiz.style.visibility = "invisible";
     restartQuiz.style.display = "none";
+    nav.style.visibility = "visible";
+    nav.style.display = "flex";
 
     document.getElementsByTagName('button')[0].style.display = "none";//hides "Start Quiz" button
     document.getElementsByClassName("startQuiz")[0].style.display = "none";//hides parent div of "Start Quiz" button, to avoid it taking space
-    document.getElementsByTagName("header")[0].style.padding = "20px 4%";
-    document.getElementsByTagName("h1")[0].style.fontSize = "300%";//reduce font-size of h1 in header
-    document.getElementsByTagName("p")[0].style.fontSize = "200%";// reduce font-size of header p
+    document.getElementsByTagName("header")[0].style.display = "none";
+
+    // document.getElementsByTagName("header")[0].style.padding = "20px 4%";
+    // document.getElementsByTagName("h1")[0].style.fontSize = "300%";//reduce font-size of h1 in header
+    // document.getElementsByTagName("p")[1].style.fontSize = "200%";// reduce font-size of header p
     document.getElementsByClassName("count")[0].style.visibility = "visible";
 
     let questionDiv = document.getElementById('question');
