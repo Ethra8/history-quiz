@@ -24,9 +24,11 @@ EDNA TORRES MUNILL
 # TABLE OF CONTENTS
 
 - [Project Overview](#project-overview)
-- [Live Site](#live-site)
-- [Repository](#repository)
-- [Author](#author)
+
+  - [Live Site](#live-site)
+  - [Repository](#repository)
+  - [Author](#author)
+
 - [UX](#ux)
 
   - [Target Audience](#target-audience)
@@ -153,6 +155,22 @@ EDNA TORRES MUNILL
   - [Content](#content)
 
 - [Acknowledgements](#acknowledgements)
+
+# DESIGN CHOICES
+
+## COLORS
+- **Aquamarine** (***#7fffd4***) - Used as background for all buttons, for the h1 on the header, for the logo, for the favicon, the title of each question, the border of the checked radio buttons, and for the final message.
+- **Whitesmoke** (***#f5f5f5***) - Used for the "Quiz" word from the header and the navbar, for the questions content text, and options. Also used for the background of the buttons on hover, and when disabled, as well as for the final results.
+- **Palatinate** (***#550055***) - Used for the text shadow of the h1 on the header and the navbar, as well as the text shadow of the favicon. It has also been used for the border of all buttons, and for the background of the checked radio buttons.
+- **Oxford Blue** (***001c3b***) - Used for the background of the header, the footer, and the navbar.
+
+![History Quiz Color Palette](https://github.com/Ethra8/history-quiz/assets/80659091/25bc497d-cbd8-4dc8-a449-57074efc300f)
+
+## TYPOGRAPHY
+All fonts have been selected from **Gloogle Fonts**.
+- [Lobster](https://fonts.google.com/specimen/Lobster?query=lobster), with a fall-back to *sans-serif* - Has been used for the h1 in the header, that is, the title of the site, for the logo on the top-right of the navigtion bar, for the "Q" of the favicon (initial from quizz), for the text of the buttons, and the main final message, once the quiz is completed.
+- [Bad Script](https://fonts.google.com/specimen/Bad+Script?query=bad+script), with a fall-back to *cursive* - Has been used for the word "quiz" at the header and navbar, for the title of each question displayed, for the text and numbers of incorrect and correct answers displayed, and for the final results.
+- [Roboto condensed](https://fonts.google.com/specimen/Roboto+Condensed?query=roboto) - Has been used for each question's text and options.
 
 # TECHNOLOGIES USED
 
