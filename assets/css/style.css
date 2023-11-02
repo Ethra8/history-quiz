@@ -100,7 +100,7 @@ header p {
     top: 20px;
     text-decoration: none;
     padding: 7px 15px;
-    color: black;
+    color: #001c3b;
     background-color: rgb(169, 255, 226);
     font-family: 'Lobster', sans-serif;
     font-size: 1.5rem;
@@ -126,7 +126,7 @@ header p {
 #goToHomePage a {
     text-decoration: none;
     width: 240px;
-    color: black;
+    color: #001c3b;
 }
 
 .restartQuiz {
