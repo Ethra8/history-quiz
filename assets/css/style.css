@@ -363,8 +363,6 @@ footer .social_media {
     footer .fab,
     footer .fa {
     padding: 30px;
-    font-size: 30px;
-    transition: all 0.15s linear;
     }
 
 }
@@ -372,7 +370,7 @@ footer .social_media {
 
 
 /* MEDIUM to LARGE MOBILE *****/
-@media only screen and (min-width:376) and (max-width: 576px) {
+@media only screen and (min-width: 376px) and (max-width: 576px) {
 
     header {
         padding: 25vh 4%;
@@ -392,7 +390,6 @@ footer .social_media {
     #navRestartBtn {
         top: 70px;
     }
-    
     
     #question {
         width: 95%;
@@ -424,7 +421,7 @@ footer .social_media {
     }
 
     footer .social_media {
-        flex-direction: column;
+        flex-direction: row;
     }
 
     footer .fab,
@@ -432,7 +429,7 @@ footer .social_media {
     padding: 30px;
     font-size: 30px;
     transition: all 0.15s linear;
-}
+    }
 
     
 }
