@@ -308,7 +308,7 @@ footer .social_media {
 @media only screen and (max-width: 375px) {
     
     header {
-        padding: 10vh 4%;
+        padding: 20vh 4%;
         height: 75vh;
     }
     
@@ -325,7 +325,6 @@ footer .social_media {
     #navRestartBtn {
         top: 70px;
     }
-    
     
     #question {
         width: 95%;
@@ -358,11 +357,12 @@ footer .social_media {
 
     footer .social_media {
         flex-direction: column;
+        justify-content: space-between;
     }
 
     footer .fab,
     footer .fa {
-    padding: 30px;
+    padding: 25px;
     }
 
 }
@@ -421,12 +421,12 @@ footer .social_media {
     }
 
     footer .social_media {
-        flex-direction: row;
+        flex-direction: row !important;
     }
 
     footer .fab,
     footer .fa {
-    padding: 30px;
+    padding: 20px;
     font-size: 30px;
     transition: all 0.15s linear;
     }
