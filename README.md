@@ -7,6 +7,8 @@
 - It might also prove useful to anyone wanting to increase their knowledge on global history facts.
 - This site might also prove of great use to secondary students wanting to reinforce their knowledge on history.
 
+![image](https://github.com/Ethra8/history-quiz/assets/80659091/c17753ed-a503-4c8e-ae47-38dab4a7c98c)
+
 **NOTE**: _Responsive images of the site automatically generated through [ui.dev/amiresponsive](https://ui.dev/amiresponsive). The tool is interactive, and you can view and scroll through all pages in all the types of devices simultaneously [here](https://ui.dev/amiresponsive?url=https://englishgrows.com/history-quiz/index.html). I customized defect background-color attribute from amiresponsive site from black to whitesmoke, as my website is mostly in dark tones. I did it by changing the elements of the page, more precisely **class="bg-brand-coal"**._
 
 ## LIVE SITE
