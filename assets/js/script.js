@@ -41,7 +41,7 @@ let questions = [
         options: ["He solemny declared he would reinstore democracy after decades of a murderous fascist regime, fruit of the 1936's military coup supported by the Nazis to the young Spanish Republic.", "He took an oath before the fascist regime, which was never after officially broken.", "He rejected the fascist dictator's appointment, and made a glorious return when the mass-murderer peacefully died at age 83, in 1975."]
     }, 
     {
-        question: "In which year was the first provisional government of the freed self-governing Republic of Ireland installed",
+        question: "In which year was the first provisional government of the freed self-governing Republic of Ireland installed?",
         correctAnswerPosition: 2,
         options: ["1918", "1931", "1922"]
     }, 
