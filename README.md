@@ -163,7 +163,7 @@ EDNA TORRES MUNILL
 - **Aquamarine** (**_#7fffd4_**) - Used as background for all buttons, for the h1 on the header, for the logo, for the favicon, the title of each question, the border of the checked radio buttons, the border of the questions' container, and for the final message.
 - **Whitesmoke** (**_#f5f5f5_**) - Used for the "Quiz" word from the header and the navbar, for the questions content text, and options. Also used for the background of the buttons on hover, and when disabled, as well as for the final results.
 - **Palatinate** (**_#550055_**) - Used for the text shadow of the h1 on the header and the navbar, as well as the text shadow of the favicon. It has also been used for the border of all buttons, and for the background of the checked radio buttons.
-- **Oxford Blue** (**_001c3b_**) - Used for the background of the header, the footer, the questions' container, and the navbar. All set with a light transparency, so the background starred sky with the milkyway is still visible, but does not affect contrast.
+- **Oxford Blue** (**_001c3b_**) - Used for all buttons' font, and background of the header, the footer, the questions' container, and the navbar. All set with a light transparency, so the background starred sky with the milkyway is still visible, but does not affect contrast.
 
 ![History Quiz Color Palette](https://github.com/Ethra8/history-quiz/assets/80659091/25bc497d-cbd8-4dc8-a449-57074efc300f)
 
