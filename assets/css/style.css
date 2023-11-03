@@ -315,7 +315,7 @@ footer .social_media {
         font-size: 360%;
         font-weight: 400;
         padding: 0 20px;
-        margin-top: 25vh;
+        margin-top: 20vh;
     }
 
     header p {
@@ -445,10 +445,6 @@ footer .social_media {
 
     h1 {
         margin-top: 20vh;
-    }
-
-    header p {
-        /* margin-top: -10vh; */
     }
 
     .count {
