@@ -57,6 +57,7 @@ h1 {
     font-family: 'Lobster', sans-serif;
     font-weight: 400;
     padding-bottom: 0;
+    line-height: 12vh;
 }
 
 header p {
@@ -381,6 +382,8 @@ footer .social_media {
         font-size: 360%;
         font-weight: 400;
         padding: 0 20px;
+        line-height: 10vh;
+
     }
 
     header p {
@@ -439,7 +442,11 @@ footer .social_media {
 @media only screen and (min-width: 577px) and (max-width: 768px){
 
     header {
-        padding: 10vh 4% ;
+        height: 60vh
+    }
+
+    h1 {
+        line-height: 20vh;
     }
 
     .count {
