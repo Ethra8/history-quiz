@@ -128,7 +128,6 @@ function displayRadioValue() {
     let a = correctAnswerPosition;
 
     let correctAnswer = questions[i].options[a];
-    console.log(correctAnswer);
 
     for (let x = 0; x < option.length; x++) {
         if (option[x].checked){
@@ -206,6 +205,8 @@ function displayNextQuestion() {
             <p class="finalMsg">Your final score is ${oldScore} / 10</p>
         `;
         }
+
+
         
     }
 }
