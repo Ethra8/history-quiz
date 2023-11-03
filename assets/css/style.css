@@ -11,6 +11,7 @@
 
 body {
     background: url("../images/bg-image.jpg");
+    /*footer at bottom:*/
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -36,14 +37,12 @@ nav p {
 header {
     text-align: center;
     background-color: rgba(0, 28, 59, 0.7);
-    padding: 12vh 4%;
+    padding: 0 4%;
     height: 50vh;
 }
 
 footer {
     background-color: rgba(0, 28, 59, 0.7);
-    /* position:absolute;
-    bottom:0px; */
     width: 100%;
     padding: 30px;
     margin-top: auto;
@@ -57,7 +56,7 @@ h1 {
     font-family: 'Lobster', sans-serif;
     font-weight: 400;
     padding-bottom: 0;
-    line-height: 12vh;
+    margin-top: 15vh;
 }
 
 header p {
@@ -309,7 +308,6 @@ footer .social_media {
 @media only screen and (max-width: 375px) {
     
     header {
-        padding: 20vh 4%;
         height: 75vh;
     }
     
@@ -317,6 +315,7 @@ footer .social_media {
         font-size: 360%;
         font-weight: 400;
         padding: 0 20px;
+        margin-top: 25vh;
     }
 
     header p {
@@ -374,7 +373,6 @@ footer .social_media {
 @media only screen and (min-width: 376px) and (max-width: 576px) {
 
     header {
-        padding: 25vh 4%;
         height: 75vh;
     }
     
@@ -382,7 +380,7 @@ footer .social_media {
         font-size: 360%;
         font-weight: 400;
         padding: 0 20px;
-        line-height: 10vh;
+        margin-top: 30vh;
 
     }
 
@@ -429,7 +427,7 @@ footer .social_media {
 
     footer .fab,
     footer .fa {
-    padding: 20px;
+    padding: 25px;
     font-size: 30px;
     transition: all 0.15s linear;
     }
@@ -446,7 +444,11 @@ footer .social_media {
     }
 
     h1 {
-        line-height: 20vh;
+        margin-top: 20vh;
+    }
+
+    header p {
+        /* margin-top: -10vh; */
     }
 
     .count {
