@@ -224,7 +224,7 @@ function addIncorrectAnswerToCounter() {
     document.getElementById('incorrect').innerText = ++oldScore;// also oldScore + 1 -> putting the ++ incrementse by 1, but after the variable doesn't let user see increment, putting ++ before the variable, shows the increment to the user
     
     let btnNextQuestion = document.getElementById('btnNextQuestion');
-    btnNextQuestion.addEventListener('click', displayNextQuestion)// Once "Next Question" btn is clicked, function displayNextQuestion() is triggered
+    btnNextQuestion.addEventListener('click', displayNextQuestion);// Once "Next Question" btn is clicked, function displayNextQuestion() is triggered
     
 
     let btnCheckAnswer = document.getElementById('btnCheckAnswer');
