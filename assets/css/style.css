@@ -4,14 +4,13 @@
 * {
     padding: 0;
     margin: 0;
-    /*height or width applied to whole element, including borders*/
+    /*height/width applied to whole element to include borders*/
     box-sizing: border-box;
 }
 
 
 body {
-    /* background-image: url('../images/bgDarkMode.jpg'); */
-    /*footer at bottom:*/
+    /*set footer at bottom:*/
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -255,7 +254,6 @@ footer {
 
  li {
     padding: 10px 5% 10px 10%;
-    /* text-align: center; */
     list-style-type: none;
     color: whitesmoke;
 }
@@ -329,6 +327,7 @@ input[type="radio"]:checked {
     padding-top: 40px;
 }
 
+
 /*** FOOTER social media*****/
 
 footer .fab,
@@ -355,7 +354,9 @@ footer .social_media {
     margin: 0 0 0px;
 }
 
+
 /**** 404 ERROR PAGE *****/
+
 #errorPage {
   height: 50vh !important;
   padding: 20vh 4%;
@@ -369,6 +370,7 @@ footer .social_media {
 
 
 /* X-SMALL & SMALL MOBILE ****/
+
 @media only screen and (max-width: 375px) {
    
     nav span {
@@ -458,11 +460,6 @@ footer .social_media {
         margin: 40px 0 0 0;
     }
 
-    /* footer .social_media {
-        flex-direction: column;
-        justify-content: space-between;
-    } */
-
     footer {
         padding: 0;
     }
@@ -474,8 +471,8 @@ footer .social_media {
 }
 
 
-
 /* MEDIUM to LARGE MOBILE *****/
+
 @media only screen and (min-width: 376px) and (max-width: 576px) {
    
     nav span {
@@ -574,6 +571,7 @@ footer .social_media {
 
 
 /** MEDIUM DEVICES - TABLETS PORTRAIT **/
+
 @media only screen and (min-width: 577px) and (max-width: 768px){
 
     header {
@@ -599,7 +597,6 @@ footer .social_media {
     header#errorPage p {
         font-size: 200%;
     }
-
 
     .count {
         width: 95%;
@@ -648,6 +645,7 @@ footer .social_media {
 
 
 /** LARGE TABLETS - LANDSCAPE **/
+
 @media only screen and (min-width: 767px) and (max-width: 992px) {
 
     #question {
@@ -657,7 +655,6 @@ footer .social_media {
     .count {
         width: 85%;
     }
-
 
 }
 
