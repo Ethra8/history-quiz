@@ -10,7 +10,8 @@
 
 
 body {
-    background: url("../images/bg-image.jpg");
+    /* background-image: url('../images/bg-image.jpg'); */
+    background: "red";
     /*footer at bottom:*/
     min-height: 100vh;
     display: flex;
@@ -24,6 +25,8 @@ nav {
     visibility: hidden;
     position: fixed;
     width: 100%;
+    display: flex;
+    justify-content:space-between;
 }
 
 nav p {
@@ -91,6 +94,11 @@ footer {
     margin-top: auto;
 }
 
+.fa-gear {
+    color: #ffffff; font-size: 22px;
+   line-height: 69.2px !important;
+}
+
 .startQuiz,
 .restartQuiz {
     padding: 70px 0 auto;
@@ -118,9 +126,9 @@ footer {
 }
 
 #navRestartBtn {
-    position: absolute;
+    /* position: absolute;
     right: 4%;
-    top: 20px;
+    top: 20px; */
     text-decoration: none;
     padding: 7px 15px;
     color: #001c3b;
@@ -301,7 +309,6 @@ input[type="radio"]:checked {
 
 /*** FOOTER social media*****/
 
-
 footer .fab,
 footer .fa {
     color: #F3F1F1;
@@ -324,6 +331,17 @@ footer .social_media {
     align-items: center;
     padding: 0;
     margin: 0 0 0px;
+}
+
+/**** 404 ERROR PAGE *****/
+
+.errorPage h1 {
+    font-size: 3rem;
+    padding-top: 70px;
+}
+
+.errorPage p {
+    margin-bottom: 40px;
 }
 
 
@@ -450,7 +468,7 @@ footer .social_media {
     #btnNextQuestion{
         margin: 40px 0 0 0;
     }
-
+    
     footer .social_media {
         flex-direction: row !important;
     }
@@ -461,6 +479,8 @@ footer .social_media {
     font-size: 30px;
     transition: all 0.15s linear;
     }
+
+
 
     
 }

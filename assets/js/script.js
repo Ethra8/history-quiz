@@ -51,7 +51,7 @@ let questions = [
         options: ["1964", "1973", "1951"]
     },];
 
-
+document.getElementById("fa-gear").addEventListener('click', changeLightMode);
 document.getElementsByTagName('button')[1].addEventListener('click', displayQuestion);//Once user clicks on "Start Quiz" button, function displayQuestion is triggered to show 1st question of quiz
 
 document.getElementById('navRestartBtn').addEventListener('click', startNewQuiz);//user can restart quiz anytime from navbar
@@ -255,4 +255,26 @@ function displayNav() {
     let nav = document.getElementsByTagName('nav')[0];
     nav.style.visibility = "visible";
     nav.style.display = "flex"; 
+}
+
+const body = document.getElementsByTagName('body')[0];
+
+
+function changeLightMode() {
+// bodyBg = "url('../images/bg-image.jpg')";
+    
+    if(body.style.background === "whitesmoke"){
+        // === "url('../images/bg-image.jpg')"){ 
+        body.style.background = "red";
+
+    } else {
+        body.style.background = "whitesmoke";
+    }
+}
+
+
+function hideNav() {
+    let nav = document.getElementsByTagName('nav')[0];
+    nav.style.visibility = "invisible";
+    nav.style.display = "none"; 
 }
