@@ -10,12 +10,19 @@
 
 
 body {
-    /* background-image: url('../images/bg-image.jpg'); */
-    background: "red";
+    /* background-image: url('../images/bgDarkMode.jpg'); */
     /*footer at bottom:*/
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+}
+
+.bgDarkMode {
+    background-image: url('../images/bgDarkMode.jpg');
+}
+
+.bgLightMode {
+    background-image: url('../images/bgLightMode.jpg');
 }
 
 nav {

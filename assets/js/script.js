@@ -49,14 +49,18 @@ let questions = [
         question: "In which year was the Civil Rights Act passed by the US Senate, which extended 'civil, political, and legal rights and protections to African Americans, including former slaves and their descendants, to end segregation in public and private facilities.'?",
         correctAnswerPosition: 0,
         options: ["1964", "1973", "1951"]
-    },];
+    },
+];
+
+const body = document.getElementsByTagName('body')[0];
+let i = 0;//pre-sets value of i (used for questions in quiz) to 0
 
 document.getElementById("fa-gear").addEventListener('click', changeLightMode);
 document.getElementsByTagName('button')[1].addEventListener('click', displayQuestion);//Once user clicks on "Start Quiz" button, function displayQuestion is triggered to show 1st question of quiz
 
 document.getElementById('navRestartBtn').addEventListener('click', startNewQuiz);//user can restart quiz anytime from navbar
 
-let i = 0;//pre-sets value of i (used for questions in quiz) to 0
+
 
 /**
  * Once button 'start Quiz' is clicked, 1st question is displayed, and
@@ -206,8 +210,6 @@ function displayNextQuestion() {
         `;
         }
 
-
-        
     }
 }
 
@@ -257,18 +259,19 @@ function displayNav() {
     nav.style.display = "flex"; 
 }
 
-const body = document.getElementsByTagName('body')[0];
-
 
 function changeLightMode() {
 // bodyBg = "url('../images/bg-image.jpg')";
     
-    if(body.style.background === "whitesmoke"){
+    // if(body.style.backgroundImage === "url('../images/bgDarkMode.jpg')"){
         // === "url('../images/bg-image.jpg')"){ 
-        body.style.background = "red";
+let bg = body.getAttribute("class");
+
+    if (bg === "bgDarkMode"){
+            body.setAttribute("class", "bgLightMode");
 
     } else {
-        body.style.background = "whitesmoke";
+        body.setAttribute("class", "bgDarkMode");
     }
 }
 
