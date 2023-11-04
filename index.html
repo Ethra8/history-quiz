@@ -24,9 +24,11 @@
 <body class="bgDarkMode">
 
   <nav>
-    <div> <a href="index.html"> <img src="./assets/images/logo.png" alt="logo" width="200"
-          style="display: inline-flex;"></a>
-      <p style="display: inline-flex;">Quiz</p>
+    <div>
+      <a href="index.html">
+        <img src="./assets/images/logo.png" alt="logo" width="200">
+      </a>
+      <p>Quiz</p>
     </div>
     <div>
       <span><i class="fa fa-gear" id="fa-gear"></i></span>
@@ -47,17 +49,19 @@
 
   </header>
 
-  <div id="question"></div>
-
   <div class="startQuiz">
     <button>Start Quiz</button>
-
   </div>
 
-  <div class="count">
-    <p>correct answers: <span id="correct">0</span></p>
+  <div id="questionSet">
+    <div id="question"></div>
 
-    <p>incorrect answers: <span id="incorrect">0</span></p>
+    <div class="count">
+      <p>correct answers: <span id="correct">0</span></p>
+
+      <p>incorrect answers: <span id="incorrect">0</span></p>
+    </div>
+
   </div>
 
   <div class="restartQuiz">

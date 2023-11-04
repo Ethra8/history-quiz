@@ -18,25 +18,25 @@
     <title>QUIZ | History Facts</title>
 </head>
 
-<body onload="displayNav()">
+<body class="bgDarkMode" onload="displayNav()">
 
     <nav>
-        <a href="index.html"> <img src="./assets/images/logo.png" alt="logo" srcset="" width="200" /></a>
-        <p>Quiz</p>
+        <div>
+            <a href="index.html">
+                <img src="./assets/images/logo.png" alt="logo" width="200">
+            </a>
+            <p>Quiz</p>
+        </div>
     </nav>
 
-    <header class="errorPage">
+    <header id="errorPage">
         <h1>Ouups ... Wrong path!</h1>
         <p>404 Error</p>
-
-        <!-- <div id="goToHomePage">
-            <a href="./index.html">Home page</a>
-        </div> -->
-
-        <button id="goToHomePage">Home Page</button>
-
     </header>
 
+    <div>
+        <p id="goToHomePage"><a href="./index.html">Home Page</a></p>
+    </div>
 
     <footer>
         <!-- Unordered List to Social Media external sites-->

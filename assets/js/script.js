@@ -53,13 +53,12 @@ let questions = [
 ];
 
 const body = document.getElementsByTagName('body')[0];
-let i = 0;//pre-sets value of i (used for questions in quiz) to 0
+let i = 0; //used to loop through questions in quiz
+let questionDiv = document.getElementById('question');
 
-document.getElementById("fa-gear").addEventListener('click', changeLightMode);
-document.getElementsByTagName('button')[1].addEventListener('click', displayQuestion);//Once user clicks on "Start Quiz" button, function displayQuestion is triggered to show 1st question of quiz
-
-document.getElementById('navRestartBtn').addEventListener('click', startNewQuiz);//user can restart quiz anytime from navbar
-
+document.getElementById("fa-gear").addEventListener('click', changeMode);
+document.getElementsByTagName('button')[1].addEventListener('click', displayQuestion); //Once user clicks on "Start Quiz" button, function displayQuestion is triggered to show 1st question of quiz
+document.getElementById('navRestartBtn').addEventListener('click', startNewQuiz); //user can restart quiz anytime from navbar
 
 
 /**
@@ -69,11 +68,12 @@ document.getElementById('navRestartBtn').addEventListener('click', startNewQuiz)
  * to check whether the correct answer was selected through radio btn.
  */
 function displayQuestion() {
-    //after completing quiz once, if user clicks on "Restart Quiz" btn, turn the "restart Quiz" button invisible again once quiz is restarted.
-    let restartQuiz = document.getElementsByClassName('restartQuiz')[0];
+    
+    // After completing quiz once, if user clicks on "Restart Quiz" btn, turn the "restart Quiz" button invisible again once quiz is restarted.
+    // let restartQuiz = document.getElementsByClassName('restartQuiz')[0];
     let nav = document.getElementsByTagName('nav')[0];
-    restartQuiz.style.visibility = "invisible";
-    restartQuiz.style.display = "none";
+    // restartQuiz.style.visibility = "invisible";
+    // restartQuiz.style.display = "none";
     nav.style.visibility = "visible";
     nav.style.display = "flex";
 
@@ -82,7 +82,6 @@ function displayQuestion() {
     document.getElementsByTagName("header")[0].style.display = "none";
     document.getElementsByClassName("count")[0].style.visibility = "visible";
 
-    let questionDiv = document.getElementById('question');
     questionDiv.style.display = "block";//displays "question"
 
     questionDiv.innerHTML = `
@@ -103,7 +102,6 @@ function displayQuestion() {
         btnCheck.addEventListener('click', displayRadioValue);
         
 }
-
 
 
 /**
@@ -211,6 +209,8 @@ function displayNextQuestion() {
         }
 
     }
+
+
 }
 
 
@@ -259,23 +259,64 @@ function displayNav() {
     nav.style.display = "flex"; 
 }
 
-
-function changeLightMode() {
-// bodyBg = "url('../images/bg-image.jpg')";
+/**
+ * Switches from dark mode to light mode, and viceversa
+ */
+function changeMode() {
+    let y;
+    let z;
+    let lis = document.getElementsByTagName('li');
+    let bgBody = body.getAttribute("class");
+    let questionNum = document.getElementById('questionNum');
+    let countDiv = document.getElementsByClassName('count')[0];
+    let radioBtns = document.getElementsByTagName('input');
+    let radioBtn = document.getElementsByTagName('input[type="radio"]')[z];
     
-    // if(body.style.backgroundImage === "url('../images/bgDarkMode.jpg')"){
-        // === "url('../images/bg-image.jpg')"){ 
-let bg = body.getAttribute("class");
-
-    if (bg === "bgDarkMode"){
+    if (bgBody === "bgDarkMode"){
             body.setAttribute("class", "bgLightMode");
+            questionDiv.style.backgroundColor = "rgba(245,245,245,0.7)";
+            questionDiv.style.borderColor = "rgb(85, 0, 85)";
+            countDiv.style.borderColor = "rgb(85, 0, 85)";
+            questionNum.style.color = "rgb(85, 0, 85)";
+            questionNum.style.fontWeight = "bold";
+            questionDiv.style.color = "slategray";
 
+            for(z = 0; z< radioBtns.length; z++){
+                radioBtn = radioBtns[z];
+                radioBtn.style.border = "2px solid rgb(85, 0, 85)";
+            }
+
+            for(y = 0; y< lis.length; y++){
+                let li = lis[y];
+                li.style.color = "slategray";
+            }
+            
     } else {
         body.setAttribute("class", "bgDarkMode");
+
+        questionDiv.style.backgroundColor = "rgba(0, 28, 59, 0.7)";
+        questionDiv.style.borderColor = "aquamarine";
+        countDiv.style.borderColor = "aquamarine";
+        questionNum.style.color = "aquamarine";
+        questionNum.style.fontWeight = "400";
+        questionDiv.style.color = "whitesmoke";
+
+        for(z = 0; z< radioBtns.length; z++){
+            radioBtn = radioBtns[z];
+            radioBtn.style.border = "2px solid aquamarine";
+        }
+
+        for(y = 0; y< lis.length; y++){
+            let li = lis[y];
+            li.style.color = "whitesmoke";
+        }
+
     }
 }
 
-
+/**
+ * Hides Navbar
+ */
 function hideNav() {
     let nav = document.getElementsByTagName('nav')[0];
     nav.style.visibility = "invisible";
