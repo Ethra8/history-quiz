@@ -196,7 +196,7 @@ The only image used in this site has been one of the Milky Way, set as the site'
 
 - HTML5
 - CSS3
-- JS
+- JS6
 
 ## FRAMEWORKS, LIBRARIES AND PROGRAMS USED
 
