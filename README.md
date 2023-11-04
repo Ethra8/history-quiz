@@ -152,6 +152,7 @@ EDNA TORRES MUNILL
 - [Credits](#credits)
 
   - [Imagery](#imagery)
+  - [Media](#media)
   - [Content](#content)
 
 - [Acknowledgements](#acknowledgements)
@@ -259,11 +260,18 @@ You can download the code to your computer, making a copy of the code at the exa
 - **Codespaces**
   1.  You will be requested to be signed in to Codespaces, and once you are, the repository will be cloned on your Codespaces account.
 
-# CREDITS
+# CREDITS & ATTRIBUTIONS
 
 ## IMAGERY
 
 - [Background Image](https://pixabay.com/photos/milky-way-stars-night-sky-2695569/) by <a href="https://pixabay.com/users/felixmittermeier-4397258/" target=_blank >FelixMittermeier</a> from <a href="https://pixabay.com">Pixabay</a>.
+
+## MEDIA
+
+The following media has been used, and is hereby attributed as follows:
+- **AUDIO**
+  [Tension orchestra chords](https://freesound.org/people/frankum/sounds/320498/) has been created by [Frankum](https://freesound.org/people/frankum/) at [Freesound.org](https://freesound.org/)
+  
 
 ## CONTENT
 
