@@ -18,7 +18,7 @@ body {
 }
 
 .bgDarkMode {
-    background: url('../images/bgDarkMode.jpg');
+    background: url('../images/bgDarkMode.jpg') center fixed;
 }
 
 .bgLightMode {
@@ -222,7 +222,7 @@ footer {
 
 #questionSet {
     margin: 25vh auto 0;
-    width: 70%;
+    width: 100%;
 }
 
 #question {
@@ -233,7 +233,7 @@ footer {
     font-size: 1.2rem;
     font-weight: 400;
     line-height: 1.6;
-    width: 100%;
+    width: 70%;
     margin: auto auto;
     border-top-right-radius: 50px;
     border-top-left-radius: 50px;
@@ -281,7 +281,7 @@ input[type="radio"]:checked {
 
 .count {
     margin: 0 auto 15vh;
-    width: 100%;
+    width: 70%;
     display: flex;
     flex-direction: row;
     visibility: hidden;
