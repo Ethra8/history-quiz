@@ -254,5 +254,5 @@ function startNewQuiz() {
 function displayNav() {
     let nav = document.getElementsByTagName('nav')[0];
     nav.style.visibility = "visible";
-    nav.style.display = "block"; 
+    nav.style.display = "flex"; 
 }
