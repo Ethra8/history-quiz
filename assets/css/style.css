@@ -54,10 +54,6 @@ nav p {
     text-align: left !important;
 }
 
-nav span {
-    /* margin-top: 15px !important; */
-}
-
 header {
     text-align: center;
     background-color: rgba(0, 28, 59, 0.7);
@@ -424,7 +420,6 @@ footer .social_media {
         height: 18px;
     }
     
-
     #navRestartBtn {
         position: absolute;
         right: 4%;
@@ -489,6 +484,7 @@ footer .social_media {
         background-color: rgba(0, 28, 59, 0.7);
         padding: 7px 30px;
         margin-top: -1px;
+        width: 100%;
     }
 
     header {
