@@ -202,19 +202,19 @@ footer {
 #navRestartBtn:hover,
 #goToHomePage:hover {
     cursor: pointer;
-    background-color: whitesmoke;
+    background-color: rgb(85, 0, 85);
     border-color: aquamarine;
+    color: whitesmoke;
 }
 
 #btnCheckAnswerDisabled {
-    background-color: antiquewhite;
+    background-color: lightgray;
+    color: slategray;
     padding: 15px 30px;
     font-family: 'Lobster', sans-serif;
     font-size: 1.5rem;
     border-radius: 50px;
-    border-style: outset;
-    border-width: 1px;
-    border-color: rgb(85, 0, 85);
+    border: 1px outset slategray;
     transition: all 0.5s;
     position: relative;
 }
