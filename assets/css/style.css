@@ -317,9 +317,42 @@ input[type="radio"]:checked {
     justify-content:flex-start;
 }
 
-.finalMsg {
+#hFinalMsg {
+    text-align: center;
+    color: aquamarine;
+    text-shadow: 5px 10px rgb(85, 0, 85);
+    font-size: 300%;
+    font-family: 'Lobster', sans-serif;
+    font-weight: 400;
+    padding-bottom: 0;
+    margin-top: 10vh;
+}
+
+#pFinalMsg {
     text-align: center !important;
     color: whitesmoke;
+    font-size: 140%;
+    font-family: 'Bad Script', cursive;
+    font-weight: 600;
+    line-height: 2;
+    padding-top: 40px;
+}
+
+#hFinalMsgLightMode {
+    text-align: center;
+    color: rgb(85, 0, 85);
+    text-shadow: 5px 10px aquamarine;
+    font-size: 300%;
+    font-family: 'Lobster', sans-serif;
+    font-weight: 400;
+    padding-bottom: 0;
+    margin-top: 10vh;
+
+}
+
+#pFinalMsgLightMode {
+    text-align: center !important;
+    color: rgb(85, 0, 85);
     font-size: 140%;
     font-family: 'Bad Script', cursive;
     font-weight: 600;
@@ -388,10 +421,10 @@ footer .social_media {
     }
     
     h1 {
-        font-size: 360%;
+        font-size: 320%;
         font-weight: 400;
         padding: 0 20px;
-        margin-top: 20vh;
+        margin-top: 22vh;
     }
 
     header p {

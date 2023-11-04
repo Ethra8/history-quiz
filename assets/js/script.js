@@ -57,6 +57,7 @@ let i = 0; //used to loop through questions in quiz
 let questionDiv = document.getElementById('question');
 
 document.getElementById("fa-gear").addEventListener('click', changeMode);
+document.getElementById("fa-music").addEventListener('click', showAudioControls)
 document.getElementsByTagName('button')[1].addEventListener('click', displayQuestion); //Once user clicks on "Start Quiz" button, function displayQuestion is triggered to show 1st question of quiz
 document.getElementById('navRestartBtn').addEventListener('click', startNewQuiz); //user can restart quiz anytime from navbar
 
@@ -68,7 +69,8 @@ document.getElementById('navRestartBtn').addEventListener('click', startNewQuiz)
  * to check whether the correct answer was selected through radio btn.
  */
 function displayQuestion() {
-
+    
+document.getElementById('fa-gear').style.display = "inline-flex";
     // After completing quiz once, if user clicks on "Restart Quiz" btn, turn the "restart Quiz" button invisible again once quiz is restarted.
     let nav = document.getElementsByTagName('nav')[0];
     nav.style.visibility = "visible";
@@ -80,6 +82,8 @@ function displayQuestion() {
     document.getElementsByClassName("count")[0].style.visibility = "visible";
 
     questionDiv.style.display = "block";//displays "question"
+
+    
 
     questionDiv.innerHTML = `
         <p><span id="questionNum">Question ${i+1}</span><br><br>
@@ -94,10 +98,10 @@ function displayQuestion() {
         <button id="btnCheckAnswer">Check Answer</button><button id="btnNextQuestion">Next Question</button>
         </div>
     `;
-    
         let btnCheck = document.getElementById('btnCheckAnswer');
         btnCheck.addEventListener('click', displayRadioValue);
-        
+        saveMode();
+
 }
 
 
@@ -175,40 +179,76 @@ function displayNextQuestion() {
 
     ++i; //increments i so that next question (or final results div with message) is displayed
     
-
-    if(i < 10) {
+    if (i < 10) {
         displayQuestion();
-    } else if(i === 10){
-        let questionDiv = document.getElementById('question');
+    
+    } 
+    
+    if (i === 10) {
+        let bgBody = body.getAttribute("class");
+
+        var questionDiv = document.getElementById('question');
         questionDiv.style.display = "block";//displays "question"
-        questionDiv.style.backgroundColor = "rgba(2, 24, 83, 0.6)";
-        let oldScore = parseInt(document.getElementById("correct").innerHTML);
+        var oldScore = parseInt(document.getElementById("correct").innerHTML);
 
-        if(oldScore <= 3){
-            questionDiv.innerHTML = `
-            <h1 style="font-size:300%">You could do much better...</h1>
-             <p class="finalMsg">Your final score is ${oldScore} / 10</p>
-            `;
-        } else if(oldScore <= 5){
-            questionDiv.innerHTML = `
-            <h1 style="font-size:300%">You could do better...</h1>
-            <p class="finalMsg">Your final score is ${oldScore} / 10</p>
-            `;
-        } else if (oldScore <= 8){
-            questionDiv.innerHTML = `
-            <h1 style="font-size:300%">Well done!</h1>
-            <p class="finalMsg">Your final score is ${oldScore} / 10</p>
-        `;
-        } else if (oldScore >= 9){
-            questionDiv.innerHTML = `
-            <h1 style="font-size:300%">Wow! Do you have a PhD in history?</h1>
-            <p class="finalMsg">Your final score is ${oldScore} / 10</p>
-        `;
+        if (bgBody === "bgLightMode"){
+
+            if (oldScore <= 3) {
+                questionDiv.innerHTML = `
+                <h1 id="hFinalMsgLightMode">You could do much better...</h1>
+                <p id="pFinalMsgLightMode">Your final score is ${oldScore} / 10</p>
+                `;     
+              
+            } else if (oldScore <= 5) {
+                questionDiv.innerHTML = `
+                <h1 id="hFinalMsgLightMode">You could do better...</h1>
+                <p id="pFinalMsgLightMode">Your final score is ${oldScore} / 10</p>
+                `;          
+                    
+            } else if (oldScore <= 8) {
+                questionDiv.innerHTML = `
+                <h1 id="hFinalMsgLightMode">Well done!</h1>
+                <p id="pFinalMsgLightMode">Your final score is ${oldScore} / 10</p>
+                `;
+        
+            } else if (oldScore >= 9) {
+                questionDiv.innerHTML = `
+                <h1 id="hFinalMsgLightMode">Wow! Do you have a PhD in history?</h1>
+                <p id="pFinalMsgLightMode">Your final score is ${oldScore} / 10</p>
+                `;
+            }
+    
+        } else {
+            if (oldScore <= 3) {
+                questionDiv.innerHTML = `
+                <h1 id="hFinalMsg">You could do much better...</h1>
+                <p id="pFinalMsg">Your final score is ${oldScore} / 10</p>
+                `;     
+              
+            } else if (oldScore <= 5) {
+                questionDiv.innerHTML = `
+                <h1 id="hFinalMsg">You could do better...</h1>
+                <p id="pFinalMsg">Your final score is ${oldScore} / 10</p>
+                `;          
+                    
+            } else if (oldScore <= 8) {
+                questionDiv.innerHTML = `
+                <h1 id="hFinalMsg">Well done!</h1>
+                <p id="pFinalMsg">Your final score is ${oldScore} / 10</p>
+                `;
+        
+            } else if (oldScore >= 9) {
+                questionDiv.innerHTML = `
+                <h1 id="hFinalMsg">Wow! Do you have a PhD in history?</h1>
+                <p id="pFinalMsg">Your final score is ${oldScore} / 10</p>
+                `;
+        
+            }
+
         }
-
+        document.getElementById("fa-gear").style.display = "none"; // hides icon to change mode once final msg w. final results is shown
     }
 
-    saveMode();
 }
 
 
@@ -267,6 +307,11 @@ function changeMode() {
     let countDiv = document.getElementsByClassName('count')[0];
     let radioBtns = document.getElementsByTagName('input');
     let radioBtn = document.getElementsByTagName('input[type="radio"]')[z];
+    // let hFinalMsg = document.getElementById('hFinalMsg');
+    // let pFinalMsg = document.getElementById('pFinalMsg');
+    // let hFinalMsgLight = document.getElementById('hFinalMsgLightMode');
+    // let pFinalMsgLight = document.getElementById('pFinalMsgLightMode');
+
 
     if (bgBody === "bgDarkMode"){
             body.setAttribute("class", "bgLightMode");
@@ -286,7 +331,10 @@ function changeMode() {
                 let li = lis[y];
                 li.style.color = "slategray";
             }
-            
+
+            // hFinalMsg.id = "hFinalMsgLightMode";
+            // pFinalMsg.id = "pFinalMsgLightMode";
+                    
     } else {
         body.setAttribute("class", "bgDarkMode");
 
@@ -306,9 +354,11 @@ function changeMode() {
             let li = lis[y];
             li.style.color = "whitesmoke";
         }
-
+        // pFinalMsgLight.id = "pFinalMsg";
+        // hFinalMsgLight.id = "hFinalMsg";
     }
 }
+
 
 /**
  * Displays next question in the same mode (dark/light) that the user has selected
@@ -322,6 +372,11 @@ function saveMode(){
     let countDiv = document.getElementsByClassName('count')[0];
     let radioBtns = document.getElementsByTagName('input');
     let radioBtn = document.getElementsByTagName('input[type="radio"]')[z];
+    // let hFinalMsg = document.getElementById('hFinalMsg');
+    // let pFinalMsg = document.getElementById('hFinalMsg');
+    // let hFinalMsgLight = document.getElementById('hFinalMsgLight');
+    // let pFinalMsgLight = document.getElementById('pFinalMsgLight');
+
 
     if(bgBody === "bgDarkMode") {
         body.setAttribute("class", "bgDarkMode");
@@ -343,6 +398,10 @@ function saveMode(){
             li.style.color = "whitesmoke";
         }
 
+        // pFinalMsgLight.id = 'pFinalMsg';
+        // hFinalMsgLight.id = 'hFinalMsg';
+
+
     } else  {
         body.setAttribute("class", "bgLightMode");
 
@@ -363,9 +422,14 @@ function saveMode(){
             li.style.color = "slategray";
         }
 
+        // hFinalMsg.id = 'hFinalMsgLight';
+        // pFinalMsg.id = 'pFinalMsgLight';
+
+
     }
     
 }
+
 
 /**
  * Hides Navbar
@@ -374,4 +438,9 @@ function hideNav() {
     let nav = document.getElementsByTagName('nav')[0];
     nav.style.visibility = "invisible";
     nav.style.display = "none"; 
+}
+
+
+function showAudioControls() {
+    
 }
