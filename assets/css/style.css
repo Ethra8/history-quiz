@@ -53,6 +53,14 @@ nav p {
     text-align: left !important;
 }
 
+audio {
+    display: none;
+    visibility: hidden;
+    position: absolute;
+    top: 70px;
+    left:40%;
+}
+
 header {
     text-align: center;
     background-color: rgba(0, 28, 59, 0.7);
@@ -109,7 +117,7 @@ footer {
 }
 
 .fa-gear,
-.fa-music {
+.fa-play {
     color: aquamarine; 
     font-size: 24px;
     line-height: 50px !important;

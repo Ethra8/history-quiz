@@ -57,7 +57,7 @@ let i = 0; //used to loop through questions in quiz
 let questionDiv = document.getElementById('question');
 
 document.getElementById("fa-gear").addEventListener('click', changeMode);
-document.getElementById("fa-music").addEventListener('click', showAudioControls)
+document.getElementById("fa-play").addEventListener('click', showAudioControls)
 document.getElementsByTagName('button')[1].addEventListener('click', displayQuestion); //Once user clicks on "Start Quiz" button, function displayQuestion is triggered to show 1st question of quiz
 document.getElementById('navRestartBtn').addEventListener('click', startNewQuiz); //user can restart quiz anytime from navbar
 
@@ -442,5 +442,10 @@ function hideNav() {
 
 
 function showAudioControls() {
-    
+    // let audioControls = document.getElementsByTagName('audio')[0];
+    // audioControls.style.display = "block";
+    // audioControls.style.visibility = "visible";
+
+    var audio = new Audio("https://freesound.org/people/frankum/sounds/320498/");
+    audio.play();
 }
