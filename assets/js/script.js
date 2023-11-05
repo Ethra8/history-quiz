@@ -327,7 +327,7 @@ function changeMode() {
 
     if (bgBody === "bgDarkMode"){
             body.setAttribute("class", "bgLightMode");
-            questionDiv.style.backgroundColor = "rgba(245,245,245,0.7)";
+            questionDiv.style.backgroundColor = "rgb(245,245,245)";
             questionDiv.style.borderColor = "rgb(85, 0, 85)";
             countDiv.style.borderColor = "rgb(85, 0, 85)";
             questionNum.style.color = "rgb(85, 0, 85)";
@@ -417,7 +417,7 @@ function saveMode(){
     } else  {
         body.setAttribute("class", "bgLightMode");
 
-        questionDiv.style.backgroundColor = "rgba(245,245,245,0.7)";
+        questionDiv.style.backgroundColor = "rgb(245,245,245)";
         questionDiv.style.borderColor = "rgb(85, 0, 85)";
         countDiv.style.borderColor = "rgb(85, 0, 85)";
         questionNum.style.color = "rgb(85, 0, 85)";
