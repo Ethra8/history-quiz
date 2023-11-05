@@ -188,7 +188,7 @@ footer {
 }
 
 .startQuiz button{
-    margin: -40px auto auto!important;
+    margin: -40px auto 0!important;
     width: 240px;
     font-size: 1.8rem;
 }
@@ -432,7 +432,8 @@ footer .social_media {
    
     /* nav no longer fixed, to liberate screen, as btnRestartQuiz is placed below settings, for space reasons, and a fixed nav would take far too much viewport*/
     nav {
-        position: relative;
+        position:unset;
+        display: none;
     }
 
     nav span {
@@ -446,14 +447,14 @@ footer .social_media {
     }
 
     header {
-        min-height: 75vh;
+        min-height: 70vh;
     }
     
     h1 {
         font-size: 320%;
         font-weight: 400;
         padding: 0 20px;
-        margin-top: 22vh;
+        margin-top: 18vh;
     }
 
     header p {
