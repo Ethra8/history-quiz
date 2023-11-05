@@ -536,19 +536,19 @@ footer .social_media {
         font-weight: 900 !important;
     }
 
-    header#errorPage {
+    #errorPage header {
         min-height: 50vh;
         max-height: 50vh !important;
         padding: 20vh 4%;
     }
       
-    header#errorPage h1 {
+    #errorPage h1 {
           display: inline-flex;
           font-size: 2rem;
           margin: auto 0;
     }
 
-    header#errorPage p {
+    #errorPage p {
         font-size: 200%;
     }
       
@@ -638,19 +638,19 @@ footer .social_media {
         font-weight: 900 !important;
     }
 
-    header#errorPage {
+    #errorPage header{
         min-height: 50vh;
         max-height: 50vh !important;
         padding: 20vh 4%;
     }
       
-    header#errorPage h1 {
+    #errorPage h1 {
           display: inline-flex;
           font-size: 2rem;
           margin: auto 0;
     }
 
-    header#errorPage p {
+    #errorPage p {
         font-size: 200%;
     }
 
@@ -726,19 +726,19 @@ footer .social_media {
         margin-top: 20vh;
     }
 
-    header#errorPage {
+    #errorPage header {
         min-height: 50vh;
         max-height: 50vh !important;
         padding: 20vh 4%;
     }
       
-    header#errorPage h1 {
+    #errorPage h1 {
           display: inline-flex;
           font-size: 2rem;
           margin: auto 0;
     }
 
-    header#errorPage p {
+    #errorPage p {
         font-size: 200%;
     }
 
