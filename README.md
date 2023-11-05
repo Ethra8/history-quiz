@@ -208,7 +208,7 @@ The image used is of the Milky Way, set as the site's background of the ***landi
 
 
 ### LIGHT MODE
-The following image has been used for the light mode option, to contrast with the Milky Way set as a dark mode - (refer to the _credits_ section for more details):
+The following image has been used for the light mode option, to contrast with the Milky Way image of the dark mode. It has primarily been chosen for its *aquamarine* color shade, aiming at a seamless design for the site, and to match the site's logo, buttons, and features of the navigation bar - (refer to the _credits_ section for more details):
 
 ![image](https://github.com/Ethra8/history-quiz/assets/80659091/44dddcc4-b50f-4c2c-8ae2-77d2dad2fd6c)
 
