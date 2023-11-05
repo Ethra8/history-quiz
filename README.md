@@ -249,17 +249,17 @@ The following test have been undertaken
 ## CORE WEB VITALS
 
 ### LIGHTHOUSE REPORTS
-#### Mobile
+#### DESKTOP
 ![image](https://github.com/Ethra8/history-quiz/assets/80659091/38367332-df80-497f-8eb9-544e23b83907)
 
-### Desktop
-
+#### MOBILE
+![image](https://github.com/Ethra8/history-quiz/assets/80659091/f247482d-b61c-4da8-835a-84d1b15fca90)
 
 ## ACCESSIBILITY TESTING
 ### ACCESSIBILITY AUDITS
 #### WCAG 2.1 Validation
 
-#### GEneral Accessibility Reports
+#### General Accessibility Reports
 
 ### KEYBOARD NAVIGATION
 
