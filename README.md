@@ -186,9 +186,16 @@ To counteract the implied seriousness of a quiz, and make it more appealing to y
 
 ## IMAGERY
 
-The only image used in this site has been one of the Milky Way, set as the site's background, including the 404 error page - (refer to the _credits_ section for more details):
+### LANDING PAGE, 404 ERROR PAGE AND DARK MODE
+The image used is of the Milky Way, set as the site's background of the ***landing page***, the ***404 error page***, and the ***dark mode*** - (refer to the _credits_ section for more details):
 
 ![image](https://github.com/Ethra8/history-quiz/assets/80659091/d9082d15-5622-4b73-a107-8a3e6f02088c)
+
+### LIGHT MODE
+The image used is of a colourful sky at dusk - (refer to the _credits_ section for more details):
+
+![image](https://github.com/Ethra8/history-quiz/assets/80659091/74883351-a902-4318-a66a-88ba70d8770d)
+
 
 # TECHNOLOGIES USED
 
@@ -263,7 +270,8 @@ You can download the code to your computer, making a copy of the code at the exa
 
 ## IMAGERY
 
-- [Background Image](https://pixabay.com/photos/milky-way-stars-night-sky-2695569/) by <a href="https://pixabay.com/users/felixmittermeier-4397258/" target=_blank >FelixMittermeier</a> from <a href="https://pixabay.com">Pixabay</a>.
+- [Milky Way](https://pixabay.com/photos/milky-way-stars-night-sky-2695569/) by <a href="https://pixabay.com/users/felixmittermeier-4397258/" target=_blank >FelixMittermeier</a> from <a href="https://pixabay.com">Pixabay</a>.
+- [Colourful sky at dusk](https://www.freepik.com/free-photo/nature-colorful-landscape-dusk-cloud_1088375.htm#query=sunny%20sky&position=2&from_view=keyword&track=ais) by [MrSiraphol](https://www.freepik.com/author/mrsiraphol) at [Freepik](www.freepik.com).
 
 ## MEDIA
 
