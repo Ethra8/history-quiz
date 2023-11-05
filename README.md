@@ -234,15 +234,28 @@ By clicking on the gear icon placed on the navigation bar, the user can toggle b
 
 
 # TESTING
-The following test have been undertaken
+The following code validators have been undertaken to test all the code of this this
 -
 ## VALIDATION TESTING
 
 ### HTML5
+- No errors nor warnings were returned when passing the HTML Validation Test.
+- Used [HTML Validator](https://validator.w3.org/) to validate all this website pages, as follows:
+
+![image](https://github.com/Ethra8/history-quiz/assets/80659091/0732ee40-d6fe-40c1-b72f-55f3175d076e)
 
 ### CSS3
+- No errors nor warnings were returned when passing the CSS Validation Test.
+- Used CSS Validator at [Jigsaw.w3.org](https://jigsaw.w3.org/css-validator/validator)
+
+![image](https://github.com/Ethra8/history-quiz/assets/80659091/a51633de-0383-482d-a6ce-73206a501ab2)
 
 ### JS6
+- No errors nor warnings were returned when passing the JS Validation Test.
+- Used JS (ES6) Validator at [JShint](https://jshint.com/)
+
+![image](https://github.com/Ethra8/history-quiz/assets/80659091/2769f08d-bcbe-4c70-9e52-739bf3490909)
+
 
 ## COMPATIBILITY and RESPONSIVE TESTING
 
