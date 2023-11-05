@@ -198,6 +198,23 @@ The following image has been used for the light mode option, to contrast with th
 ![image](https://github.com/Ethra8/history-quiz/assets/80659091/44dddcc4-b50f-4c2c-8ae2-77d2dad2fd6c)
 
 
+# FEATURES
+
+## NAVIGATION BAR
+Is fully responsive, and is fixed at the top, to allow the user to access its fucntionalities even when scrolling down. Its background has a slight transparency, so that it visually not so intrusive. Its functionalities are the following:
+- **LOGO** : By clicking on it, the user gets to the landing page, before the questsions are displayed.
+- **SETTINGS**
+    * **MODE-SWITCH ICON** : By clkicking on the gear icon, the user can switch from the default dark mode to the light mode, and viceversa, anytime during the quiz.
+    * **MUSIC ICONS** :
+        + **PLAY ICON** : By clicking on the ***play*** icon, the user triggers the audio mp3 file, which is coded to loop itself seamlessly.
+        + **PAUSE ICON** : By clicking on the ***pause*** icon, the user pauses the audio file, which can be continued by clickg again on the play icon.
+
+## DARK AND LIGHT MODES 
+By clicking on the settings icon placed on the navigation bar, the user can toggle between the default dark mode, and the light mode, all through the quiz:
+-
+
+![image](https://github.com/Ethra8/history-quiz/assets/80659091/59ac8a71-7bd8-4856-a849-ef009b6c227a)
+
 
 # TECHNOLOGIES USED
 
