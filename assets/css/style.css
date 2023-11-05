@@ -430,6 +430,11 @@ footer .social_media {
 
 @media only screen and (max-width: 375px) {
    
+    /* nav no longer fixed, to liberate screen, as btnRestartQuiz is placed below settings, for space reasons, and a fixed nav would take far too much viewport*/
+    nav {
+        position: relative;
+    }
+
     nav span {
         position: absolute;
         left: 0;
@@ -482,8 +487,8 @@ footer .social_media {
     
     #navRestartBtn {
         position: absolute;
-        right: 4%;
-        top: 85px;
+        left: 4%;
+        top: 149px;
     }
         
     #question {
