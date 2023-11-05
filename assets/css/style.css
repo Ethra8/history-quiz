@@ -40,6 +40,7 @@ nav {
 nav img {
     display: inline-flex;
     margin-bottom:-20px;
+    width: 200px;
 }
 
 nav p {
@@ -179,7 +180,7 @@ footer {
 .startQuiz button:hover {
     background-color: aqua;
     /* color: #001c3b; */
-    color: rgb(85, 0, 85);
+    color: #001c3b;
     border-color: aquamarine;
     cursor: pointer;
 }
@@ -228,7 +229,7 @@ footer {
     cursor: pointer;
     background-color: aqua;
     border-color: aqua;
-    color: rgb(85, 0, 85);
+    color: #001c3b;
 }
 
 #btnCheckAnswerDisabled {
