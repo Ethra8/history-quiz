@@ -192,9 +192,10 @@ The image used is of the Milky Way, set as the site's background of the ***landi
 ![image](https://github.com/Ethra8/history-quiz/assets/80659091/d9082d15-5622-4b73-a107-8a3e6f02088c)
 
 ### LIGHT MODE
-The image used is of a colourful sky at dusk - (refer to the _credits_ section for more details):
+The following image has been used for the light mode option, to contrast with the Milky Way set as a dark mode - (refer to the _credits_ section for more details):
 
-![image](https://github.com/Ethra8/history-quiz/assets/80659091/74883351-a902-4318-a66a-88ba70d8770d)
+![image](https://github.com/Ethra8/history-quiz/assets/80659091/1534dc5d-6ce5-4f2d-abbe-febe3e2e659b)
+
 
 
 # TECHNOLOGIES USED
@@ -271,7 +272,7 @@ You can download the code to your computer, making a copy of the code at the exa
 ## IMAGERY
 
 - [Milky Way](https://pixabay.com/photos/milky-way-stars-night-sky-2695569/) by <a href="https://pixabay.com/users/felixmittermeier-4397258/" target=_blank >FelixMittermeier</a> from <a href="https://pixabay.com">Pixabay</a>.
-- [Colourful sky at dusk](https://www.freepik.com/free-photo/nature-colorful-landscape-dusk-cloud_1088375.htm#query=sunny%20sky&position=2&from_view=keyword&track=ais) by [MrSiraphol](https://www.freepik.com/author/mrsiraphol) at [Freepik](www.freepik.com).
+- [Blue sky](https://www.freepik.com/free-photo/tropical-sea-beach_1032933.htm) by [mrsiraphol](https://www.freepik.com/author/mrsiraphol) at [Freepik](www.freepik.com).
 
 ## MEDIA
 
