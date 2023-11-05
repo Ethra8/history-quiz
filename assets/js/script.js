@@ -52,6 +52,91 @@ let questions = [
     },
 ];
 
+
+
+
+//function getRandomArray(arrays) {
+    //const availableArrays = arrays.slice();
+    // Get a random index from the array of arrays
+    //const randomIndex = Math.floor(Math.random() * arrays.length);
+    
+    // Return the random array
+    //return arrays[randomIndex];
+  //}
+  
+  // Example usage
+  //const arrayOfArrays = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
+  //const randomQuestion = getRandomArray(questions);
+  //console.log(randomQuestion);
+
+
+//********************************************************************************** */
+
+function getRandomArrayWithoutRepeats(arrays, newArraysOfArray) {
+    // Create a copy of questions arrays to avoid modifying the original array
+    const newQuestionsArray = arrays.slice();
+    
+    // Remove previously selected arrays from the available arrays
+    newArraysOfArray.forEach(previousArray => {
+      const index = newQuestionsArray.indexOf(previousArray);
+      if (index !== -1) {
+        newQuestionsArray.splice(index, 1);
+      }
+      console.log(index)
+    });
+    
+    // If all arrays have been previously selected, reset the newArraysOfArray
+    if (newQuestionsArray.length === 0) {
+        newArraysOfArray.length = 0;
+      newQuestionsArray.push(...arrays);
+    }
+    
+    // Get a random index from the available arrays
+    const randomIndex = Math.floor(Math.random() * newQuestionsArray.length);
+    
+    // Get the random array and remove it from the available arrays
+    const randomArray = newQuestionsArray.splice(randomIndex, 1)[0];
+    
+    // Add the selected array to the newArraysOfArray
+    newArraysOfArray.push(randomArray);
+    
+    console.log(newArraysOfArray);
+    // Return the random array
+    return randomArray;
+    
+  }
+  
+  // Example usage
+  //const arrayOfArrays = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
+  const newArraysOfArray = [];
+  var randomArray1 = getRandomArrayWithoutRepeats(questions, newArraysOfArray);
+  //console.log(randomArray1);
+  
+  const randomArray2 = getRandomArrayWithoutRepeats(questions, newArraysOfArray);
+  //console.log(randomArray2);
+ 
+   const randomArray3 = getRandomArrayWithoutRepeats(questions, newArraysOfArray);
+  const randomArray4 = getRandomArrayWithoutRepeats(questions, newArraysOfArray);
+  const randomArray5 = getRandomArrayWithoutRepeats(questions, newArraysOfArray);
+   const randomArray6 = getRandomArrayWithoutRepeats(questions, newArraysOfArray);
+  const randomArray7 = getRandomArrayWithoutRepeats(questions, newArraysOfArray);
+   const randomArray8 = getRandomArrayWithoutRepeats(questions, newArraysOfArray);
+   const randomArray9 = getRandomArrayWithoutRepeats(questions, newArraysOfArray);
+  const randomArray10 = getRandomArrayWithoutRepeats(questions, newArraysOfArray);
+
+
+
+
+
+
+
+
+
+
+
+
+////****************************************************************************** */
+
 const body = document.getElementsByTagName('body')[0];
 let i = 0; //used to loop through questions in quiz
 let questionDiv = document.getElementById('question');
@@ -81,7 +166,8 @@ document.getElementById('navRestartBtn').addEventListener('click', startNewQuiz)
  * to check whether the correct answer was selected through radio btn.
  */
 function displayQuestion() {
-    
+    const randomArray2 = getRandomArrayWithoutRepeats(questions, newArraysOfArray);
+        console.log(randomArray2);
    // document.getElementById('fa-gear').style.display = "inline-flex";
     // After completing quiz once, if user clicks on "Restart Quiz" btn, turn the "restart Quiz" button invisible again once quiz is restarted.
     let nav = document.getElementsByTagName('nav')[0];
@@ -99,11 +185,11 @@ function displayQuestion() {
 
     questionDiv.innerHTML = `
         <p><span id="questionNum">Question ${i+1}</span><br><br>
-         ${questions[i].question}</p>
+         ${newArraysOfArray[i].question}</p>
         <ul>
-            <li><input type="radio" name="option" id="${getId(0)}"><label for="${getId(0)}">${questions[i].options[0]}</label></li>
-            <li><input type="radio" name="option" id="${getId(1)}"><label for="${getId(1)}">${questions[i].options[1]}</label></li>
-            <li><input type="radio" name="option" id="${getId(2)}"><label for="${getId(2)}">${questions[i].options[2]}</label></li>
+            <li><input type="radio" name="option" id="${getId(0)}"><label for="${getId(0)}">${newArraysOfArray[i].options[0]}</label></li>
+            <li><input type="radio" name="option" id="${getId(1)}"><label for="${getId(1)}">${newArraysOfArray[i].options[1]}</label></li>
+            <li><input type="radio" name="option" id="${getId(2)}"><label for="${getId(2)}">${newArraysOfArray[i].options[2]}</label></li>
         </ul>
         <br>
         <div class="btnsDiv">
@@ -123,7 +209,7 @@ function displayQuestion() {
  * If values match, then it must be the correct answer, which exact position in the questions[i].options array is specified hardcoded in questions[i].correctAnswer's integer value.
  */
 function getId(id){
-    let correctAnswerPosition = questions[i].correctAnswerPosition;
+    let correctAnswerPosition = newArraysOfArray[i].correctAnswerPosition;
 
     if(correctAnswerPosition === id){
         return "answer";
@@ -139,10 +225,11 @@ function getId(id){
 function displayRadioValue() {
     let option = document.getElementsByName('option');
     
-    let correctAnswerPosition = questions[i].correctAnswerPosition;
+    let correctAnswerPosition = newArraysOfArray[i].correctAnswerPosition;
+    console.log(correctAnswerPosition);
     let a = correctAnswerPosition;
 
-    let correctAnswer = questions[i].options[a];
+    let correctAnswer = newArraysOfArray[i].options[a];
 
     for (let x = 0; x < option.length; x++) {
         if (option[x].checked){
@@ -177,7 +264,7 @@ function addCorrectAnswerToCounter() {
     let btnNextQuestion = document.getElementById('btnNextQuestion');
     btnNextQuestion.style.display = "inline-block";//displays button "Next Question", and activates it
     
-    if(i === 9){
+    if(newArraysOfArray.length === 10){
         btnNextQuestion.innerText = "Final Results";
     }
 
@@ -188,10 +275,12 @@ function addCorrectAnswerToCounter() {
  * Adds +1 to i, and displays next question if i< total number of Qs, or displays final message when i === to final question.
  */
 function displayNextQuestion() {
-
-    ++i; //increments i so that next question (or final results div with message) is displayed
-    
+    //getRandomArrayWithoutRepeats(questions, newArraysOfArray);
+    ++i;
+     //increments i so that next question (or final results div with message) is displayed
+    //randomArray1;
     if (i < 10) {
+        
         displayQuestion();
     
     } 
