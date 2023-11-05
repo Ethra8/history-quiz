@@ -331,6 +331,7 @@ To include accurate historic answers to the questions in this quiz, the followin
 - [How to get value of selected radio button using JS](https://www.geeksforgeeks.org/how-to-get-value-of-selected-radio-button-using-javascript/) at [Geeksforgeeks](www.geeksforgeeks.org) site.
 - [Playing sound on click event with pure JS](https://stackoverflow.com/questions/51572489/playing-sound-on-click-event-with-pure-javascript) at [Stackoverflow](https://stackoverflow.com).
 - [Loop audio with JS](https://stackoverflow.com/questions/3273552/html5-audio-looping) at [Stackoverflow](https://stackoverflow.com).
+- [Howto CSS modals](https://www.w3schools.com/howto/howto_css_modals.asp) at [w3schools](https://www.w3schools.com/).
 - [W3Schools](https://www.w3schools.com/): Their documentation has been very useful when wanting to implement new features or animations.
 - [Mozilla Web Docs](https://developer.mozilla.org/en-US/): Their documentation has been checked to clear some doubts along the way.
 
