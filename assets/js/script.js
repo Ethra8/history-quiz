@@ -65,11 +65,11 @@ function getRandomArrayWithoutRepeats(arrays, newArraysOfArray) {
     
     // Remove previously selected arrays from the available arrays
     newArraysOfArray.forEach(previousArray => {
-      const index = newQuestionsArray.indexOf(previousArray);
-      if (index !== -1) {
+        const index = newQuestionsArray.indexOf(previousArray);
+        
+        if (index !== -1) {
         newQuestionsArray.splice(index, 1);
-      }
-      console.log(index)
+        }
     });
     
     // If all arrays have been previously selected, reset the newArraysOfArray to length=0
@@ -224,7 +224,7 @@ function displayRadioValue() {
                 <button id="btnNextQuestion">Next Question</button>
                 </div>
                 `;
-                
+                let btnNextQuestion = document.getElementById('btnNextQuestion');
                 btnNextQuestion.addEventListener('click', function() {
                     modal.style.display = "none";
                });
