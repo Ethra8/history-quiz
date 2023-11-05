@@ -399,7 +399,7 @@ function changeMode() {
     } else {
         body.setAttribute("class", "bgDarkMode");
 
-        questionDiv.style.backgroundColor = "rgba(0, 28, 59, 0.7)";
+        questionDiv.style.backgroundColor = "rgba(0, 28, 59, 0.8)";
         questionDiv.style.borderColor = "aquamarine";
         countDiv.style.borderColor = "aquamarine";
         questionNum.style.color = "aquamarine";
@@ -435,7 +435,7 @@ function saveMode(){
     if(bgBody === "bgDarkMode") {
         body.setAttribute("class", "bgDarkMode");
 
-        questionDiv.style.backgroundColor = "rgba(0, 28, 59, 0.7)";
+        questionDiv.style.backgroundColor = "rgba(0, 28, 59, 0.8)";
         questionDiv.style.borderColor = "aquamarine";
         countDiv.style.borderColor = "aquamarine";
         questionNum.style.color = "aquamarine";
