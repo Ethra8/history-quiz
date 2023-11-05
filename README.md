@@ -108,7 +108,7 @@ EDNA TORRES MUNILL
 
   - [Compatibility and Responsive Testing](#compatibility-and-responsive-testing)
 
-    - [Preselecting Testing Targets](#preselecting-testing-targets)
+    - [Preselection of Testing Targets](#preselection-of-testing-targets)
     - [Testing Targets Table](#testing-targets-table)
     - [Test Recordings and Results](#test-recordings-and-results)
 
@@ -216,6 +216,54 @@ By clicking on the gear icon placed on the navigation bar, the user can toggle b
 ![image](https://github.com/Ethra8/history-quiz/assets/80659091/455f2fb6-4126-44f0-92e9-38f877fa6dbe)
 
 
+
+# TESTING
+The following test have been undertaken
+-
+## VALIDATION TESTING
+
+### HTML5
+
+### CSS3
+
+### JS6
+
+## COMPATIBILITY and RESPONSIVE TESTING
+
+### Pre-selection of Testing Targets
+
+### TABLE for Testing Targets
+
+### Test Recordings and Results
+
+## MANUAL TESTING
+### QUIZ
+
+## DEFECT TRACKING
+### GITHUB ISSUES
+
+## DEFECTS OF NOTE
+
+## OUTSTANDING DEFECTS
+
+## CORE WEB VITALS
+
+### LIGHTHOUSE REPORTS
+#### Mobile
+![image](https://github.com/Ethra8/history-quiz/assets/80659091/38367332-df80-497f-8eb9-544e23b83907)
+
+### Desktop
+
+
+## ACCESSIBILITY TESTING
+### ACCESSIBILITY AUDITS
+#### WCAG 2.1 Validation
+
+#### GEneral Accessibility Reports
+
+### KEYBOARD NAVIGATION
+
+### CHROME VOX READER
 
 # TECHNOLOGIES USED
 
