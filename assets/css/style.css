@@ -480,9 +480,14 @@ footer .social_media {
 
 /**** 404 ERROR PAGE *****/
 
-#errorPage {
+#errorPage header {
   height: 50vh !important;
-  padding: 20vh 4%;
+  padding: 15vh 4%;
+}
+
+#errorPage nav {
+    display: block;
+    visibility: visible;
 }
 
 #errorPage h1 {

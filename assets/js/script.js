@@ -111,6 +111,7 @@ let i = 0; //used to loop through questions in quiz
 let questionDiv = document.getElementById('question');
 const audio = new Audio("./assets/media/music.mp3");
 const gearIcon = document.getElementById("fa-gear");
+let btnNextQuestion = document.getElementById('btnNextQuestion');
 
 gearIcon.addEventListener('click', changeMode); // to change from dark/light mode
 
@@ -130,14 +131,11 @@ document.getElementById('navRestartBtn').addEventListener('click', startNewQuiz)
 // Get the modal
 var modal = document.getElementById("myModal");
 
-// Get the button that opens the modal
-var btn = document.getElementById("btnCheckAnswer");
-
 // When the user clicks anywhere outside of the modal, it doesn't close
 window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "block";
-  };
+  }
 };
 
 /**
@@ -396,14 +394,6 @@ function startNewQuiz() {
     displayQuestion();
 }
 
-/**
- * displays nav on 404.html
- */
-function displayNav() {
-    let nav = document.getElementsByTagName('nav')[0];
-    nav.style.visibility = "visible";
-    nav.style.display = "flex"; 
-}
 
 /**
  * Switches from dark mode to light mode, and viceversa
@@ -513,16 +503,6 @@ function saveMode(){
             li.style.color = "rgb(57, 63, 68)";
         }
     }
-}
-
-
-/**
- * Hides Navbar
- */
-function hideNav() {
-    let nav = document.getElementsByTagName('nav')[0];
-    nav.style.visibility = "invisible";
-    nav.style.display = "none"; 
 }
 
 
