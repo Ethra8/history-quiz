@@ -287,6 +287,25 @@ The following code validators have been undertaken to test all the code of this 
 
    
 ### TABLE for Testing Targets
+Following all the above information, compatibility and responsive testing has been done on the most common *browser versions*, *OS*, and *screen resolution* combinations, by using [Browser Stack](https://chrome.google.com/webstore/detail/browserstack/nkihdmlheodkdfojglpcjjmioefjahjb) Chrome extension, which has been downloaded, the *Chrome Dev tool's emulator*, and real devices owned by me. 
+
+Please find the correspondent **compatibility and responsive testing** reflected in the following table:
+
+| TEST no.| TOOL               | DEVICE               | BROWSER            | OS              | VIEWPORT width x height (px) |
+|---------|--------------------|----------------------|--------------------|-----------------|------------------------------|
+| 1       | Chrome Dev emulator| Samsung Galaxy S20   | Chrome 117         |Windows 10       |360 x 800                     | 
+| 2       | BrowserStack       | Samsung Galaxy S22   | Chrome             |Android 12.0     |360 x 780                     |
+| 3       | BrowserStack       | Samsung Galaxy S22   | Edge               |Android 12.0     |360 x 780                     |
+| 4       | BrowserStack       | iPhone 12 Mini       | Safari             | iOS 16.0        |360 x 780                     |
+| 5       | Blisk              | iPhone SE 2022       | Chrome             | iOS             |375 x 667                     |
+| 6       | REAL mobile device | Samsung Galaxy A22 5G| Chrome             | Android 13.0    |384 x 857                     |
+| 7       | BrowserStack       | iPhone 13            | Safari 17.0        | iOS             |390 x 844                     |
+| 8       | BrowserStack       | iPhone 14 Pro        | Safari 16.3        | iOS             |393 x 852                     |
+| 9       | REAL Laptop Device | PC Notebook HP -15-bs013ns| Chrome 117    |Windows 10 -64bit|1366 x 768                    |
+| 10      | Blisk              | MacBook Pro          | Chrome 117         | macOS           |1440 x 900                    |
+| 11      | BrowserStack       | Asus ZenBook UX305   | Edge               |Windows 11       |1920 x 1080                   |
+| 12      | BrowserStack       | Asus ZenBook UX305   | Firefox 117        |Windows 11       |1920 x 1080                   |
+| 13      | BrowserStack       | MacBook              | Safari 16.5        | OS X Ventura    |1920 x 1080                   |
 
 ### Test Recordings and Results
 
@@ -303,12 +322,21 @@ No defects of note have been detencted on this site.
 No outstanding defects have been detected in this site.
 ## CORE WEB VITALS
 
-### LIGHTHOUSE REPORTS
+## LIGHTHOUSE REPORTS
+### INDEX PAGE
 #### DESKTOP
 ![image](https://github.com/Ethra8/history-quiz/assets/80659091/38367332-df80-497f-8eb9-544e23b83907)
 
 #### MOBILE
 ![image](https://github.com/Ethra8/history-quiz/assets/80659091/f247482d-b61c-4da8-835a-84d1b15fca90)
+
+### 404 ERROR PAGE
+#### DESKTOP
+![image](https://github.com/Ethra8/history-quiz/assets/80659091/5c82dfb3-6ac9-4319-99e8-936d0b87b9f7)
+
+#### MOBILE
+![image](https://github.com/Ethra8/history-quiz/assets/80659091/3a5da35c-759f-4dea-8221-1912ee4e4421)
+
 
 ## ACCESSIBILITY TESTING
 This site has been tested to be ADA compliant, and has achieved **WCAG 2.1 validation**.
