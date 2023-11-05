@@ -189,7 +189,8 @@ To counteract the implied seriousness of a quiz, and make it more appealing to y
 ### LANDING PAGE, 404 ERROR PAGE AND DARK MODE
 The image used is of the Milky Way, set as the site's background of the ***landing page***, the ***404 error page***, and the ***dark mode*** - (refer to the _credits_ section for more details):
 
-![image](https://github.com/Ethra8/history-quiz/assets/80659091/d9082d15-5622-4b73-a107-8a3e6f02088c)
+![image](https://github.com/Ethra8/history-quiz/assets/80659091/35cdcf0f-bc05-4935-b1f6-325e7ee8806f)
+
 
 ### LIGHT MODE
 The following image has been used for the light mode option, to contrast with the Milky Way set as a dark mode - (refer to the _credits_ section for more details):
