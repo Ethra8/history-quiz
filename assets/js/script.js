@@ -219,7 +219,7 @@ function displayRadioValue() {
 
                 modalContent.innerHTML = `
                 <div>
-                <p>That's right! ... You've got it!!</p>
+                <h2>That's right! ... You've got it!!</h2>
                 <br>
                 <button id="btnNextQuestion">Next Question</button>
                 </div>
@@ -243,9 +243,7 @@ function displayRadioValue() {
                 <p>The correct answer is:
                 <br><strong> ${correctAnswer}</strong></p>
                 <button id="btnNextQuestion">Next Question</button>
-
                 </div>
-
                 `;
                 
                 btnNextQuestion.addEventListener('click', function() {
