@@ -214,7 +214,7 @@ Is fully responsive, and is fixed at the top, to allow the user to access its fu
 By clicking on the gear icon placed on the navigation bar, the user can toggle between the default dark mode, and the light mode, all through the quiz:
 -
 
-![image](https://github.com/Ethra8/history-quiz/assets/80659091/59ac8a71-7bd8-4856-a849-ef009b6c227a)
+![image](https://github.com/Ethra8/history-quiz/assets/80659091/8b0da6e5-5a89-4edd-a34f-097599c088f0)
 
 
 # TECHNOLOGIES USED
