@@ -110,8 +110,9 @@ const body = document.getElementsByTagName('body')[0];
 let i = 0; //used to loop through questions in quiz
 let questionDiv = document.getElementById('question');
 const audio = new Audio("./assets/media/music.mp3");
+const gearIcon = document.getElementById("fa-gear");
 
-document.getElementById("fa-gear").addEventListener('click', changeMode); // to change from dark/light mode
+gearIcon.addEventListener('click', changeMode); // to change from dark/light mode
 
 //this function to loop the audio file was researched in Stack overflow (acknowledged in the README file)
 document.getElementById("fa-play").addEventListener('click', function (){
@@ -349,6 +350,7 @@ function startNewQuiz() {
 
     document.getElementById('correct').innerHTML = "0";
     document.getElementById('incorrect').innerHTML = "0";
+    gearIcon.style.display = "inline-flex";
 
     displayQuestion();
 }
@@ -418,7 +420,7 @@ function changeMode() {
 
 
 /**
- * Displays next question in the same mode (dark/light) that the user has selected
+ * Preserves the mode (dark/light) that the user has selected throught the whole quiz, or until user switches again
  */
 function saveMode(){
     let y;
@@ -483,6 +485,7 @@ function hideNav() {
     nav.style.visibility = "invisible";
     nav.style.display = "none"; 
 }
+
 
 function stopAudio(){
     audio.pause();
