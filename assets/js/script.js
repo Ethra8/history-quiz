@@ -133,12 +133,12 @@ var modal = document.getElementById("myModal");
 // Get the button that opens the modal
 var btn = document.getElementById("btnCheckAnswer");
 
-// When the user clicks anywhere outside of the modal, don't close it
+// When the user clicks anywhere outside of the modal, it doesn't close
 window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "block";
-  }
-}
+  };
+};
 
 /**
  * Once button 'start Quiz' is clicked, 1st question is displayed, and
