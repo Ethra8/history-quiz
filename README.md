@@ -211,7 +211,7 @@ Is fully responsive, and is fixed at the top, to allow the user to access its fu
 - **RESTART-QUIZ BUTTON** - By clicking on the button, the user can restart the quiz at anytime. The 1st question is automatically displayed, and the counters are set to 0.
 
 ## DARK AND LIGHT MODES 
-By clicking on the settings icon placed on the navigation bar, the user can toggle between the default dark mode, and the light mode, all through the quiz:
+By clicking on the gear icon placed on the navigation bar, the user can toggle between the default dark mode, and the light mode, all through the quiz:
 -
 
 ![image](https://github.com/Ethra8/history-quiz/assets/80659091/59ac8a71-7bd8-4856-a849-ef009b6c227a)
