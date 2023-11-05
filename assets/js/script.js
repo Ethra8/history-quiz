@@ -425,7 +425,7 @@ function changeMode() {
             countDiv.style.borderColor = "#001c3b";
             questionNum.style.color = "#001c3b";
             questionNum.style.fontWeight = "bold";
-            questionDiv.style.color = "slategray";
+            questionDiv.style.color = "rgb(57, 63, 68)";
 
             for(z = 0; z< radioBtns.length; z++){
                 radioBtn = radioBtns[z];
@@ -434,7 +434,7 @@ function changeMode() {
 
             for(y = 0; y< lis.length; y++){
                 let li = lis[y];
-                li.style.color = "slategray";
+                li.style.color = "rgb(57, 63, 68)";
             }
 
     } else {
@@ -501,7 +501,7 @@ function saveMode(){
         countDiv.style.borderColor = "#001c3b";
         questionNum.style.color = "#001c3b";
         questionNum.style.fontWeight = "bold";
-        questionDiv.style.color = "slategray";
+        questionDiv.style.color = "rgb(57, 63, 68)";
 
         for(z = 0; z< radioBtns.length; z++){
             radioBtn = radioBtns[z];
@@ -510,7 +510,7 @@ function saveMode(){
 
         for(y = 0; y< lis.length; y++){
             let li = lis[y];
-            li.style.color = "slategray";
+            li.style.color = "rgb(57, 63, 68)";
         }
     }
 }

@@ -178,7 +178,7 @@ footer {
 
 #navRestartBtn:hover,
 .startQuiz button:hover {
-    background-color: aqua;
+    background-color: whitesmoke;
     /* color: #001c3b; */
     color: #001c3b;
     border-color: aquamarine;
@@ -234,7 +234,7 @@ footer {
 
 #btnCheckAnswerDisabled {
     background-color: lightgray;
-    color: slategray;
+    color: rgb(57, 63, 68);
     padding: 15px 30px;
     font-family: 'Lobster', sans-serif;
     font-size: 1.5rem;
@@ -461,7 +461,7 @@ footer .fab:hover,
 footer .fa:hover {
     color: aquamarine;
     transform: scale(1.1);
-    rotate: -7deg;
+    transform: rotate(-7deg);
 }
 
 footer .social_media {
