@@ -203,6 +203,7 @@ The only image used in this site has been one of the Milky Way, set as the site'
 - The following have been used:
   - [Visual Studio Code](https://code.visualstudio.com/) - To begin coding the site from scratch. I already had VScode installed previously, due to a previous personal freelance project called englishgrows.com, and I think is a great tool for coding.
   - **Chrome Dev Tools** - To inspect the elements, and be able to spot what element was having an unexpected behaviour, and correct it more efficiently. Also have used **_Lighthouse_** reports to check and improve core web vitals, including accessibility issues.
+  - **Paint** - To resize background images.
   - [Favicon](https://favicon.io/) - To create the logo, and the icon on the title included in each page of this site
   - [Font Awesome](https://fontawesome.com/) - For the icons used
   - [Google Fonts](https://fonts.google.com/) - To select fonts and implement them in the site
