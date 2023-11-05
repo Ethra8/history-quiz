@@ -2,10 +2,9 @@
 
 ## PROJECT OVERVIEW
 
-- **History Quiz** is a website that aims at testing the user's knowledge on general history facts from around the globe.
-- This site is useful to anyone interested in history.
-- It might also prove useful to anyone wanting to increase their knowledge on global history facts.
-- This site might also prove of great use to secondary students wanting to reinforce their knowledge on history.
+- The aim of this site is to test the user's knowledge on general history facts from around the globe.
+- This site is useful to anyone interested in history, who might also want to increase knowledge on global history facts.
+- This site might also prove of great use to secondary students wanting to reinforce their knowledge on the history subject.
 
 ![image](https://github.com/Ethra8/history-quiz/assets/80659091/c17753ed-a503-4c8e-ae47-38dab4a7c98c)
 
