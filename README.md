@@ -260,7 +260,29 @@ The following code validators have been undertaken to test all the code of this 
 ## COMPATIBILITY and RESPONSIVE TESTING
 
 ### Pre-selection of Testing Targets
+- To meaningful testing of site, [Stat Counter](https://gs.statcounter.com) has been used, in order to get an insight of the following:
+    
+    * **BROWSER MARKET SHARE** - Most commonly used browsers worldwide:
 
+    ![image](https://github.com/Ethra8/history_beyond_myth/assets/80659091/77d7356e-35e0-4fbf-9d28-2e75215bb96b)
+
+     * **BROWSER VERSION MARKET SHARE** - Most commonly used browser versions worldwide:
+
+    ![image](https://github.com/Ethra8/history_beyond_myth/assets/80659091/2cf8b70e-99ba-46f0-bd41-a88fc75d0649)
+    
+    * **OS MARKET SHARE** - Most commonly used operation systems worldwide:
+
+    ![image](https://github.com/Ethra8/history_beyond_myth/assets/80659091/9373a798-32b1-4e80-95e6-1406bcda0a37)
+
+    * **MOBILE vs DESKTOP vs TABLET MARKET SHARE** - Most commonly used devices worldwide:
+
+    ![image](https://github.com/Ethra8/history_beyond_myth/assets/80659091/57cabf42-8cee-4263-a6c5-ac1f9ac581f5)
+
+    * **SCREEN RESOLUTION STATS** - Most common screen resolution (in pixels) worldwide:
+
+    ![image](https://github.com/Ethra8/history_beyond_myth/assets/80659091/3b4fd7bf-c127-4323-a8d0-efb71b547417)
+
+   
 ### TABLE for Testing Targets
 
 ### Test Recordings and Results
