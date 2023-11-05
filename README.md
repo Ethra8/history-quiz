@@ -38,9 +38,11 @@ EDNA TORRES MUNILL
   - [User Profiles](#user-profiles)
 
 - [UI](#ui)
-
-  - [Footer](#ui---footer)
-  - [Home Page](#ui---home-page)
+  - [UI - Fixed Navigation Bar](#ui---fixed-navigation-bar)
+  - [UI - Home Page](#ui---home-page)
+  - [UI - Quiz](#ui---quiz)
+  - [UI - Footer](#ui---footer)
+  - [UI - Contact Page](#ui---contact-page)
 
 - [DESIGN CHOICES](#design-choices)
 
@@ -155,6 +157,35 @@ EDNA TORRES MUNILL
   - [Content](#content)
 
 - [Acknowledgements](#acknowledgements)
+
+
+# UX
+## TARGET AUDIENCE
+## PROJECT GOALS
+## USER STORIES
+## USER PROFILES
+
+
+# UI
+## UI - FIXED NAVIGATION BAR
+- The user is able to interact with the responsive navigation bar, fixed to the top while completing the quiz, on the contact page, and the 404 error page. So, even when scrolling down, the user can change the settings at any time. The navigation bar includes the following:
+    * **LOGO** allows user to go to landing page when clicked.
+    * **SETTINGS** include:
+      + **Switch mode** from default ***dark*** to ***light*** anytime throughout the quiz.
+      + **Audio** settings allowing the user to play or pause the audio by clicking to the correspondent icons.
+    * **'RESTART QUIZ' button** allowing the user to restart the quiz, with a new random order of the questions, displaying automatically the new "question 1".
+
+## UI - LANDING PAGE
+- On the landing page, there is only the header qith the name of the page "History Facts Quiz", and a call-to-action button on the middle of the page to "Start Quiz". Once the user clicks it, the quiz automatically begins displaying the 1st random question with 3 possible options.
+
+## UI - QUIZ
+- 
+
+## UI - FOOTER
+- The footer is set to be fixed at the bottom of each page, and allows the user to interact, by clicking on the media icons in roder to visit the correspondent pages, and eventually follow the site on these platforms to be aware of any new feature implemented.
+
+## UI - CONTACT PAGE
+- The contact page allows the user to communicate with the admin through a simple form, or by opening the admin's Whatsapp chat, through the API url embedded on the Whatsapp icon displayed.
 
 # DESIGN CHOICES
 
