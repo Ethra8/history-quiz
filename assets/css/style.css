@@ -135,9 +135,9 @@ footer {
     color: rgb(223, 255, 244);
 } 
 
-.startQuiz,
-.restartQuiz {
-    padding: 70px 0 auto;
+
+.startQuiz {
+    padding: 70px 0 0;
     margin: 0 auto;
     text-align: center;
 }
@@ -146,7 +146,6 @@ footer {
 .startQuiz button,
 #btnCheckAnswer,
 #btnNextQuestion,
-.restartQuiz button,
 #goToHomePage {
     background-color: aquamarine;
     padding: 15px 30px;
@@ -206,17 +205,6 @@ footer {
     color: #001c3b;
 }
 
-.restartQuiz {
-    visibility: hidden;
-    display: none;
-}
-
-.restartQuiz button {
-    margin: 0 auto;
-    width: 220px;
-    font-size: 1.8rem;
-}
-
 #btnNextQuestion {
     display: block;
     margin: 40px auto 20px;
@@ -224,7 +212,6 @@ footer {
 
 #btnCheckAnswer:hover,
 #btnNextQuestion:hover,
-.restartQuiz button:hover,
 #goToHomePage:hover {
     cursor: pointer;
     background-color: aqua;
@@ -509,7 +496,7 @@ footer .social_media {
 
 @media only screen and (max-width: 375px) {
    
-    /* nav no longer fixed, to liberate screen, as btnRestartQuiz is placed below settings, for space reasons, and a fixed nav would take far too much viewport*/
+    /* nav no longer fixed, to liberate screen, as navRestartBtn is placed below settings, for space reasons, and a fixed nav would take far too much viewport*/
     nav {
         position:unset;
         display: none;
