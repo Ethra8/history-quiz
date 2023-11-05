@@ -53,25 +53,12 @@ let questions = [
 ];
 
 
-
-
-//function getRandomArray(arrays) {
-    //const availableArrays = arrays.slice();
-    // Get a random index from the array of arrays
-    //const randomIndex = Math.floor(Math.random() * arrays.length);
-    
-    // Return the random array
-    //return arrays[randomIndex];
-  //}
-  
-  // Example usage
-  //const arrayOfArrays = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
-  //const randomQuestion = getRandomArray(questions);
-  //console.log(randomQuestion);
-
-
-//********************************************************************************** */
-
+/**
+ * Creates a new array of questions with a random order from the initial one.
+ * @param {*} arrays the initial array of arrays that we want to randomize.
+ * @param {*} newArraysOfArray new empty array where randomized questions will be pushed.
+ * @returns randomArray (question, correcAnswer position inside array of options, options)
+ */
 function getRandomArrayWithoutRepeats(arrays, newArraysOfArray) {
     // Create a copy of questions arrays to avoid modifying the original array
     const newQuestionsArray = arrays.slice();
@@ -85,75 +72,56 @@ function getRandomArrayWithoutRepeats(arrays, newArraysOfArray) {
       console.log(index)
     });
     
-    // If all arrays have been previously selected, reset the newArraysOfArray
+    // If all arrays have been previously selected, reset the newArraysOfArray to length=0
     if (newQuestionsArray.length === 0) {
         newArraysOfArray.length = 0;
       newQuestionsArray.push(...arrays);
     }
     
-    // Get a random index from the available arrays
+    // Get a random index from the available arrays to pick a random question from the available in the oiginal array "questions"
     const randomIndex = Math.floor(Math.random() * newQuestionsArray.length);
     
-    // Get the random array and remove it from the available arrays
+    // Get the random array and remove it from the available arrays, so that questions are not repeated
     const randomArray = newQuestionsArray.splice(randomIndex, 1)[0];
     
-    // Add the selected array to the newArraysOfArray
+    // Add the array (question + answer + optional answers) to the newArraysOfArray
     newArraysOfArray.push(randomArray);
     
-    console.log(newArraysOfArray);
-    // Return the random array
+    // Return the random array containing the question, correctAnswer and options
     return randomArray;
-    
   }
   
-  // Example usage
-  //const arrayOfArrays = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
-  const newArraysOfArray = [];
-  var randomArray1 = getRandomArrayWithoutRepeats(questions, newArraysOfArray);
-  //console.log(randomArray1);
-  
-  const randomArray2 = getRandomArrayWithoutRepeats(questions, newArraysOfArray);
-  //console.log(randomArray2);
- 
-   const randomArray3 = getRandomArrayWithoutRepeats(questions, newArraysOfArray);
-  const randomArray4 = getRandomArrayWithoutRepeats(questions, newArraysOfArray);
-  const randomArray5 = getRandomArrayWithoutRepeats(questions, newArraysOfArray);
-   const randomArray6 = getRandomArrayWithoutRepeats(questions, newArraysOfArray);
-  const randomArray7 = getRandomArrayWithoutRepeats(questions, newArraysOfArray);
-   const randomArray8 = getRandomArrayWithoutRepeats(questions, newArraysOfArray);
-   const randomArray9 = getRandomArrayWithoutRepeats(questions, newArraysOfArray);
-  const randomArray10 = getRandomArrayWithoutRepeats(questions, newArraysOfArray);
+const newArraysOfArray = []; // Empty array to include all randomized questions from initial "question" array.
+// each of the following const run the getRandomArrayWithoutRepeats() and pushes a question to new array "newArrayOfArrays".
+const randomArray1 = getRandomArrayWithoutRepeats(questions, newArraysOfArray);  
+const randomArray2 = getRandomArrayWithoutRepeats(questions, newArraysOfArray);
+const randomArray3 = getRandomArrayWithoutRepeats(questions, newArraysOfArray);
+const randomArray4 = getRandomArrayWithoutRepeats(questions, newArraysOfArray);
+const randomArray5 = getRandomArrayWithoutRepeats(questions, newArraysOfArray);
+const randomArray6 = getRandomArrayWithoutRepeats(questions, newArraysOfArray);
+const randomArray7 = getRandomArrayWithoutRepeats(questions, newArraysOfArray);
+const randomArray8 = getRandomArrayWithoutRepeats(questions, newArraysOfArray);
+const randomArray9 = getRandomArrayWithoutRepeats(questions, newArraysOfArray);
+const randomArray10 = getRandomArrayWithoutRepeats(questions, newArraysOfArray);
 
 
-
-
-
-
-
-
-
-
-
-
-////****************************************************************************** */
 
 const body = document.getElementsByTagName('body')[0];
 let i = 0; //used to loop through questions in quiz
 let questionDiv = document.getElementById('question');
 const audio = new Audio("./assets/media/music.mp3");
 
+document.getElementById("fa-gear").addEventListener('click', changeMode); // to change from dark/light mode
 
-document.getElementById("fa-gear").addEventListener('click', changeMode);
+//this function to loop the audio file was researched in Stack overflow (acknowledged in the README file)
 document.getElementById("fa-play").addEventListener('click', function (){
     audio.addEventListener('ended', function() {
         this.currentTime = 0;
         this.play();
     }, false);
-
     audio.loop ? audio.pause() : audio.play();
-
 });
-// document.getElementById("fa-pause").addEventListener('click', stopAudio);
+
 document.getElementById("fa-pause").addEventListener("click", stopAudio);
 document.getElementsByTagName('button')[1].addEventListener('click', displayQuestion); //Once user clicks on "Start Quiz" button, function displayQuestion is triggered to show 1st question of quiz
 document.getElementById('navRestartBtn').addEventListener('click', startNewQuiz); //user can restart quiz anytime from navbar
@@ -166,10 +134,7 @@ document.getElementById('navRestartBtn').addEventListener('click', startNewQuiz)
  * to check whether the correct answer was selected through radio btn.
  */
 function displayQuestion() {
-    const randomArray2 = getRandomArrayWithoutRepeats(questions, newArraysOfArray);
-        console.log(randomArray2);
-   // document.getElementById('fa-gear').style.display = "inline-flex";
-    // After completing quiz once, if user clicks on "Restart Quiz" btn, turn the "restart Quiz" button invisible again once quiz is restarted.
+
     let nav = document.getElementsByTagName('nav')[0];
     nav.style.visibility = "visible";
     nav.style.display = "flex";
@@ -223,14 +188,13 @@ function getId(id){
  * returns boolean, and triggers function addCorrectAnswerToCounter().
  */
 function displayRadioValue() {
-    let option = document.getElementsByName('option');
-    
-    let correctAnswerPosition = newArraysOfArray[i].correctAnswerPosition;
-    console.log(correctAnswerPosition);
-    let a = correctAnswerPosition;
+    let option = document.getElementsByName('option'); //gets radio elements by attribute name=option
+    let correctAnswerPosition = newArraysOfArray[i].correctAnswerPosition;//gets hard-coded value of the correct "answer" position inside array of options
+    let a = correctAnswerPosition; //simplified 
 
-    let correctAnswer = newArraysOfArray[i].options[a];
+    let correctAnswer = newArraysOfArray[i].options[a];// the atring of the correct "answer"
 
+    //for loop to get radio button checked by user, and check if it is the correct "asnwer"
     for (let x = 0; x < option.length; x++) {
         if (option[x].checked){
             if(option[x].id === "answer") {
@@ -264,7 +228,8 @@ function addCorrectAnswerToCounter() {
     let btnNextQuestion = document.getElementById('btnNextQuestion');
     btnNextQuestion.style.display = "inline-block";//displays button "Next Question", and activates it
     
-    if(newArraysOfArray.length === 10){
+    //changes text of "nextQuestion" btn to "Final Results" once last question is reached
+    if(i === newArraysOfArray.length - 1){
         btnNextQuestion.innerText = "Final Results";
     }
 
@@ -275,23 +240,24 @@ function addCorrectAnswerToCounter() {
  * Adds +1 to i, and displays next question if i< total number of Qs, or displays final message when i === to final question.
  */
 function displayNextQuestion() {
-    //getRandomArrayWithoutRepeats(questions, newArraysOfArray);
+    //increments i so that next question (or final results div with message) is displayed
     ++i;
-     //increments i so that next question (or final results div with message) is displayed
-    //randomArray1;
-    if (i < 10) {
+
+    //if question index (i) is still less than total length of array of questions
+    if (i < newArraysOfArray.length) {
         
         displayQuestion();
     
     } 
     
-    if (i === 10) {
+    if (i === newArraysOfArray.length) {
         let bgBody = body.getAttribute("class");
 
         var questionDiv = document.getElementById('question');
         questionDiv.style.display = "block";//displays "question"
         var oldScore = parseInt(document.getElementById("correct").innerHTML);
 
+        //determines whether user is on dark or light mode, to display final message accordingly
         if (bgBody === "bgLightMode"){
 
             if (oldScore <= 3) {
@@ -408,11 +374,6 @@ function changeMode() {
     let countDiv = document.getElementsByClassName('count')[0];
     let radioBtns = document.getElementsByTagName('input');
     let radioBtn = document.getElementsByTagName('input[type="radio"]')[z];
-    // let hFinalMsg = document.getElementById('hFinalMsg');
-    // let pFinalMsg = document.getElementById('pFinalMsg');
-    // let hFinalMsgLight = document.getElementById('hFinalMsgLightMode');
-    // let pFinalMsgLight = document.getElementById('pFinalMsgLightMode');
-
 
     if (bgBody === "bgDarkMode"){
             body.setAttribute("class", "bgLightMode");
@@ -433,9 +394,6 @@ function changeMode() {
                 li.style.color = "slategray";
             }
 
-            // hFinalMsg.id = "hFinalMsgLightMode";
-            // pFinalMsg.id = "pFinalMsgLightMode";
-                    
     } else {
         body.setAttribute("class", "bgDarkMode");
 
@@ -455,8 +413,6 @@ function changeMode() {
             let li = lis[y];
             li.style.color = "whitesmoke";
         }
-        // pFinalMsgLight.id = "pFinalMsg";
-        // hFinalMsgLight.id = "hFinalMsg";
     }
 }
 
@@ -473,11 +429,6 @@ function saveMode(){
     let countDiv = document.getElementsByClassName('count')[0];
     let radioBtns = document.getElementsByTagName('input');
     let radioBtn = document.getElementsByTagName('input[type="radio"]')[z];
-    // let hFinalMsg = document.getElementById('hFinalMsg');
-    // let pFinalMsg = document.getElementById('hFinalMsg');
-    // let hFinalMsgLight = document.getElementById('hFinalMsgLight');
-    // let pFinalMsgLight = document.getElementById('pFinalMsgLight');
-
 
     if(bgBody === "bgDarkMode") {
         body.setAttribute("class", "bgDarkMode");
@@ -499,10 +450,6 @@ function saveMode(){
             li.style.color = "whitesmoke";
         }
 
-        // pFinalMsgLight.id = 'pFinalMsg';
-        // hFinalMsgLight.id = 'hFinalMsg';
-
-
     } else  {
         body.setAttribute("class", "bgLightMode");
 
@@ -523,10 +470,6 @@ function saveMode(){
             li.style.color = "slategray";
         }
 
-        // hFinalMsg.id = 'hFinalMsgLight';
-        // pFinalMsg.id = 'pFinalMsgLight';
-
-
     }
     
 }
@@ -541,21 +484,6 @@ function hideNav() {
     nav.style.display = "none"; 
 }
 
-
-function playAudio() {
-
-    var audio = new Audio("./assets/media/music.mp3");
-// loops audio, reinitiates it
-    // audio.addEventListener('ended', function() {
-    //     this.currentTime = 0;
-    //     this.play();
-    // }, false);
-    audio.play();
-
-}
-
 function stopAudio(){
-
-
     audio.pause();
 }
