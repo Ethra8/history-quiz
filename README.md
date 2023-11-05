@@ -213,6 +213,7 @@ The following image has been used for the light mode option, to contrast with th
   - [Visual Studio Code](https://code.visualstudio.com/) - To begin coding the site from scratch. I already had VScode installed previously, due to a previous personal freelance project called englishgrows.com, and I think is a great tool for coding.
   - **Chrome Dev Tools** - To inspect the elements, and be able to spot what element was having an unexpected behaviour, and correct it more efficiently. Also have used **_Lighthouse_** reports to check and improve core web vitals, including accessibility issues.
   - **Paint** - To resize background images.
+  - [Remove.bg](https://www.remove.bg/) to remove background from logo image.
   - [Favicon](https://favicon.io/) - To create the logo, and the icon on the title included in each page of this site
   - [Font Awesome](https://fontawesome.com/) - For the icons used
   - [Google Fonts](https://fonts.google.com/) - To select fonts and implement them in the site
