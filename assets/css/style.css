@@ -117,13 +117,22 @@ footer {
 }
 
 .fa-gear,
-.fa-play {
+.fa-play,
+#fa-pause {
     color: aquamarine; 
     font-size: 24px;
     line-height: 50px !important;
     margin: auto 0;
     padding: 0 20px;
+    transition: all 0.2s;
 }
+
+.fa-gear:hover,
+.fa-play:hover,
+#fa-pause:hover {
+    cursor: pointer;
+    color: rgb(223, 255, 244);
+} 
 
 .startQuiz,
 .restartQuiz {
@@ -153,7 +162,7 @@ footer {
     text-decoration: none;
     padding: 5px 15px;
     color: #001c3b;
-    background-color: rgb(169, 255, 226);
+    background-color: aquamarine;
     font-family: 'Lobster', sans-serif;
     font-size: 1.5rem;
     border-radius: 50px;
@@ -164,6 +173,14 @@ footer {
     display: inline-flex;
     justify-items: center;
     margin: auto 0;
+}
+
+#navRestartBtn:hover,
+.startQuiz button:hover {
+    background-color: whitesmoke;
+    color: #001c3b;
+    border-color: aquamarine;
+    cursor: pointer;
 }
 
 .startQuiz {
@@ -203,11 +220,9 @@ footer {
     display: none;
 }
 
-.startQuiz button:hover,
 #btnCheckAnswer:hover,
 #btnNextQuestion:hover,
 .restartQuiz button:hover,
-#navRestartBtn:hover,
 #goToHomePage:hover {
     cursor: pointer;
     background-color: rgb(85, 0, 85);

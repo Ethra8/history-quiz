@@ -55,9 +55,21 @@ let questions = [
 const body = document.getElementsByTagName('body')[0];
 let i = 0; //used to loop through questions in quiz
 let questionDiv = document.getElementById('question');
+const audio = new Audio("./assets/media/music.mp3");
+
 
 document.getElementById("fa-gear").addEventListener('click', changeMode);
-document.getElementById("fa-play").addEventListener('click', showAudioControls)
+document.getElementById("fa-play").addEventListener('click', function (){
+    audio.addEventListener('ended', function() {
+        this.currentTime = 0;
+        this.play();
+    }, false);
+
+    audio.loop ? audio.pause() : audio.play();
+
+});
+// document.getElementById("fa-pause").addEventListener('click', stopAudio);
+document.getElementById("fa-pause").addEventListener("click", stopAudio);
 document.getElementsByTagName('button')[1].addEventListener('click', displayQuestion); //Once user clicks on "Start Quiz" button, function displayQuestion is triggered to show 1st question of quiz
 document.getElementById('navRestartBtn').addEventListener('click', startNewQuiz); //user can restart quiz anytime from navbar
 
@@ -70,7 +82,7 @@ document.getElementById('navRestartBtn').addEventListener('click', startNewQuiz)
  */
 function displayQuestion() {
     
-document.getElementById('fa-gear').style.display = "inline-flex";
+   // document.getElementById('fa-gear').style.display = "inline-flex";
     // After completing quiz once, if user clicks on "Restart Quiz" btn, turn the "restart Quiz" button invisible again once quiz is restarted.
     let nav = document.getElementsByTagName('nav')[0];
     nav.style.visibility = "visible";
@@ -441,11 +453,20 @@ function hideNav() {
 }
 
 
-function showAudioControls() {
-    // let audioControls = document.getElementsByTagName('audio')[0];
-    // audioControls.style.display = "block";
-    // audioControls.style.visibility = "visible";
+function playAudio() {
 
-    var audio = new Audio("https://freesound.org/people/frankum/sounds/320498/");
+    var audio = new Audio("./assets/media/music.mp3");
+// loops audio, reinitiates it
+    // audio.addEventListener('ended', function() {
+    //     this.currentTime = 0;
+    //     this.play();
+    // }, false);
     audio.play();
+
+}
+
+function stopAudio(){
+
+
+    audio.pause();
 }
