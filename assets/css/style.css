@@ -152,7 +152,7 @@ footer {
     font-family: 'Lobster', sans-serif;
     font-size: 1.5rem;
     border-radius: 50px;
-    border: 2px outset aquamarine;
+    border: 2px outset #3EB489;
     transition: all 0.5s;
     position: relative;
     text-align: center;
@@ -166,7 +166,7 @@ footer {
     font-family: 'Lobster', sans-serif;
     font-size: 1.5rem;
     border-radius: 50px;
-    border: 2px outset aquamarine;
+    border: 2px outset #3EB489;
     transition: all 0.5s;
     text-align: center;
     height: min-content;
@@ -215,7 +215,7 @@ footer {
 #goToHomePage:hover {
     cursor: pointer;
     background-color: aqua;
-    border-color: aqua;
+    border-color: #3EB489;
     color: #001c3b;
 }
 
