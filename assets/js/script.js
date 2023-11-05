@@ -127,6 +127,18 @@ document.getElementById("fa-pause").addEventListener("click", stopAudio);
 document.getElementsByTagName('button')[1].addEventListener('click', displayQuestion); //Once user clicks on "Start Quiz" button, function displayQuestion is triggered to show 1st question of quiz
 document.getElementById('navRestartBtn').addEventListener('click', startNewQuiz); //user can restart quiz anytime from navbar
 
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("btnCheckAnswer");
+
+// When the user clicks anywhere outside of the modal, don't close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "block";
+  }
+}
 
 /**
  * Once button 'start Quiz' is clicked, 1st question is displayed, and
@@ -159,13 +171,12 @@ function displayQuestion() {
         </ul>
         <br>
         <div class="btnsDiv">
-        <button id="btnCheckAnswer">Check Answer</button><button id="btnNextQuestion">Next Question</button>
+        <button id="btnCheckAnswer">Check Answer</button>
         </div>
     `;
         let btnCheck = document.getElementById('btnCheckAnswer');
         btnCheck.addEventListener('click', displayRadioValue);
         saveMode();
-
 }
 
 
@@ -184,6 +195,9 @@ function getId(id){
     }
 }
 
+
+
+
 /**
  * Checks if correctAnswer radio btn was selected
  * returns boolean, and triggers function addCorrectAnswerToCounter().
@@ -199,15 +213,49 @@ function displayRadioValue() {
     for (let x = 0; x < option.length; x++) {
         if (option[x].checked){
             if(option[x].id === "answer") {
-                alert("That's right! You've got it!!");
-                addCorrectAnswerToCounter();
+                
+                modal.style.display = "block";
+                let modalContent = document.getElementsByClassName('modal-content')[0];
+
+                modalContent.innerHTML = `
+                <div>
+                <p>That's right! ... You've got it!!</p>
+                <br>
+                <button id="btnNextQuestion">Next Question</button>
+                </div>
+                `;
+                
+                btnNextQuestion.addEventListener('click', function() {
+                    modal.style.display = "none";
+               });
+
+               addCorrectAnswerToCounter();
+            
             } else {
-                alert(`Awwwwww ... you got it wrong this time.\n\n The correct answer is:\n ${correctAnswer}`);
+                // alert(`Awwwwww ... you got it wrong this time.\n\n The correct answer is:\n ${correctAnswer}`);
+                modal.style.display = "block";
+                let modalContent = document.getElementsByClassName('modal-content')[0];
+
+                modalContent.innerHTML = `
+                <div>
+                <h2>Awww . . . you got it wrong this time .</h2>
+                <br><br>
+                <p>The correct answer is:
+                <br><strong> ${correctAnswer}</strong></p>
+                <button id="btnNextQuestion">Next Question</button>
+
+                </div>
+
+                `;
+                
+                btnNextQuestion.addEventListener('click', function() {
+                    modal.style.display = "none";
+               });
+
                 addIncorrectAnswerToCounter();
             }
         }
     }
-
 }
 
 
@@ -226,11 +274,11 @@ function addCorrectAnswerToCounter() {
     btnCheckAnswer.style.cursor = "auto";//changes cursor:pointer which implies an action to the user, to "auto" (default mouse arrow)
     btnCheckAnswer.id = "btnCheckAnswerDisabled";
 
-    let btnNextQuestion = document.getElementById('btnNextQuestion');
-    btnNextQuestion.style.display = "inline-block";//displays button "Next Question", and activates it
+    // let btnNextQuestion = document.getElementById('btnNextQuestion');
+    // btnNextQuestion.style.display = "inline-block";//displays button "Next Question", and activates it
     
     //changes text of "nextQuestion" btn to "Final Results" once last question is reached
-    if(i === newArraysOfArray.length - 1){
+    if (i === newArraysOfArray.length - 1){
         btnNextQuestion.innerText = "Final Results";
     }
 
@@ -245,10 +293,8 @@ function displayNextQuestion() {
     ++i;
 
     //if question index (i) is still less than total length of array of questions
-    if (i < newArraysOfArray.length) {
-        
+    if (i < newArraysOfArray.length) {  
         displayQuestion();
-    
     } 
     
     if (i === newArraysOfArray.length) {
@@ -312,11 +358,9 @@ function displayNextQuestion() {
                 `;
         
             }
-
         }
         document.getElementById("fa-gear").style.display = "none"; // hides icon to change mode once final msg w. final results is shown
     }
-
 }
 
 
@@ -339,7 +383,6 @@ function addIncorrectAnswerToCounter() {
     if(i === 9){
         btnNextQuestion.innerText = "Final Results";
     }
-
 }
 
 /**
@@ -380,9 +423,9 @@ function changeMode() {
     if (bgBody === "bgDarkMode"){
             body.setAttribute("class", "bgLightMode");
             questionDiv.style.backgroundColor = "rgb(245,245,245)";
-            questionDiv.style.borderColor = "rgb(85, 0, 85)";
-            countDiv.style.borderColor = "rgb(85, 0, 85)";
-            questionNum.style.color = "rgb(85, 0, 85)";
+            questionDiv.style.borderColor = "#001c3b";
+            countDiv.style.borderColor = "#001c3b";
+            questionNum.style.color = "#001c3b";
             questionNum.style.fontWeight = "bold";
             questionDiv.style.color = "slategray";
 
@@ -456,9 +499,9 @@ function saveMode(){
         body.setAttribute("class", "bgLightMode");
 
         questionDiv.style.backgroundColor = "rgb(245,245,245)";
-        questionDiv.style.borderColor = "rgb(85, 0, 85)";
-        countDiv.style.borderColor = "rgb(85, 0, 85)";
-        questionNum.style.color = "rgb(85, 0, 85)";
+        questionDiv.style.borderColor = "#001c3b";
+        countDiv.style.borderColor = "#001c3b";
+        questionNum.style.color = "#001c3b";
         questionNum.style.fontWeight = "bold";
         questionDiv.style.color = "slategray";
 
@@ -471,9 +514,7 @@ function saveMode(){
             let li = lis[y];
             li.style.color = "slategray";
         }
-
     }
-    
 }
 
 
@@ -487,6 +528,8 @@ function hideNav() {
 }
 
 
-function stopAudio(){
+function stopAudio() {
     audio.pause();
 }
+
+

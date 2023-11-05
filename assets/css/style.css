@@ -152,7 +152,7 @@ footer {
     font-family: 'Lobster', sans-serif;
     font-size: 1.5rem;
     border-radius: 50px;
-    border: 2px outset rgb(85, 0, 85);
+    border: 2px outset aquamarine;
     transition: all 0.5s;
     position: relative;
     text-align: center;
@@ -166,7 +166,7 @@ footer {
     font-family: 'Lobster', sans-serif;
     font-size: 1.5rem;
     border-radius: 50px;
-    border: 2px outset rgb(85, 0, 85);
+    border: 2px outset aquamarine;
     transition: all 0.5s;
     text-align: center;
     height: min-content;
@@ -177,8 +177,9 @@ footer {
 
 #navRestartBtn:hover,
 .startQuiz button:hover {
-    background-color: whitesmoke;
-    color: #001c3b;
+    background-color: aqua;
+    /* color: #001c3b; */
+    color: rgb(85, 0, 85);
     border-color: aquamarine;
     cursor: pointer;
 }
@@ -216,8 +217,8 @@ footer {
 }
 
 #btnNextQuestion {
-    margin-left: 50px;
-    display: none;
+    display: block;
+    margin: 40px auto 20px;
 }
 
 #btnCheckAnswer:hover,
@@ -225,9 +226,9 @@ footer {
 .restartQuiz button:hover,
 #goToHomePage:hover {
     cursor: pointer;
-    background-color: rgb(85, 0, 85);
-    border-color: aquamarine;
-    color: whitesmoke;
+    background-color: aqua;
+    border-color: aqua;
+    color: rgb(85, 0, 85);
 }
 
 #btnCheckAnswerDisabled {
@@ -275,7 +276,7 @@ footer {
     margin: 25px auto 0;
 }
 
- li {
+li {
     padding: 10px 5% 10px 10%;
     list-style-type: none;
     color: whitesmoke;
@@ -293,6 +294,11 @@ input[type=radio]{
     background-clip: content-box;
     border: none;
     background-color: whitesmoke;
+}
+
+input[type=radio]:hover,
+label:hover {
+    cursor: pointer;
 }
   
 input[type="radio"]:checked {
@@ -320,7 +326,6 @@ input[type="radio"]:checked {
     font-weight: 600;
     line-height: 1.2;
     padding: 20px 60px;
-
 }
 
 #correct {
@@ -371,7 +376,6 @@ input[type="radio"]:checked {
     font-weight: 400;
     padding-bottom: 0;
     margin-top: 10vh;
-
 }
 
 #pFinalMsgLightMode {
@@ -383,6 +387,63 @@ input[type="radio"]:checked {
     line-height: 2;
     padding-top: 40px;
 }
+
+
+/** MODAL CHECK ANSWER DISPLAY ***/
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.5); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+.modal-content {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: whitesmoke;
+    margin: auto;
+    padding: 40px 30px;
+    border: 3px outset #001c3b;
+    border-radius: 50px;
+    width: 50%;
+    height: 50vh;
+}
+
+.modal-content h2 {
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    font-family: 'Bad Script', cursive;
+    color: #001c3b;
+    font-weight: 600;
+    font-size:1.5rem;
+    /* padding: 45% 8%; */
+}
+
+.modal-content p {
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: #001c3b;
+    font-weight: 500;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    /* padding: 45% 8%; */
+}
+
+  
 
 
 /*** FOOTER social media*****/
@@ -634,7 +695,7 @@ footer .social_media {
     }
 
     #btnNextQuestion{
-        margin: 40px 0 0 0;
+        margin: 40px auto;
     }
     
     footer .social_media {
