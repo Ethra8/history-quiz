@@ -202,12 +202,13 @@ The following image has been used for the light mode option, to contrast with th
 
 ## NAVIGATION BAR
 Is fully responsive, and is fixed at the top, to allow the user to access its fucntionalities even when scrolling down. Its background has a slight transparency, so that it visually not so intrusive. Its functionalities are the following:
-- **LOGO** : By clicking on it, the user gets to the landing page, before the questsions are displayed.
-- **SETTINGS**
-    * **MODE-SWITCH ICON** : By clkicking on the gear icon, the user can switch from the default dark mode to the light mode, and viceversa, anytime during the quiz.
-    * **MUSIC ICONS** :
-        + **PLAY ICON** : By clicking on the ***play*** icon, the user triggers the audio mp3 file, which is coded to loop itself seamlessly.
-        + **PAUSE ICON** : By clicking on the ***pause*** icon, the user pauses the audio file, which can be continued by clickg again on the play icon.
+- **LOGO** - By clicking on it, the user gets to the landing page, before the questsions are displayed.
+- **SETTINGS** - On smaller devices these are placed underneath the logo. The site's settings are the following:
+    * **MODE-SWITCH ICON** - By clkicking on the gear icon, the user can switch from the default dark mode to the light mode, and viceversa, anytime during the quiz.
+    * **MUSIC ICONS**  
+        + **PLAY ICON** - By clicking on the ***play*** icon, the user triggers the audio mp3 file, which is coded to loop itself seamlessly.
+        + **PAUSE ICON** - By clicking on the ***pause*** icon, the user pauses the audio file, which can be continued by clickg again on the play icon.
+- **RESTART-QUIZ BUTTON** - By clicking on the button, the user can restart the quiz at anytime. The 1st question is automatically displayed, and the counters are set to 0.
 
 ## DARK AND LIGHT MODES 
 By clicking on the settings icon placed on the navigation bar, the user can toggle between the default dark mode, and the light mode, all through the quiz:
