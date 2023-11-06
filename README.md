@@ -160,11 +160,18 @@ EDNA TORRES MUNILL
 
 
 # UX
+You will find in the points stated below a brief study aiming at providing the user with the best possible experience when visiting this site.
 ## TARGET AUDIENCE
 ## PROJECT GOALS
 ## USER STORIES
-## USER PROFILES
+1. **As a first time visitor**
+2. **As a returning visitor**
 
+## USER PROFILES
+1. Malia is a history teacher at secondary level, and continuously researches for new technologies and websites to test her students' knowledge.
+2. Sarah is interested in history, and wants to learn more.
+3. Brian enjoys any kind of quiz which will test his knowledge on general topics, such as general histotry facts. Is keen to employ some of his leisure time researching new cultural entertainment to do at home, or on the train on his way to work.
+4. Mara is an English teacher, and and continuously researches for new technologies and websites for her students to practice comprehension skills on any general topic, including history.
 
 # UI
 ## UI - FIXED NAVIGATION BAR
