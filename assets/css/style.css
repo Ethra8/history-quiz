@@ -66,7 +66,7 @@ header {
     text-align: center;
     background-color: rgba(0, 28, 59, 0.8);
     padding: 0 4%;
-    min-height: 50vh;
+    min-height: 50vh !important;
 }
 
 h1 {
@@ -115,6 +115,17 @@ footer {
     width: 100%;
     padding: 20px 30px;
     margin-top: auto;
+    text-align: center;
+    height: fit-content;
+}
+
+p#contactUs {
+    display: inline-flex;
+    color: aquamarine;
+    font-size: 2rem;
+    font-weight: 500;
+    font-family: 'Lobster', cursive;
+    transform: rotate(0);
 }
 
 .fa-gear,
@@ -135,9 +146,35 @@ footer {
     color: rgb(223, 255, 244);
 } 
 
+#contactPage {
+    /* display: flex;
+    text-align: center; */
+}
+
+#contactPage header {
+    max-height: 25vh !important;
+    padding: 50px 4%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+
+#contactPage header p {
+    transform: rotate(0);
+    color: whitesmoke;
+    text-shadow: 2px 2px #001c3b;
+    font-family: 'Lobster', cursive;
+    font-weight: 300;
+    padding-bottom : 0;
+    display: flex;
+}
+
 
 .startQuiz {
-    padding: 70px 0 0;
+    padding: 0;
     margin: 0 auto;
     text-align: center;
 }
