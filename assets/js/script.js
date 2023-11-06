@@ -66,7 +66,6 @@ function getRandomArrayWithoutRepeats(arrays, newArraysOfArray) {
     // Remove previously selected arrays from the available arrays
     newArraysOfArray.forEach(previousArray => {
         const index = newQuestionsArray.indexOf(previousArray);
-        
         if (index !== -1) {
         newQuestionsArray.splice(index, 1);
         }
@@ -111,7 +110,7 @@ let i = 0; //used to loop through questions in quiz
 let questionDiv = document.getElementById('question');
 const audio = new Audio("./assets/media/music.mp3");
 const gearIcon = document.getElementById("fa-gear");
-let btnNextQuestion = document.getElementById('btnNextQuestion');
+
 
 gearIcon.addEventListener('click', changeMode); // to change from dark/light mode
 
@@ -131,12 +130,15 @@ document.getElementById('navRestartBtn').addEventListener('click', startNewQuiz)
 // Get the modal
 var modal = document.getElementById("myModal");
 
-// When the user clicks anywhere outside of the modal, it doesn't close
+// Get the button that opens the modal
+var btn = document.getElementById("btnCheckAnswer");
+
+// When the user clicks anywhere outside of the modal, don't close it
 window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "block";
   }
-};
+}
 
 /**
  * Once button 'start Quiz' is clicked, 1st question is displayed, and
@@ -206,7 +208,6 @@ function displayRadioValue() {
     let a = correctAnswerPosition; //simplified 
 
     let correctAnswer = newArraysOfArray[i].options[a];// the atring of the correct "answer"
-
     //for loop to get radio button checked by user, and check if it is the correct "asnwer"
     for (let x = 0; x < option.length; x++) {
         if (option[x].checked){
@@ -222,7 +223,7 @@ function displayRadioValue() {
                 <button id="btnNextQuestion">Next Question</button>
                 </div>
                 `;
-                let btnNextQuestion = document.getElementById('btnNextQuestion');
+                
                 btnNextQuestion.addEventListener('click', function() {
                     modal.style.display = "none";
                });
@@ -394,6 +395,14 @@ function startNewQuiz() {
     displayQuestion();
 }
 
+/**
+ * displays nav on 404.html
+ */
+function displayNav() {
+    let nav = document.getElementsByTagName('nav')[0];
+    nav.style.visibility = "visible";
+    nav.style.display = "flex"; 
+}
 
 /**
  * Switches from dark mode to light mode, and viceversa
@@ -503,6 +512,16 @@ function saveMode(){
             li.style.color = "rgb(57, 63, 68)";
         }
     }
+}
+
+
+/**
+ * Hides Navbar
+ */
+function hideNav() {
+    let nav = document.getElementsByTagName('nav')[0];
+    nav.style.visibility = "invisible";
+    nav.style.display = "none"; 
 }
 
 

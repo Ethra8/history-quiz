@@ -627,6 +627,11 @@ footer .social_media {
         flex-wrap: wrap;
     }
 
+    .modal-content {
+        width: 95%;
+        height: 50vh;
+    }
+    
     #btnNextQuestion{
         margin: 40px 0 0 0;
     }
@@ -707,8 +712,7 @@ footer .social_media {
         font-weight: 600;
         display: flex;
         flex-direction: column !important; 
-        padding: 20px 0;
-           
+        padding: 20px 0;    
     }
 
     .count p {
@@ -722,6 +726,11 @@ footer .social_media {
         flex-direction: column;
         justify-content:center;
         flex-wrap: wrap;
+    }
+
+    .modal-content {
+        width: 95%;
+        height: 50vh;
     }
 
     #btnNextQuestion{
@@ -808,6 +817,11 @@ footer .social_media {
         margin: 0 auto;
     }
 
+    .modal-content {
+        width: 75%;
+        height: 50vh;
+    }
+
     #btnNextQuestion{
         margin: 40px auto;
         width: 80%;
@@ -836,6 +850,12 @@ footer .social_media {
     .count {
         width: 85%;
     }
+
+    .modal-content {
+        width: 60%;
+        height: 50vh;
+    }
+
 
 }
 
