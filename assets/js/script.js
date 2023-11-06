@@ -271,8 +271,6 @@ function addCorrectAnswerToCounter() {
     btnCheckAnswer.style.cursor = "auto";//changes cursor:pointer which implies an action to the user, to "auto" (default mouse arrow)
     btnCheckAnswer.id = "btnCheckAnswerDisabled";
 
-    // let btnNextQuestion = document.getElementById('btnNextQuestion');
-    // btnNextQuestion.style.display = "inline-block";//displays button "Next Question", and activates it
     
     //changes text of "nextQuestion" btn to "Final Results" once last question is reached
     if (i === newArraysOfArray.length - 1){
