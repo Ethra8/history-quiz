@@ -173,6 +173,7 @@ You will find in the points stated below a brief study aiming at providing the u
 2. Josh is an English teacher, and continuously researches for new technologies and websites for her students to practice comprehension skills on any general topic, including history.
 3. Sarah is interested in history, and wants to learn more.
 4. Brian enjoys any kind of quiz which will test his knowledge on general topics, such as general history facts. He's keen to employ some of his leisure time researching new cultural entertainment to do at home, or on the train on his way to work.
+5. Kate and Paul are parents who enjoy doing cultural activities at home on bad-weather weekends with their teen children, such as playing Trivia, or... taking online quizzes.
 
 # UI
 ## UI - FIXED NAVIGATION BAR
