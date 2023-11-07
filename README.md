@@ -231,10 +231,16 @@ You will find in the points stated below a brief study aiming at providing the u
      * If the user's final result is of 9 or 10 correct answers, the final results title reads "Wow! Do you have a PhD in history?" with the user's final result stated below as "Your final score is x/10".
 
 ## UI - FOOTER
-- The footer is set to be fixed at the bottom of each page, and allows the user to interact, by clicking on the media icons in roder to visit the correspondent pages, and eventually follow the site on these platforms to be aware of any new feature implemented.
+- The footer is set to be fixed at the bottom of each page, and allows the user to interact at anytime, even throught the quiz, by clicking on the media icons in roder to visit the correspondent pages, and eventually follow the site on these platforms to be aware of any new feature implemented.
+  ![image](https://github.com/Ethra8/history-quiz/assets/80659091/5edf3f3a-4114-4ba1-9205-f267632145f0)
+
+  ![image](https://github.com/Ethra8/history-quiz/assets/80659091/0c26fefe-afc1-420d-9e24-64848618f50e)
+
 
 ## UI - CONTACT PAGE
-- The contact page allows the user to communicate with the admin through a simple form, or by opening the admin's Whatsapp chat, through the API url embedded on the Whatsapp icon displayed.
+- The contact page gices two options by which the user is able to communicate with the admin:
+1. Through a simple form
+2. Through the admin's Whatsapp chat, using the Whatsapp API embedded url linked to the Whatsapp icon displayed.
 
 # DESIGN CHOICES
 
