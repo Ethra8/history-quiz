@@ -23,21 +23,48 @@
 
 <body class="bgDarkMode" id="contactPage">
 
-    <nav style="display: fixed;visibility: visible;width: 100%;">
+    <!-- <nav id="navContact">
         <div>
             <a href="index.html">
-                <img src="./assets/images/logo.png" alt="logo" width="200">
+                <img id="logo" src="./assets/images/logo.png"
+                    srcset="https://englishgrows.com/history-quiz/assets/images/logo.png" alt="logo" width="200">
             </a>
+        </div>
+    </nav> -->
+
+
+    <!-- NAVBAR -->
+    <nav id="navContact">
+        <a href="./index.html" aria-label="return to landing page">
+            <img id="logo" src="./assets/images/logo.png"
+                srcset="https://englishgrows.com/history-quiz/assets/images/logo.png" alt="logo" width="200">
             <p>Quiz</p>
-        </div>
-        <div>
-            <span>
-                <i class="fa fa-gear" id="fa-gear"></i>
-                <i class="fa fa-play" id="fa-play"></i>
-                <i class="fa fa-volume-xmark" id="fa-pause"></i>
+        </a>
+        <input type="checkbox" name="menuToggle" id="menuToggle">
+        <label for="menuToggle">
+            <span class="toggle">
+                <a class="show_mobile" href="#header">
+                    <img id="logo1" src="./assets/images/logo.png"
+                        srcset="https://englishgrows.com/history-quiz/assets/images/logo.png" alt="logo" width="200">
+                </a>
+                <span id="list_symbol"><i class="fa fa-bars fa-2x"></i></span>
             </span>
-        </div>
-        <button id="navRestartBtn">Restart Quiz</button>
+        </label>
+        <!--the menu that will slide in from the left-->
+        <ul id="menu" class="menu nav_item">
+            <li>
+                <div>
+                    <span id="settings">
+                        <i class="fa fa-gear" id="fa-gear"></i>
+                        <i class="fa fa-play" id="fa-play"></i>
+                        <i class="fa fa-volume-xmark" id="fa-pause"></i>
+                    </span>
+                </div>
+            </li>
+            <li>
+                <button id="navRestartBtn">Restart Quiz</button>
+            </li>
+        </ul>
     </nav>
 
 
@@ -96,7 +123,7 @@
 
     </footer>
 
-    <script src="./assets/js/script.js"></script>
+    <!-- <script src="./assets/js/script.js"></script> -->
 
 </body>
 

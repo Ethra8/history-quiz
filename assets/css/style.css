@@ -24,28 +24,134 @@ body {
     background: url('../images/bgLightMode.jpg') center fixed;
 }
 
-nav {
+
+/*NAVBAR*/
+
+#navIndex,
+#navContact {
+    background-color: rgba(0, 28, 59, 0.7);
+    padding: 15px 4%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    justify-content:space-between;
+    height: 80px;
+}
+
+#navIndex {
+    display: none;
+    visibility: hidden;
+}
+
+#navContact {
+    display: flex; 
+    position: fixed;
+    visibility: visible;
+    width: 100%;
+}
+
+#logo1 {
+    float: left;
+    vertical-align: middle;
+    width: 200px;
+    margin-left: 0;
+    transition: all 0.15s linear;
+}
+
+#logo1:hover {
+    transform: scale(1.05);
+}
+
+/* contains fontawesome icon fa-bars */
+#list_symbol {
+    margin-top: -15px;
+    margin-bottom: 5px;
+    margin-right: -15px;
+    border-style: solid;
+    border-color: aquamarine;
+    border-width: 3px;
+    border-radius: 10px;
+    padding: 5px 10px 5px;
+    transition: color 0.5s linear;
+}
+
+/* style fontawesome icon fa-bars */
+#list_symbol .fa-bars {
+    color: aquamarine;
+    transition: color 0.5s linear;
+}
+
+#list_symbol .fa-bars:hover {
+    color: whitesmoke;
+}
+
+#list_symbol:hover {
+    border-color: whitesmoke;
+}
+
+/*end of fa-bars personal styling*/
+
+/* nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+nav li {
+    display: inline;
+}
+ */
+
+
+/* Below RESPONSIVE NAVBAR Adapted from:
+attribution to: Responsive Navigation based on Malia Havlicek's codepen: https://codepen.io/maliahavlicek/pen/LYeBwNY */
+.menu {
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    list-style-type: none;
+}
+
+#menuToggle,
+.show_mobile,
+.toggle {
+    display: none;
+}
+
+/* nav {
     background-color: rgba(0, 28, 59, 0.7);
     display: none;
     padding: 15px 4%;
     visibility: hidden;
     position: fixed;
     width: 100%;
-    display: flex;
     justify-content:space-between;
     min-height: 60px !important;
     max-height: 80px;
-}
+} */
 
-nav img {
+/* nav img {
     display: inline-flex;
     margin-bottom:-20px;
     width: 200px;
+} */
+
+/* nav a {
+    text-decoration: none;
+    transition: all 0.2s linear;
 }
 
-nav a {
-    text-decoration: none;
-}
+nav a:hover {
+    color: #D6D6D6;
+} */
+
 
 nav p {
     display: inline;
@@ -64,13 +170,6 @@ audio {
     position: absolute;
     top: 70px;
     left:40%;
-}
-
-header {
-    text-align: center;
-    background-color: rgba(0, 28, 59, 0.8);
-    padding: 0 4%;
-    min-height: 50vh !important;
 }
 
 h1 {
@@ -123,11 +222,18 @@ footer {
     height: fit-content;
 }
 
+#index header {
+    text-align: center;
+    background-color: rgba(0, 28, 59, 0.8);
+    padding: 0 4%;
+    height: 50vh ;
+}
+
 p#contactUs {
     display: inline-flex;
     color: aquamarine;
-    font-size: 2rem;
-    font-weight: 500;
+    font-size: 1.8rem;
+    font-weight: 400;
     font-family: 'Lobster', cursive;
     transform: rotate(0);
 }
@@ -151,15 +257,14 @@ p#contactUs {
 } 
 
 #contactPage {
-    /* display: flex;
-    text-align: center; */
+    padding-top : 80px; /* nav height**/
 }
 
 #contactPage header {
     max-height: 25vh !important;
+    background-color: rgba(0, 28, 59, 0.8);
     padding: 50px 4%;
     display:flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     align-content: center;
@@ -305,13 +410,13 @@ p#contactUs {
     margin: 25px auto 0;
 }
 
-li {
+#question li {
     padding: 10px 5% 10px 10%;
     list-style-type: none;
     color: whitesmoke;
 }
 
-label {
+#question label {
     padding-left: 15px;
 }
 
@@ -420,18 +525,18 @@ input[type="radio"]:checked {
 
 /** MODAL CHECK ANSWER DISPLAY ***/
 
-/* The Modal (background) */
+/* Modal (background: page darkened) */
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px; 
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
+    width: 100%; 
+    height: 100%; 
     overflow: auto; /* Enable scroll if needed */
-    background-color: rgba(0,0,0,0.5); /* Black w/ opacity */
+    background-color: rgba(0,0,0,0.5); 
   }
   
   /* Modal Content */
@@ -522,8 +627,10 @@ footer .social_media {
 /**** 404 ERROR PAGE *****/
 
 #errorPage header {
-  height: 50vh !important;
+  height: 50vh;
   padding: 15vh 4%;
+  background-color: rgba(0, 28, 59, 0.8);
+  text-align: center;
 }
 
 #errorPage nav {
@@ -538,17 +645,105 @@ footer .social_media {
 }
 
 
+/**** RESPONSIVE NAVBAR *******/
+@media only screen and (max-width: 767px) {
+     /* Below RESPONSIVE NAVBAR Adapted from:
+attribution to: Responsive Navigation based on Malia Havlicek's codepen: https://codepen.io/maliahavlicek/pen/LYeBwNY */
+
+nav {
+    padding: 15px 3% 9px;
+    /* justify-content: space-around; */
+}
+
+a.show_mobile {
+    text-decoration: none;
+    color: #595959;
+    display: inline-block;
+}
+
+#logo1 {
+    display: none;
+    visibility: hidden;
+}
+
+#logo {
+    float: inline-start;
+    vertical-align: middle;
+    width: 200px;
+    margin-top: -20px;
+    margin-left: 0;
+    transition: all 0.15s linear;
+}
+
+#logo:hover {
+    transform: scale(1.05);
+}
+
+.toggle {
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    width: calc(100% - 2.4rem);
+    text-align: left;
+    line-height: 40px;
+    cursor: pointer;
+    height: 40px;
+    font-size: 18px;
+    transition: all 1s linear;
+}
+
+#menuToggle:checked~ul.nav_item li {
+    opacity: 1;
+    visibility: visible;
+    transition: all .7s linear;
+}
+
+#menuToggle:checked~ul.nav_item {
+    height: fit-content;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 0px;
+    transition: height .3s linear;
+}
+
+.menu li {
+    display: flex;
+    /* magic */
+    align-self: center;
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.menu li a {
+    text-align: left;
+    align-self: center;
+    align-content: center;
+    margin-left: 1.2rem;
+    margin-bottom: 15px;
+    padding-top: 10px;
+}
+
+}
+
+
+
 /* X-SMALL & SMALL MOBILE ****/
 
 @media only screen and (max-width: 375px) {
    
     /* nav no longer fixed, to liberate screen, as navRestartBtn is placed below settings, for space reasons, and a fixed nav would take far too much viewport*/
-    nav {
+    /* nav {
         position:unset;
         display: none;
-    }
+    } */
 
-    nav span {
+    #setttings {
         position: absolute;
         left: 0;
         top: 80px;
@@ -558,10 +753,6 @@ footer .social_media {
         width: 100%;
     }
 
-    header {
-        min-height: 70vh;
-    }
-    
     h1 {
         font-size: 320%;
         font-weight: 400;
@@ -576,6 +767,31 @@ footer .social_media {
     header noscript p {
         font-weight: 900 !important;
     }
+    
+    #index header {
+        min-height: 70vh;
+    }
+
+    #contactPage header {
+    height: 40vh !important;
+    padding: 100px 4% 0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    }
+
+    #contactPage header p {
+    transform: rotate(0);
+    color: whitesmoke;
+    text-shadow: 2px 2px #001c3b;
+    font-family: 'Lobster', cursive;
+    font-weight: 300;
+    padding-bottom : 0;
+    display: flex;
+    }
+
 
     #errorPage header {
         min-height: 50vh;
@@ -614,8 +830,7 @@ footer .social_media {
         font-weight: 600;
         display: flex;
         flex-direction: column !important; 
-        padding: 20px 0;
-           
+        padding: 20px 0;      
     }
 
     .count p {
@@ -655,7 +870,7 @@ footer .social_media {
 
 @media only screen and (min-width: 376px) and (max-width: 576px) {
    
-    nav span {
+    #setttings {
         position: absolute;
         left: 0;
         top: 80px;
@@ -758,7 +973,7 @@ footer .social_media {
 
 @media only screen and (min-width: 577px) and (max-width: 768px){
 
-    nav span {
+    #setttings {
         position: absolute;
         left: 0;
         top: 80px;
@@ -846,6 +1061,16 @@ footer .social_media {
 /** LARGE TABLETS - LANDSCAPE **/
 
 @media only screen and (min-width: 767px) and (max-width: 992px) {
+
+    #setttings {
+        position: absolute;
+        left: 0;
+        top: 80px;
+        background-color: rgba(0, 28, 59, 0.7);
+        padding: 7px 10px;
+        margin-top: -1px;
+        width: 100%;
+    }
 
     #question {
         width: 85%;

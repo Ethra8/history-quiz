@@ -21,9 +21,9 @@
   <title>QUIZ | History Facts</title>
 </head>
 
-<body class="bgDarkMode">
+<body class="bgDarkMode" id="index">
 
-  <nav>
+  <!-- <nav>
     <div>
       <a href="index.html">
         <img src="./assets/images/logo.png" alt="logo">
@@ -37,16 +37,51 @@
         <i class="fa fa-volume-xmark" id="fa-pause"></i>
       </span>
     </div>
-    <a href="./contact.html">
-      <p id="contactUs">Contact Us</p>
+    <a class="active" href="./contact.html">
+      <p id="contactUs">Contact</p>
     </a>
     <button id="navRestartBtn">Restart Quiz</button>
+  </nav> -->
+
+  <!-- NAVBAR -->
+  <nav id="navIndex">
+    <a href="./index.html" aria-label="return to landing page">
+      <img id="logo" src="./assets/images/logo.png"
+        srcset="https://englishgrows.com/history-quiz/assets/images/logo.png" alt="logo" width="200">
+      <p>Quiz</p>
+    </a>
+    <input type="checkbox" name="menuToggle" id="menuToggle">
+    <label for="menuToggle">
+      <span class="toggle">
+        <a class="show_mobile" href="#header">
+          <img id="logo1" src="./assets/images/logo.png"
+            srcset="https://englishgrows.com/history-quiz/assets/images/logo.png" alt="logo" width="200">
+        </a>
+        <span id="list_symbol"><i class="fa fa-bars fa-2x"></i></span>
+      </span>
+    </label>
+    <!--the menu that will slide in from the left-->
+    <ul id="menu" class="menu nav_item">
+      <li>
+        <div>
+          <span id="settings">
+            <i class="fa fa-gear" id="fa-gear"></i>
+            <i class="fa fa-play" id="fa-play"></i>
+            <i class="fa fa-volume-xmark" id="fa-pause"></i>
+          </span>
+        </div>
+      </li>
+      <li>
+        <button id="navRestartBtn">Restart Quiz</button>
+      </li>
+    </ul>
   </nav>
 
-  <audio src="./assets/media/music.mp3" controls loop id="music.mp3">
+
+  <!-- <audio src="./assets/media/music.mp3" controls loop id="music.mp3">
 
   </audio>
-
+ -->
   <header>
     <noscript>
       <h2>This quiz is coded with JavaScript. <br>
