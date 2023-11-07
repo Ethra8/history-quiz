@@ -3,6 +3,8 @@
 ## PROJECT OVERVIEW
 
 - The aim of this site is to test the user's knowledge on general history facts from around the globe.
+- This site can be of great value to history teachers to check their students' knowledge in an entertaining way.
+- This site can also be of great value to teachers of English as a second language, as a tool to offer students some alternative and entertaining language practice. 
 - This site is useful to anyone interested in history, who might also want to increase knowledge on global history facts.
 - This site might also prove of great use to secondary students wanting to reinforce their knowledge on the history subject.
 
