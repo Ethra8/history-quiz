@@ -305,7 +305,7 @@ The following image has been used for the light mode option, to contrast with th
 # FEATURES
 
 ## RESPONSIVENESS
-This site is fully responsive on all device sizes.  
+This site is fully responsive on all device sizes. Please refer to [Test Recordings and Results](#test-recordings-and-results).
 
 ## NAVIGATION BAR FEATURES
 Is fully responsive, and is fixed at the top, to allow the user to access its fucntionalities even when scrolling down. Its background has a slight transparency, so that it visually not so intrusive. Its functionalities are the following:
@@ -383,7 +383,6 @@ Please find the correspondent **compatibility and responsive testing** reflected
 | TEST no.| TOOL               | DEVICE               | BROWSER            | OS              | VIEWPORT width x height (px) |
 |---------|--------------------|----------------------|--------------------|-----------------|------------------------------|
 | 1       | Chrome Dev emulator| Samsung Galaxy S20   | Chrome 117         |Windows 10       |360 x 800                     | 
-| 2       | BrowserStack       | Samsung Galaxy S22   | Chrome             |Android 12.0     |360 x 780                     |
 | 3       | BrowserStack       | Samsung Galaxy S22   | Edge               |Android 12.0     |360 x 780                     |
 | 4       | BrowserStack       | iPhone 12 Mini       | Safari             | iOS 16.0        |360 x 780                     |
 | 5       | Blisk              | iPhone SE 2022       | Chrome             | iOS             |375 x 667                     |
