@@ -36,9 +36,9 @@ let questions = [
         options: ["Finland", "New Zealand", "Canada"]
     }, 
     {
-        question: "In 1969, when Spanish king Juan Carlos I, grown up in fascist Spain, was appointed by fascist dictator Franco to be his successor, what did Juan Carlos do?",
+        question: "In 1969, what did Spanish king Juan Carlos I do when appointed by fascist dictator Franco to be his successor?",
         correctAnswerPosition: 1,
-        options: ["He solemny declared he would reinstore democracy after decades of a murderous fascist regime, fruit of the 1936's military coup supported by the Nazis to the young Spanish Republic.", "He took an oath before the fascist regime, which was never after officially broken.", "He rejected the fascist dictator's appointment, and made a glorious return when the mass-murderer peacefully died at age 83, in 1975."]
+        options: ["He accepted, but solemny declared he would reinstore democracy after decades of a murderous fascist regime, fruit of the 1936's military coup supported by the Nazis to the young Spanish Republic.", "He took an oath before the fascist regime, and solemny accepted the succession, skipping his father Don Juan, who was still alive.", "He rejected the fascist dictator's appointment, and made a glorious return in 1975 when the mass-murderer died at age 83."]
     }, 
     {
         question: "In which year was the first provisional government of the freed self-governing Republic of Ireland installed?",
