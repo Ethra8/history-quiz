@@ -177,18 +177,58 @@ You will find in the points stated below a brief study aiming at providing the u
 
 # UI
 ## UI - FIXED NAVIGATION BAR
+**The fixed navigation bar appears once the user clicks on the cta button on the landing page "Start Quiz".**  
+![image](https://github.com/Ethra8/history-quiz/assets/80659091/6bc53151-a636-4a1f-8162-85d702bc2429)
+
 - The user is able to interact with the responsive navigation bar, fixed to the top while completing the quiz, on the contact page, and the 404 error page. So, even when scrolling down, the user can change the settings at any time. The navigation bar includes the following:
     * **LOGO** allows user to go to landing page when clicked.
     * **SETTINGS** include:
       + **Switch mode** from default ***dark*** to ***light*** anytime throughout the quiz.
-      + **Audio** settings allowing the user to play or pause the audio by clicking to the correspondent icons.
-    * **'RESTART QUIZ' button** allowing the user to restart the quiz, with a new random order of the questions, displaying automatically the new "question 1".
+      + **Audio icons** allowing the user to play or pause the audio by clicking to the correspondent icons. The audio is a "tension orchestra chords" (for more details refer to the media creadits section below).
+    * **'RESTART QUIZ' button** allowing the user to restart the quiz, with a new random order of the questions, displaying automatically the new "question 1", and sets the counters to zero.
 
 ## UI - LANDING PAGE
-- On the landing page, there is only the header qith the name of the page "History Facts Quiz", and a call-to-action button on the middle of the page to "Start Quiz". Once the user clicks it, the quiz automatically begins displaying the 1st random question with 3 possible options.
+- On the landing page, there is only the header with the name of the page "History Facts Quiz", and a call-to-action button on the middle of the page to "Start Quiz". Once the user clicks it, the quiz automatically begins.
+  ![image](https://github.com/Ethra8/history-quiz/assets/80659091/845b1893-7ac6-40dc-b035-6595e5126e2d)
+
 
 ## UI - QUIZ
-- 
+1. Once the user clicks on "Start Quiz" cta button on the landing page, the 1st random question is displayed, with three optional answers set in a list, where a button can be checked for each (a.k.a radio buttons).
+  * **Dark mode**
+    ![image](https://github.com/Ethra8/history-quiz/assets/80659091/62408d49-91b0-4d1a-9097-0a719da3522a)
+
+  * **Light mode**  
+    ![image](https://github.com/Ethra8/history-quiz/assets/80659091/64e06ebc-d187-4632-a866-a13ddc327cf2)
+
+2. At the bottom of the question & options, are the points' counters. There is a counter for "correct answers" (dosplaying the points in green) and another for "incorrect answers" (displaying the points in red).
+3. Once the user selects an option whithin the possible answers, and clicks on the "Check Answer" button, a small customized pop-up (a.k.a modal) appears, darkening the rest of the page to highlight it, stating whether the answer is correct, or incorrect, with a button at the bottom for "Next Question". The modal has th same design in both modes:
+    * **Correct Answer**: The message in the pop-up reads "That's right!... You've got it!"
+        + **Dark mode**  
+          ![image](https://github.com/Ethra8/history-quiz/assets/80659091/cc41cd70-7cf6-457e-bfe0-ea4db1179af9)
+
+        + **Light mode**
+          ![image](https://github.com/Ethra8/history-quiz/assets/80659091/736af16d-f0f5-43ba-af00-8ed946ed57f8)
+
+
+    * **Incorrect Answer** : The messase in the pop-up reads "Awww ... You got it wrong this time. The correct answer is: 'correct answer in full text'."
+          ![image](https://github.com/Ethra8/history-quiz/assets/80659091/313abf65-2272-4f9b-81e6-3ee82e7e934b)
+
+4. As the pop-up appears, the counter updates, counting a point to the "correct ansswer" or "incorrect answer" counter, accordingly.
+5. Once the user clicks on the "Next Question" button at the bottom of the pop-up, the next random question is displayed.
+6. Once the user answers the last question, the button's text on the pop-up changes from "Next Question" to "Final Results".
+   ![image](https://github.com/Ethra8/history-quiz/assets/80659091/12f3311b-3a8f-4e1d-9b45-22ab88a9c36e)
+
+7. Once the user click on the "Final Results" button, a container with the same design as the questions appears, to give the user a seamless experience depending on the mode selected (dark or light) with a conditional text in it, and the total amount of correct answers out of the total of ten questions:
+     * If the user's final result is of 3 or less correct answers, the final results title reads "You could do much better ..." with the user's final result stated below as "Your final score is x/10".
+     * If the user's final result is of 4 or 5 correct answers, the final results title reads "You could do better ..." with the user's final result stated below as "Your final score is x/10".
+       + **Light mode exmple**
+         ![image](https://github.com/Ethra8/history-quiz/assets/80659091/90998abb-cf88-4ba9-a6d1-de16b93caaf8)
+
+     * If the user's final result is of between 6 and 8 (included) correct answers, the final results title reads "Well done!" with the user's final result stated below as "Your final score is x/10".
+       + **Dark mode example**
+         ![image](https://github.com/Ethra8/history-quiz/assets/80659091/40f61915-3938-4c06-b131-2432a7ac8b08)
+
+     * If the user's final result is of 9 or 10 correct answers, the final results title reads "Wow! Do you have a PhD in history?" with the user's final result stated below as "Your final score is x/10".
 
 ## UI - FOOTER
 - The footer is set to be fixed at the bottom of each page, and allows the user to interact, by clicking on the media icons in roder to visit the correspondent pages, and eventually follow the site on these platforms to be aware of any new feature implemented.
