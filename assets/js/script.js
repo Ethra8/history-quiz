@@ -54,7 +54,7 @@ let questions = [
 
 
 /**
- * Creates a new array of questions with a random order from the initial one.
+ * Creates a new array of question with a random order from the initial one.
  * @param {*} arrays the initial array of arrays that we want to randomize.
  * @param {*} newArraysOfArray new empty array where randomized questions will be pushed.
  * @returns randomArray (question, correcAnswer position inside array of options, options)
@@ -91,17 +91,15 @@ function getRandomArrayWithoutRepeats(arrays, newArraysOfArray) {
   }
   
 const newArraysOfArray = []; // Empty array to include all randomized questions from initial "question" array.
-// each of the following const run the getRandomArrayWithoutRepeats() and pushes a question to new array "newArrayOfArrays".
-const randomArray1 = getRandomArrayWithoutRepeats(questions, newArraysOfArray);  
-const randomArray2 = getRandomArrayWithoutRepeats(questions, newArraysOfArray);
-const randomArray3 = getRandomArrayWithoutRepeats(questions, newArraysOfArray);
-const randomArray4 = getRandomArrayWithoutRepeats(questions, newArraysOfArray);
-const randomArray5 = getRandomArrayWithoutRepeats(questions, newArraysOfArray);
-const randomArray6 = getRandomArrayWithoutRepeats(questions, newArraysOfArray);
-const randomArray7 = getRandomArrayWithoutRepeats(questions, newArraysOfArray);
-const randomArray8 = getRandomArrayWithoutRepeats(questions, newArraysOfArray);
-const randomArray9 = getRandomArrayWithoutRepeats(questions, newArraysOfArray);
-const randomArray10 = getRandomArrayWithoutRepeats(questions, newArraysOfArray);
+
+//trigers getRandomArrayWithoutRepeats() as many times as arrays (questions) the questions array has.
+function randomizeQuizRestartQuizButton() {
+    
+    for (b=0; b<questions.length; b++) {
+        getRandomArrayWithoutRepeats(questions, newArraysOfArray);  
+
+    }
+}
 
 
 
@@ -147,7 +145,9 @@ window.onclick = function(event) {
  * to check whether the correct answer was selected through radio btn.
  */
 function displayQuestion() {
-
+    
+    randomizeQuizRestartQuizButton();
+    
     let nav = document.getElementsByTagName('nav')[0];
     nav.style.visibility = "visible";
     nav.style.display = "flex";

@@ -93,7 +93,7 @@ body {
 
 /*end of fa-bars personal styling*/
 
-/* nav ul {
+nav ul {
     list-style: none;
     padding: 0;
     margin-top: 0;
@@ -101,9 +101,9 @@ body {
 }
 
 nav li {
-    display: inline;
+    /* display: inline; */
 }
- */
+
 
 
 /* Below RESPONSIVE NAVBAR Adapted from:
@@ -714,7 +714,7 @@ a.show_mobile {
 .menu li {
     display: flex;
     /* magic */
-    align-self: center;
+    align-self: right;
     width: 100%;
     opacity: 0;
     visibility: hidden;
