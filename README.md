@@ -396,6 +396,13 @@ Please find the correspondent **compatibility and responsive testing** reflected
 | 13      | BrowserStack       | MacBook              | Safari 16.5        | OS X Ventura    |1920 x 1080                   |
 
 ### Test Recordings and Results
+#### TEST no. 1
+#### TEST no. 2
+
+
+https://github.com/Ethra8/history-quiz/assets/80659091/7e1b5607-8e57-4b42-978f-839fef9e7d70
+
+
 
 ## MANUAL TESTING
 ### QUIZ
