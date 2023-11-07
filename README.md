@@ -170,9 +170,9 @@ You will find in the points stated below a brief study aiming at providing the u
 
 ## USER PROFILES
 1. Malia is a history teacher at secondary level, and continuously researches for new technologies and websites to test her students' knowledge.
-2. Sarah is interested in history, and wants to learn more.
-3. Brian enjoys any kind of quiz which will test his knowledge on general topics, such as general histotry facts. Is keen to employ some of his leisure time researching new cultural entertainment to do at home, or on the train on his way to work.
-4. Mara is an English teacher, and and continuously researches for new technologies and websites for her students to practice comprehension skills on any general topic, including history.
+2. Josh is an English teacher, and continuously researches for new technologies and websites for her students to practice comprehension skills on any general topic, including history.
+3. Sarah is interested in history, and wants to learn more.
+4. Brian enjoys any kind of quiz which will test his knowledge on general topics, such as general history facts. He's keen to employ some of his leisure time researching new cultural entertainment to do at home, or on the train on his way to work.
 
 # UI
 ## UI - FIXED NAVIGATION BAR
