@@ -324,9 +324,9 @@ All the social-media icons have the same hover effect, which is the same from th
 ## TRANSITIONS
 
 ### NAVIGATION BAR TRANSITIONS
-- **AUDIO ICONS** - Have the following transition, to make the hover effect less abrupt:
+- **AUDIO ICONS** - Have the following transition, to make the hover effect less abrupt:  
          transition: all 0.2s;
-- **BARS ICON*** - On devices with a screen width smaller or equal to 767px, the navigation bar is collapsed by default, and the "bars icon" is displayed, by which the user can collapse/uncollapse the navigation bar. This icon has the following transition to make the hover effect less abrupt:
+- **BARS ICON*** - On devices with a screen width smaller or equal to 767px, the navigation bar is collapsed by default, and the "bars icon" is displayed, by which the user can collapse/uncollapse the navigation bar. This icon has the following transition to make the hover effect less abrupt:  
          transition: color 0.5s linear;
 # FEATURES
 
