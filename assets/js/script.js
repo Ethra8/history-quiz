@@ -92,7 +92,7 @@ function getRandomArrayWithoutRepeats(arrays, newArraysOfArray) {
   
 const newArraysOfArray = []; // Empty array to include all randomized questions from initial "question" array.
 
-//trigers getRandomArrayWithoutRepeats() as many times as arrays (questions) the questions array has.
+//trigers getRandomArrayWithoutRepeats() as many times as arrays (questions) the initial "questions" array has.
 function randomizeQuizRestartQuizButton() {
     
     for (b=0; b<questions.length; b++) {
@@ -101,6 +101,8 @@ function randomizeQuizRestartQuizButton() {
     }
 }
 
+//call function to execute it on load
+randomizeQuizRestartQuizButton();
 
 
 const body = document.getElementsByTagName('body')[0];
@@ -146,7 +148,6 @@ window.onclick = function(event) {
  */
 function displayQuestion() {
     
-    randomizeQuizRestartQuizButton();
     
     let nav = document.getElementsByTagName('nav')[0];
     nav.style.visibility = "visible";
@@ -388,6 +389,10 @@ function addIncorrectAnswerToCounter() {
  * resets scores to 0 and displays 1st question to restart quiz
  */
 function startNewQuiz() {
+
+    //creates a new randomized array of questions from inition questions array
+    randomizeQuizRestartQuizButton();
+
     i = 0;
 
     document.getElementById('correct').innerHTML = "0";
