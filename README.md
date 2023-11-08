@@ -58,6 +58,8 @@ EDNA TORRES MUNILL
     - [Typography Rationale of Use](#typography-rationale-of-use)
 
   - [Imagery](#imagery)
+      * [Dark Mode, Landing Page and Error Page](#dark-mode,-landing-page-and-error-page)
+      * [Light Mode](#light-mode)
 
   - [Animations and Transitions](#animations-and-transitions)
 
@@ -181,15 +183,15 @@ You will find in the points stated below a brief study aiming at providing the u
 
 # UI
 ## UI - FIXED NAVIGATION BAR
-**The fixed navigation bar appears once the user clicks on the cta button on the landing page "Start Quiz".**  
-![image](https://github.com/Ethra8/history-quiz/assets/80659091/6bc53151-a636-4a1f-8162-85d702bc2429)
+**The fixed navigation bar appears once the user clicks on the cta button "Start Quiz" on the middle of the landing page.**  
+![image](https://github.com/Ethra8/history-quiz/assets/80659091/bd517cdf-2953-4585-a068-63915349c98a)
 
 - The user is able to interact with the responsive navigation bar, fixed to the top while completing the quiz, on the contact page, and the 404 error page. So, even when scrolling down, the user can change the settings at any time. The navigation bar includes the following:
     * **LOGO** allows user to go to landing page when clicked.
     * **SETTINGS** include:
       + **Switch mode** from default ***dark*** to ***light*** anytime throughout the quiz.
-      + **Audio icons** allowing the user to play or pause the audio by clicking to the correspondent icons. The audio is a "tension orchestra chords" (for more details refer to the media creadits section below).
-    * **'RESTART QUIZ' button** allowing the user to restart the quiz, with a new random order of the questions, displaying automatically the new "question 1", and sets the counters to zero.
+      + **Audio** allowing the user to play or pause the audio by clicking to the audio icon. When the audio is off, the "sound on icon" is visible, and once the user clicks on it to initiate sound, the icon changes to a "sound off" icon, so that the user can click on it to pause the music. The audio is a "tension orchestra chords" (for more details refer to the correspondent [media credits](#media) section below).
+    * **'RESTART QUIZ' button** allowing the user to restart the quiz, with a new random order of the questions, and displaying automatically the new "question 1", also setting the counters to zero.
 
 ## UI - LANDING PAGE
 - On the landing page, there is only the header with the name of the page "History Facts Quiz", and a call-to-action button on the middle of the page to "Start Quiz". Once the user clicks it, the quiz automatically begins.
@@ -235,7 +237,7 @@ You will find in the points stated below a brief study aiming at providing the u
      * If the user's final result is of 9 or 10 correct answers, the final results title reads "Wow! Do you have a PhD in history?" with the user's final result stated below as "Your final score is x/10".
 
 ## UI - FOOTER
-- The footer is set to be fixed at the bottom of each page, and allows the user to interact at anytime, even throught the quiz, by clicking on the media icons in roder to visit the correspondent pages, and eventually follow the site on these platforms to be aware of any new feature implemented.
+- The footer is set to be fixed at the bottom of each page, and allows the user to interact at anytime, even throught the quiz, by clicking on the media icons in order to visit the correspondent social media page, and eventually follow the site on these platforms to be aware of any new feature implemented, or new quizes uploaded.
   ![image](https://github.com/Ethra8/history-quiz/assets/80659091/5edf3f3a-4114-4ba1-9205-f267632145f0)
 
   ![image](https://github.com/Ethra8/history-quiz/assets/80659091/0c26fefe-afc1-420d-9e24-64848618f50e)
@@ -244,7 +246,7 @@ You will find in the points stated below a brief study aiming at providing the u
 ## UI - CONTACT PAGE
 - The contact page gices two options by which the user is able to communicate with the admin:
 1. Through a simple form
-2. Through the admin's Whatsapp chat, using the Whatsapp API embedded url linked to the Whatsapp icon displayed.
+2. Through the admin's Whatsapp chat, using the **Whatsapp API embedded url** linked to the Whatsapp icon displayed.
 
 # DESIGN CHOICES
 
@@ -271,8 +273,6 @@ Used for font of each question's check message (of modal triggered when "Check A
 
 ![History Quiz Color Palette](https://github.com/Ethra8/history-quiz/assets/80659091/f00ef81a-8952-42d9-9d0b-1cd8c2920a4b)
 
-
-
 ### COLORS RATIONALE OF USE
 The dark mode was coded first of all, so all colors selected at firstm aimed to match the Milky Way sky background, such as *Oxford blue*, or bring contrast, such as *aquamarine*, or *whitesmoke*. *Palatinate* purple was combined with aquamarine for main titles and logo, as a nice text-shadow for the aquamarine title and logo.  
 Once the light mode was implemented. *onyx* was selected to bring clear contrast on *whitesmoke* background containers used for the questions.
@@ -291,7 +291,7 @@ To counteract the implied seriousness of a quiz, and make it more appealing to y
 
 ## IMAGERY
 
-### LANDING PAGE, 404 ERROR PAGE AND DARK MODE
+### DARK MODE, LANDING PAGE and 404 ERROR PAGE
 The image used is of the Milky Way, set as the site's background of the ***landing page***, the ***404 error page***, and the ***dark mode*** - (refer to the _credits_ section for more details):
 
 ![image](https://github.com/Ethra8/history-quiz/assets/80659091/35cdcf0f-bc05-4935-b1f6-325e7ee8806f)
@@ -303,16 +303,46 @@ The following image has been used for the light mode option, to contrast with th
 ![image](https://github.com/Ethra8/history-quiz/assets/80659091/44dddcc4-b50f-4c2c-8ae2-77d2dad2fd6c)
 
 
+## ANIMATIONS AND TRANSITIONS
+All the following animations and transitions placed on the different elements stated belowremain the same both in light and dark mode, as they are suitable for both.
+
+### LANDING PAGE HOVER
+The **call-to-action** button placed in the middle of the landing page has a hover that changes the background color from ***aquamarine*** to ***whitesmoke*** when the user moves the mouse on top of it.
+
+### NAVIGATION BAR HOVER
+The navigation bar has a hover effect on the following elements:
+- **SOUND ICONS** - When the user moves the mouse on top of them (only one icon is displayed at a time, depending if the sound is on or off), the icon color goes from default ***aquamarine*** to ***whitesmoke***.
+- **RESTART QUIZ BUTTON** - Its background color changes from ***aquamarine*** to ***whitesmoke*** when the user moves the mouse on top of it.
+- **BARS ICON** - Only displayes on portrait tablets and phones, that is, on devices with a screen width less or equal to 767px, where the navigation bar is collapsed beneath the icon, and the bar icon can be clicked to uncollapse the navigation bar. This icon has a hover effect which changes its color from ***aquamarine*** to ***whitesmoke***, to keep a seamless design.
+
+### QUIZ BUTTONS HOVER
+All the buttons from the quiz have a hover effect. Aiming for a seamless design, they all change from an ***aquamarine*** background to the slight darker tone ***aqua***, and the font changes from a default ***black*** to ***Oxford blue***.
+
+### FOOTER HOVER
+All the social-media icons have the same hover effect, which is the same from the sound icons placed on the navigation bar, aiming for a seamless design, that is from color ***aquamarine*** to ***whitesmoke***.
+
+## TRANSITIONS
+
+### NAVIGATION BAR TRANSITIONS
+- **AUDIO ICONS** - Have the following transition, to make the hover effect less abrupt:
+       transition: all 0.2s;
+- **BARS ICON*** - On devices with a screen width smaller or equal to 767px, the navigation bar is collapsed by default, and the "bars icon" is displayed, by which the user can collapse/uncollapse the navigation bar. This icon has the following transition to make the hover effect less abrupt:
+       transition: color 0.5s linear;
 # FEATURES
 
 ## RESPONSIVENESS
 This site is fully responsive on all device sizes. Please refer to [Test Recordings and Results](#test-recordings-and-results).
 
+## ACCESSIBILITY
+This site id WCSG 2.1 compliant.
+- This site has an optional **light mode**, apart from the default dark mode. The user can easily switch between modes at any time throughout the quiz, by just clicking on the switch placed on the fixed navigation bar.
+- This site has also been scanned for general accessibility arrors, and contrast, and no errors have been found. Refer to the **EqualWeb Accessibility Checker** report [here](#general-wcag-2.1-report).
+
 ## NAVIGATION BAR FEATURES
-Is fully responsive, and is fixed at the top, to allow the user to access its fucntionalities even when scrolling down. Its background has a slight transparency, so that it visually not so intrusive. Its functionalities are the following:
+Is fully responsive, and is fixed at the top, to allow the user to access its functionalities even when scrolling down. Its background has a slight transparency, so that it's visually not so intrusive. As the navigation bar passed the accessibility audits, its colors stay the same both in the light and dark modes. Its functionalities are the following:
 - **LOGO** - By clicking on it, the user gets to the landing page, before the questsions are displayed.
 - **SETTINGS** - On smaller devices these are placed underneath the logo. The site's settings are the following:
-    * **MODE-SWITCH ICON** - By clkicking on the gear icon, the user can switch from the default dark mode to the light mode, and viceversa, anytime during the quiz.
+    * **MODE SWITCH TOGGLE** - By clicking on the switch, the user can change from the default dark mode to the light mode, and viceversa, anytime during the quiz.
     * **MUSIC ICONS**  
         + **PLAY ICON** - By clicking on the ***play*** icon, the user triggers the audio mp3 file, which is coded to loop itself seamlessly.
         + **PAUSE ICON** - By clicking on the ***pause*** icon, the user pauses the audio file, which can be continued by clickg again on the play icon.
