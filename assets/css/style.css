@@ -419,18 +419,6 @@ p#contactUs {
     color: #001c3b;
 }
 
-#btnCheckAnswerDisabled {
-    background-color: lightgray;
-    color: rgb(57, 63, 68);
-    padding: 15px 30px;
-    font-family: 'Lobster', sans-serif;
-    font-size: 1.5rem;
-    border-radius: 50px;
-    border: 1px outset slategray;
-    transition: all 0.5s;
-    position: relative;
-}
-
 #questionSet {
     margin: 25vh auto 0;
     width: 100%;
@@ -1134,8 +1122,7 @@ attribution to: Responsive Navigation based on Malia Havlicek's codepen: https:/
         flex-wrap: wrap;
     }
 
-    #btnCheckAnswer,
-    #btnCheckAnswerDisabled {
+    #btnCheckAnswer {
         width: 80%;
         margin: 0 auto;
     }

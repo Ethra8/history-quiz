@@ -280,7 +280,7 @@ function addCorrectAnswerToCounter() {
     let btnCheckAnswer = document.getElementById('btnCheckAnswer');
     btnCheckAnswer.disabled = "true";//disables btn to check answer, avoiding users to hit it a second time and get more points for same correct answer
     btnCheckAnswer.style.cursor = "auto";//changes cursor:pointer which implies an action to the user, to "auto" (default mouse arrow)
-    btnCheckAnswer.id = "btnCheckAnswerDisabled";
+    
 
     
     //changes text of "nextQuestion" btn to "Final Results" once last question is reached
@@ -383,7 +383,6 @@ function addIncorrectAnswerToCounter() {
     let btnCheckAnswer = document.getElementById('btnCheckAnswer');
     btnCheckAnswer.disabled = "true";//disables btn to check answer, avoiding users to hit it a second time and get more points for same correct answer
     btnCheckAnswer.style.cursor = "auto";//changes cursor:pointer which implies an action to the user, to "auto" (default mouse arrow)
-    btnCheckAnswer.id = "btnCheckAnswerDisabled";
 
     btnNextQuestion.style.display = "inline-block";//displays button "Next Question", and activates it
    
