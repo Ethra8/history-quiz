@@ -577,8 +577,9 @@ To include accurate historic answers to the questions in this quiz, the followin
   - [Ratial segregation in the US](https://www.senate.gov/artandhistory/history/civil_rights/background.htm#:~:text=Passage%20of%20the%20Civil%20Rights,in%20public%20and%20private%20facilities.) at the [United States Senate](https://www.senate.gov) official site.
 
 # ACKNOWLEDGEMENTS
-
+- [Responsive navigation bar using only HTML and CSS](https://codepen.io/maliahavlicek/pen/LYeBwNY) by Malia Havlicek.
 - [How to get value of selected radio button using JS](https://www.geeksforgeeks.org/how-to-get-value-of-selected-radio-button-using-javascript/) at [Geeksforgeeks](www.geeksforgeeks.org) site.
+- [How to Toggle Switch in CSS](https://www.w3schools.com/howto/howto_css_switch.asp) at [W3Schools](https://www.w3schools.com/).
 - [Playing sound on click event with pure JS](https://stackoverflow.com/questions/51572489/playing-sound-on-click-event-with-pure-javascript) at [Stackoverflow](https://stackoverflow.com).
 - [Loop audio with JS](https://stackoverflow.com/questions/3273552/html5-audio-looping) at [Stackoverflow](https://stackoverflow.com).
 - [Howto CSS modals](https://www.w3schools.com/howto/howto_css_modals.asp) at [w3schools](https://www.w3schools.com/).
