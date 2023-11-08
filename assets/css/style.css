@@ -52,8 +52,13 @@ body {
     width: 100%;
 }
 
+#logo { /*only shows on devices max.767px*/
+    width: 200px;
+}
+
 #logo1 {
     float: left;
+    width: 200px;
     vertical-align: middle;
     width: 200px;
     margin-left: 0;
@@ -665,7 +670,6 @@ attribution to: Responsive Navigation based on Malia Havlicek's codepen: https:/
 
     #logo {
         vertical-align: middle;
-        width: 200px;
         margin-top: -20px;
         margin-left: 0;
         transition: all 0.15s linear;
@@ -725,6 +729,7 @@ attribution to: Responsive Navigation based on Malia Havlicek's codepen: https:/
         width: 100%;
         opacity: 0;
         visibility: hidden;
+        height: 65px;
     }
 
     .menu li a {
@@ -748,6 +753,11 @@ attribution to: Responsive Navigation based on Malia Havlicek's codepen: https:/
         position:unset;
         display: none;
     } */
+
+    #logo {
+        width: 150px;
+    }
+
     #setttings {
         position: absolute;
         left: 0;
@@ -821,7 +831,8 @@ attribution to: Responsive Navigation based on Malia Havlicek's codepen: https:/
 
     #navRestartBtn {
         position: absolute;
-        left: 4%;
+        left: 25px;
+        top: 85px;
     }
 
     #question {
