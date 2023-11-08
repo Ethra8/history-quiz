@@ -429,7 +429,7 @@ function changeMode() {
     let bgBody = body.getAttribute("class");
     let questionNum = document.getElementById('questionNum');
     let countDiv = document.getElementsByClassName('count')[0];
-    let radioBtns = document.getElementsByTagName('input[type="radio"]');
+    let radioBtns = document.getElementsByTagName('input');
     let radioBtn = document.getElementsByTagName('input[type="radio"]')[z];
 
     if (bgBody === "bgDarkMode"){
@@ -484,7 +484,7 @@ function saveMode(){
     let bgBody = body.getAttribute("class");
     let questionNum = document.getElementById('questionNum');
     let countDiv = document.getElementsByClassName('count')[0];
-    let radioBtns = document.getElementsByTagName('input[type="radio"]');
+    let radioBtns = document.getElementsByTagName('input');
     let radioBtn = document.getElementsByTagName('input[type="radio"]')[z];
 
     if(bgBody === "bgDarkMode") {

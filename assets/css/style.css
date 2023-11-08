@@ -476,8 +476,8 @@ p#contactUs {
 
 input[type=radio] {
     appearance: none;
-    width: 15px;
-    height: 15px;
+    width: 18px;
+    height: 18px;
     border-radius: 50%;
     background-clip: content-box;
     border: none;
@@ -811,6 +811,12 @@ attribution to: Responsive Navigation based on Malia Havlicek's codepen: https:/
         padding-top: 10px;
     }
 
+    input[type=radio] {
+        width: 20px;
+        height: 20px;
+    }
+
+
 }
 
 
@@ -818,23 +824,11 @@ attribution to: Responsive Navigation based on Malia Havlicek's codepen: https:/
 
 @media only screen and (max-width: 375px) {
 
-    /* nav no longer fixed, to liberate screen, as navRestartBtn is placed below settings, for space reasons, and a fixed nav would take far too much viewport*/
-    /* nav {
-        position:unset;
-        display: none;
-    } */
 
     #logo {
         width: 150px;
     }
-
-    .slider {
-    /* for it to be centered vertically in nav*/
-        /* top: -28px;
-        bottom: 28px; */
-      }
     
-
     .menu li {
         display: flex;
         /* magic */
@@ -844,7 +838,6 @@ attribution to: Responsive Navigation based on Malia Havlicek's codepen: https:/
         visibility: hidden;
         height: 65px;
     }
-
 
     h1 {
         font-size: 320%;
@@ -885,7 +878,6 @@ attribution to: Responsive Navigation based on Malia Havlicek's codepen: https:/
         display: flex;
     }
 
-
     #errorPage header {
         min-height: 50vh;
         max-height: 50vh !important;
@@ -900,11 +892,6 @@ attribution to: Responsive Navigation based on Malia Havlicek's codepen: https:/
 
     #errorPage p {
         font-size: 200%;
-    }
-
-    input[type=radio] {
-        width: 18px;
-        height: 18px;
     }
 
     #navRestartBtn {
