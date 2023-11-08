@@ -62,11 +62,6 @@ body {
     vertical-align: middle;
     width: 200px;
     margin-left: 0;
-    transition: all 0.15s linear;
-}
-
-#logo1:hover {
-    transform: scale(1.05);
 }
 
 /* contains fontawesome icon fa-bars */
