@@ -166,6 +166,7 @@ EDNA TORRES MUNILL
 # UX
 You will find in the points stated below a brief study aiming at providing the user with the best possible experience when visiting this site.
 ## TARGET AUDIENCE
+
 ## PROJECT GOALS
 ## USER STORIES
 1. **As a first time visitor**
@@ -410,7 +411,8 @@ The quiz functionality has been manually tested and works seamlessly in both mod
 
 ## DEFECT TRACKING
 ### GITHUB ISSUES
-
+- Nav anchor link to contact page is underlined.
+- Navbar content does not show in width:768px (1px defect).
 ## DEFECTS OF NOTE
 No defects of note have been detencted on this site.
 ## OUTSTANDING DEFECTS
