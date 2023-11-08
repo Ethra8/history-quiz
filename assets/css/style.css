@@ -52,7 +52,7 @@ body {
     width: 100%;
 }
 
-#logo { /*only shows on devices max.767px*/
+#logo { /*only shows on devices max.767px, but width is specified here so is only reduced in @media max-width 280px and doesn't conflic with max-767px as rest of code is set*/
     width: 200px;
 }
 
@@ -98,18 +98,6 @@ body {
 
 /*end of fa-bars personal styling*/
 
-/* nav ul {
-    list-style: none;
-    padding: 0;
-    margin-top: 0;
-    margin-bottom: 10px;
-}
-
-nav li {
-    display: inline;
-}
- */
-
 
 /* Below RESPONSIVE NAVBAR Adapted from:
 attribution to: Responsive Navigation based on Malia Havlicek's codepen: https://codepen.io/maliahavlicek/pen/LYeBwNY */
@@ -128,38 +116,16 @@ attribution to: Responsive Navigation based on Malia Havlicek's codepen: https:/
 .show_mobile,
 .toggle {
     display: none;
+    align-content: center;
 }
 
-/* nav {
-    background-color: rgba(0, 28, 59, 0.7);
-    display: none;
-    padding: 15px 4%;
-    visibility: hidden;
-    position: fixed;
-    width: 100%;
-    justify-content:space-between;
-    min-height: 60px !important;
-    max-height: 80px;
-} */
-
-/* nav img {
-    display: inline-flex;
-    margin-bottom:-20px;
-    width: 200px;
-} */
-
-/* nav a {
-    text-decoration: none;
-    transition: all 0.2s linear;
+nav a {
+    display: flex;
+    align-content: center;
 }
-
-nav a:hover {
-    color: #D6D6D6;
-} */
-
 
 nav p {
-    display: inline;
+    display: inline-flex;
     color: whitesmoke;
     font-size: 150%;
     font-weight: 500;
@@ -167,6 +133,7 @@ nav p {
     transform: rotate(-5deg);
     padding-top: 0;
     text-align: left !important;
+    margin-bottom: 30px !important;
 }
 
 audio {
@@ -648,6 +615,29 @@ footer .social_media {
 }
 
 
+
+/** Reduce nav p in xx-smal devices, to maintain cirrect display*/
+@media only screen and (max-width: 285px) {
+
+    nav a {
+        display: inline;
+        align-content: center;
+    }
+    
+    nav p {
+        display: none;
+        visibility: hidden;
+    }
+
+    #logo {
+        margin-bottom: -40px;
+    }
+    
+} 
+
+
+
+
 /**** RESPONSIVE NAVBAR *******/
 @media only screen and (max-width: 767px) {
     /* Below RESPONSIVE NAVBAR Adapted from:
@@ -670,7 +660,7 @@ attribution to: Responsive Navigation based on Malia Havlicek's codepen: https:/
 
     #logo {
         vertical-align: middle;
-        margin-top: -20px;
+        margin-top: -10px;
         margin-left: 0;
         transition: all 0.15s linear;
     }
@@ -722,16 +712,6 @@ attribution to: Responsive Navigation based on Malia Havlicek's codepen: https:/
         border: teal 1px solid;
     }
 
-    .menu li {
-        display: flex;
-        /* magic */
-        align-self: center;
-        width: 100%;
-        opacity: 0;
-        visibility: hidden;
-        height: 65px;
-    }
-
     .menu li a {
         text-align: left;
         align-self: center;
@@ -767,6 +747,17 @@ attribution to: Responsive Navigation based on Malia Havlicek's codepen: https:/
         margin-top: -1px;
         width: 100%;
     }
+
+    .menu li {
+        display: flex;
+        /* magic */
+        align-self: center;
+        width: 100%;
+        opacity: 0;
+        visibility: hidden;
+        height: 65px;
+    }
+
 
     h1 {
         font-size: 320%;
@@ -886,6 +877,16 @@ attribution to: Responsive Navigation based on Malia Havlicek's codepen: https:/
 
 @media only screen and (min-width: 376px) and (max-width: 576px) {
 
+    .menu li {
+        display: flex;
+        /* magic */
+        align-self: center;
+        width: 100%;
+        opacity: 0;
+        visibility: hidden;
+        height: 25px;
+    }
+
     #setttings {
         position: absolute;
         left: 0;
@@ -934,7 +935,7 @@ attribution to: Responsive Navigation based on Malia Havlicek's codepen: https:/
     #navRestartBtn {
         position: absolute;
         right: 4%;
-        top: 85px;
+        top: 25px;
     }
 
     #question {
@@ -988,6 +989,22 @@ attribution to: Responsive Navigation based on Malia Havlicek's codepen: https:/
 /** MEDIUM DEVICES - TABLETS PORTRAIT **/
 
 @media only screen and (min-width: 577px) and (max-width: 768px) {
+
+    .menu li {
+        display: flex;
+        /* magic */
+        align-self: center;
+        width: 100%;
+        opacity: 0;
+        visibility: hidden;
+        height: 25px;
+    }
+
+    #navRestartBtn {
+        position: absolute;
+        right: 4%;
+        top: 25px;
+    }
 
     #setttings {
         position: absolute;
