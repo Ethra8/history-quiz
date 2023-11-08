@@ -122,6 +122,7 @@ attribution to: Responsive Navigation based on Malia Havlicek's codepen: https:/
 nav a {
     display: flex;
     align-content: center;
+    text-decoration: none;
 }
 
 nav p {
