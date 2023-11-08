@@ -109,18 +109,26 @@ const body = document.getElementsByTagName('body')[0];
 let i = 0; //used to loop through questions in quiz
 let questionDiv = document.getElementById('question');
 const audio = new Audio("./assets/media/music.mp3");
-const gearIcon = document.getElementById("fa-gear");
+// const gearIcon = document.getElementById("fa-gear");
+const toggleMode = document.getElementById('switchMode');
 
+toggleMode.addEventListener('click', changeMode);
+// gearIcon.addEventListener('click', changeMode); // to change from dark/light mode
 
-gearIcon.addEventListener('click', changeMode); // to change from dark/light mode
-
+const faPause = document.getElementById('fa-pause');
+const faPlay = document.getElementById('fa-play');
 //this function to loop the audio file was researched in Stack overflow (acknowledged in the README file)
-document.getElementById("fa-play").addEventListener('click', function (){
+faPlay.addEventListener('click', function (){
     audio.addEventListener('ended', function() {
         this.currentTime = 0;
         this.play();
     }, false);
     audio.loop ? audio.pause() : audio.play();
+    faPause.style.display = "inline-block";
+    faPause.style.visibility = "visible";
+    faPlay.style.display = "none";
+    faPlay.style.visibility = "hidden";
+
 });
 
 document.getElementById("fa-pause").addEventListener("click", stopAudio);
@@ -195,8 +203,6 @@ function getId(id){
         return `option-${id}`;
     }
 }
-
-
 
 
 /**
@@ -285,6 +291,7 @@ function addCorrectAnswerToCounter() {
     btnNextQuestion.addEventListener('click', displayNextQuestion);// Once "Next Question" btn is clicked, function displayNextQuestion() is triggered
 }
 
+
 /**
  * Adds +1 to i, and displays next question if i< total number of Qs, or displays final message when i === to final question.
  */
@@ -359,7 +366,7 @@ function displayNextQuestion() {
         
             }
         }
-        document.getElementById("fa-gear").style.display = "none"; // hides icon to change mode once final msg w. final results is shown
+        // document.getElementById("fa-gear").style.display = "none"; // hides icon to change mode once final msg w. final results is shown
     }
 }
 
@@ -389,7 +396,6 @@ function addIncorrectAnswerToCounter() {
  * resets scores to 0 and displays 1st question to restart quiz
  */
 function startNewQuiz() {
-
     //creates a new randomized array of questions from inition questions array
     randomizeQuizRestartQuizButton();
 
@@ -397,10 +403,11 @@ function startNewQuiz() {
 
     document.getElementById('correct').innerHTML = "0";
     document.getElementById('incorrect').innerHTML = "0";
-    gearIcon.style.display = "inline-flex";
+    // gearIcon.style.display = "inline-flex";
 
     displayQuestion();
 }
+
 
 /**
  * displays nav on 404.html
@@ -410,6 +417,7 @@ function displayNav() {
     nav.style.visibility = "visible";
     nav.style.display = "flex"; 
 }
+
 
 /**
  * Switches from dark mode to light mode, and viceversa
@@ -421,7 +429,7 @@ function changeMode() {
     let bgBody = body.getAttribute("class");
     let questionNum = document.getElementById('questionNum');
     let countDiv = document.getElementsByClassName('count')[0];
-    let radioBtns = document.getElementsByTagName('input');
+    let radioBtns = document.getElementsByTagName('input[type="radio"]');
     let radioBtn = document.getElementsByTagName('input[type="radio"]')[z];
 
     if (bgBody === "bgDarkMode"){
@@ -476,7 +484,7 @@ function saveMode(){
     let bgBody = body.getAttribute("class");
     let questionNum = document.getElementById('questionNum');
     let countDiv = document.getElementsByClassName('count')[0];
-    let radioBtns = document.getElementsByTagName('input');
+    let radioBtns = document.getElementsByTagName('input[type="radio"]');
     let radioBtn = document.getElementsByTagName('input[type="radio"]')[z];
 
     if(bgBody === "bgDarkMode") {
@@ -534,6 +542,11 @@ function hideNav() {
 
 function stopAudio() {
     audio.pause();
+    faPlay.style.display = "inline-block";
+    faPlay.style.visibility = "visible";
+    faPause.style.display = "none";
+    faPause.style.visibility = "hidden";
+
 }
 
 
