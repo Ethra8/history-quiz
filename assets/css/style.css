@@ -1059,7 +1059,7 @@ attribution to: Responsive Navigation based on Malia Havlicek's codepen: https:/
 
 /** MEDIUM DEVICES - TABLETS PORTRAIT **/
 
-@media only screen and (min-width: 577px) and (max-width: 768px) {
+@media only screen and (min-width: 577px) and (max-width: 767px) {
 
     .menu li {
         display: flex;
@@ -1164,7 +1164,7 @@ attribution to: Responsive Navigation based on Malia Havlicek's codepen: https:/
 
 /** LARGE TABLETS - LANDSCAPE **/
 
-@media only screen and (min-width: 767px) and (max-width: 992px) {
+@media only screen and (min-width: 768px) and (max-width: 992px) {
 
     #setttings {
         position: absolute;
