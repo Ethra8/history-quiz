@@ -218,9 +218,11 @@ function displayRadioValue() {
 
                 modalContent.innerHTML = `
                 <div>
+                <div id="modal">
                 <h2>That's right! ... You've got it!!</h2>
                 <br>
                 <button id="btnNextQuestion">Next Question</button>
+                </div>
                 </div>
                 `;
                 
@@ -237,11 +239,13 @@ function displayRadioValue() {
 
                 modalContent.innerHTML = `
                 <div>
+                <div id="modal">
                 <h2>Awww . . . you got it wrong this time .</h2>
                 <br><br>
                 <p>The correct answer is:
                 <br><strong> ${correctAnswer}</strong></p>
                 <button id="btnNextQuestion">Next Question</button>
+                </div>
                 </div>
                 `;
                 

@@ -497,6 +497,13 @@ input[type="radio"]:checked {
 
 /** MODAL CHECK ANSWER DISPLAY ***/
 
+/*div container for the modal pop up */
+#modal {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column
+}
+
 /* Modal (background: page darkened) */
 .modal {
     display: none;
@@ -519,11 +526,12 @@ input[type="radio"]:checked {
     justify-content: center;
     background-color: whitesmoke;
     margin: auto;
-    padding: 40px 30px;
+    padding: 60px 30px 30px;
     border: 3px outset #001c3b;
     border-radius: 50px;
     width: 50%;
-    height: 50vh;
+    min-height: 50vh;
+    max-height: 80vh;
 }
 
 .modal-content h2 {
@@ -854,7 +862,7 @@ attribution to: Responsive Navigation based on Malia Havlicek's codepen: https:/
 
     .modal-content {
         width: 95%;
-        height: 50vh;
+        max-height: 75vh;
     }
 
     #btnNextQuestion {
@@ -966,7 +974,7 @@ attribution to: Responsive Navigation based on Malia Havlicek's codepen: https:/
 
     .modal-content {
         width: 95%;
-        height: 50vh;
+        max-height: 75vh;
     }
 
     #btnNextQuestion {
@@ -1071,7 +1079,7 @@ attribution to: Responsive Navigation based on Malia Havlicek's codepen: https:/
 
     .modal-content {
         width: 75%;
-        height: 50vh;
+        max-height: 75vh;
     }
 
     #btnNextQuestion {
@@ -1115,7 +1123,7 @@ attribution to: Responsive Navigation based on Malia Havlicek's codepen: https:/
 
     .modal-content {
         width: 60%;
-        height: 50vh;
+        max-height: 75vh;
     }
 
 
