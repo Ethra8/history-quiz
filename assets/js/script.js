@@ -113,10 +113,10 @@ const audio = new Audio("./assets/media/music.mp3");
 const toggleMode = document.getElementById('switchMode');
 let bgBody = body.getAttribute("class");
 
-if (bgBody === "bgDarkMode"){
-    toggleMode.ckecked = true;
+if (bgBody === "bgLightMode"){
+    toggleMode.ckecked = false;
 } else {
-    toggleMode.checked = false;
+    toggleMode.checked = true;
 };
 
 toggleMode.addEventListener('click', changeMode);
