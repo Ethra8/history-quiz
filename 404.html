@@ -20,14 +20,44 @@
 
 <body id="errorPage" class="bgDarkMode">
 
-    <nav>
+  <!-- NAVBAR -->
+  <nav id="navIndex">
+    <a href="./index.html" aria-label="return to landing page">
+      <img id="logo" src="./assets/images/logo.png"
+        srcset="https://englishgrows.com/history-quiz/assets/images/logo.png" alt="logo">
+      <p>Quiz</p>
+    </a>
+    <input type="checkbox" name="menuToggle" id="menuToggle">
+    <label for="menuToggle">
+      <span class="toggle">
+        <a class="show_mobile" href="./index.html" aria-label="return to landing page">
+          <img id="logo1" src="./assets/images/logo.png"
+            srcset="https://englishgrows.com/history-quiz/assets/images/logo.png" alt="logo">
+        </a>
+        <span id="list_symbol"><i class="fa fa-bars fa-2x"></i></span>
+      </span>
+    </label>
+    <!--the menu that will slide in from the left-->
+    <ul id="menu" class="menu nav_item">
+      <li>
         <div>
-            <a href="index.html">
-                <img src="./assets/images/logo.png" alt="logo" width="200">
-            </a>
-            <p>Quiz</p>
+          <span id="settings">
+            <i class="fa-regular fa-sun"></i>
+            <label class="switch">
+              <input id="switchMode" type="checkbox" checked>
+              <span class="slider round"></span>
+            </label>
+            <i class="fa-regular fa-moon"></i>
+            <i class="fa fa-volume-high" id="fa-play"></i>
+            <i class="fa fa-volume-xmark" id="fa-pause"></i>
+          </span>
         </div>
-    </nav>
+      </li>
+      <li>
+        <button id="navRestartBtn">Restart Quiz</button>
+      </li>
+    </ul>
+  </nav>
 
     <header>
         <h1>Ouups ... Wrong path!</h1>
