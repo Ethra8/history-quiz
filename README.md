@@ -106,9 +106,9 @@ EDNA TORRES MUNILL
     - [404 Error Page Features](#404-error-page-features)
 
   - [Future Features](#future-features)
-    - [Add Different Quizzes](#add-different-quizzes)
-    - [Question Images](#question-images)
-    - [Contact Form](#contact-form)
+    - [Include Different Topics Categories](#include-different-topics-categories)
+    - [Membership By Monthly Subscription](#membership-by-monthly-subscription)
+    - [User Can Create Own Quiz](#user-can-create-own-quiz)
 
 - [TESTING](#testing)
 
