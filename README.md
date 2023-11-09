@@ -363,17 +363,17 @@ All social-media icons have the following transition to make their hover effect 
 ## ANIMATIONS
 The site has the following animations:
 ### NAVIGATION BAR AND HOME PAGE ANIMATIONS
-- **'Quiz' Word** next to the logo (on the navigation bar), and as part of the title header (on the home page) has the following animation:
+- **'Quiz' Word** next to the logo (on the navigation bar), and as part of the title header (on the home page) has the following animation:  
        transform: rotate(-5deg);
-- **Swith Mode Toggle** has the following animation:
-       -webkit-transform: translateX(26px);
-       -ms-transform: translateX(26px);
-       transform: translateX(26px);
+- **Swith Mode Toggle** has the following animation:  
+       -webkit-transform: translateX(26px);  
+       -ms-transform: translateX(26px);  
+       transform: translateX(26px);  
 
 ### FOOTER ANIMATIONS
-The footer icons have the followng animations when the user hovers through them, so that they become a bit bigger, and they present a sliht rotation to the left:
-       transform: scale(1.1);
-       transform: rotate(-7deg);
+The footer icons have the followng animations when the user hovers through them, so that they become a bit bigger, and they present a sliht rotation to the left:  
+       transform: scale(1.1);  
+       transform: rotate(-7deg);  
 
 # FEATURES
 ## IMPLEMENTED FEATURES
