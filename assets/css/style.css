@@ -627,6 +627,10 @@ footer .social_media {
     margin: auto 0;
 }
 
+#errorPage nav p{
+    display: inline-flex;
+}
+
 
 
 /** Reduce nav p in xx-smal devices, to maintain cirrect display*/
