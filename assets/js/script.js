@@ -162,20 +162,17 @@ window.onclick = function(event) {
  * to check whether the correct answer was selected through radio btn.
  */
 function displayQuestion() {
+    window.scrollTo(0,0);
     let nav = document.getElementsByTagName('nav')[0];
     nav.style.visibility = "visible";
     nav.style.display = "flex";
-
-
-
+    
     document.getElementsByTagName('button')[1].style.display = "none";//hides "Start Quiz" button
     document.getElementsByClassName("startQuiz")[0].style.display = "none";//hides parent div of "Start Quiz" button, to avoid it taking space
     document.getElementsByTagName("header")[0].style.display = "none";
     document.getElementsByClassName("count")[0].style.visibility = "visible";
 
     questionDiv.style.display = "block";//displays "question"
-
-    
 
     questionDiv.innerHTML = `
         <p><span id="questionNum">Question ${i+1}</span><br><br>
@@ -190,6 +187,7 @@ function displayQuestion() {
         <button id="btnCheckAnswer">Check Answer</button>
         </div>
     `;
+        
         let btnCheck = document.getElementById('btnCheckAnswer');
         btnCheck.addEventListener('click', displayRadioValue);
         saveMode();
