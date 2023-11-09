@@ -3,9 +3,8 @@
 ## PROJECT OVERVIEW
 
 - The aim of this site is to test the user's knowledge on general history facts from around the globe.
-- This site can be of great value to history teachers to check their students' knowledge in an entertaining way.
-- This site can also be of great value to teachers of English as a second language, as a tool to offer students some alternative and entertaining language practice. 
-- This site is useful to anyone interested in history, who might also want to increase knowledge on global history facts.
+- This site can be of great value to history teachers to check their students' knowledge in an entertaining way, and can also be of great value to teachers of English as a second language, as a tool to offer students some alternative and entertaining language practice. 
+- This site is useful to anyone interested in history, who might also want to increase knowledge on global history facts, as well as for parents, as a family get-together activity.
 - This site might also prove of great use to secondary students wanting to reinforce their knowledge on the history subject.
 
 ![image](https://github.com/Ethra8/history-quiz/assets/80659091/05a021fa-ac26-48bf-bd10-b1dc61f12de2)
@@ -167,11 +166,17 @@ EDNA TORRES MUNILL
 # UX
 You will find in the points stated below a brief study aiming at providing the user with the best possible experience when visiting this site.
 ## TARGET AUDIENCE
-
+- This site's target audience is pretty wide, ranging from teenagers to elderly users, regardless of their cultural or social background.
+- History teachers at secondary levels
+- Teachers of English as a second language
+- Secondary students around the globe, aiming to practice their knowledge in general history, or wanting to practice their English language skills.
+- Adult students of English as a second language around the globe, wanting to practice their comprehensive skills, and use of the English language.
+- Parents of teens who enjoy cultural entertainmnet time with their sons and daughters.
 ## PROJECT GOALS
+This project aims to entertain and test the users' knowledge on general history facts.
 ## USER STORIES
-1. **As a first time visitor**
-2. **As a returning visitor**
+1. **As a first time visitor** : The user is curious and wants to complete the quiz to check knowledge on general history facts.
+2. **As a returning visitor** : The user takes the quiz with randomized questions, and checks his knowledge, comparing the final results.
 
 ## USER PROFILES
 1. Malia is a history teacher at secondary level, and continuously researches for new technologies and websites to test her students' knowledge.
