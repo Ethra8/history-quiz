@@ -363,17 +363,32 @@ All social-media icons have the following transition to make their hover effect 
 ## ANIMATIONS
 The site has the following animations:
 ### NAVIGATION BAR AND HOME PAGE ANIMATIONS
-- **'Quiz' Word** next to the logo (on the navigation bar), and as part of the title header (on the home page) has the following animation:  
+- **'Quiz' Word** next to the logo (on the navigation bar), and as part of the title header (on the home page) has the following animation:
+
        transform: rotate(-5deg);
-- **Swith Mode Toggle** has the following animation:  
-       -webkit-transform: translateX(26px);  
-       -ms-transform: translateX(26px);  
+
+- **Swith Mode Toggle** has the following animation:
+
        transform: translateX(26px);  
 
 ### FOOTER ANIMATIONS
 The footer icons have the followng animations when the user hovers through them, so that they become a bit bigger, and they present a sliht rotation to the left:  
-       transform: scale(1.1);  
+       transform: scale(1.1);
        transform: rotate(-7deg);  
+
+## DESIGN ELEMENTS
+### ICONS
+All icons present in the navigation bar and the footer have been taken from ***Font Awesome***, and have been styled  with the colors of the site. They are all in ***aquamarine***, and turn to ***whitesmoke*** when the user hovers on them.
+### AUDIO
+There is music availale, and it can be played or paused at any time throught the quiz by clicking on the "audio on"/"audio off" icons that appear in the navigation, one at a time depending whether the music is playing or is paused.
+### SWITCH TOGGLE
+The switch toggle on the navigation bar allows the user to switch between the default ***dark mode*** and the ***light mode*** at anytime during the quiz, and as many times the user wishes.
+### BUTTONS
+Buttons are present along the site. To start quiz from the home page, to restart quiz anytime (button placed in the navigation bar), to check the selected answer on each question, to move to next question, and to go to final results.
+### RADIO BUTTONS
+Radio buttons is the element used to present the user with three possible answers for each question. Once the user selects a radio button, he/she can check the answer, and the modal displays.
+### MODAL
+The modal is styled with the site's lighter colors, and displays when the user checks answer.
 
 # FEATURES
 ## IMPLEMENTED FEATURES
