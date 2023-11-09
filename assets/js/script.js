@@ -139,7 +139,7 @@ faPlay.addEventListener('click', function (){
 });
 
 document.getElementById("fa-pause").addEventListener("click", stopAudio);
-document.getElementsByTagName('button')[1].addEventListener('click', displayQuestion); //Once user clicks on "Start Quiz" button, function displayQuestion is triggered to show 1st question of quiz
+document.getElementById('startQuizBtn').addEventListener('click', displayQuestion); //Once user clicks on "Start Quiz" button, function displayQuestion is triggered to show 1st question of quiz
 document.getElementById('navRestartBtn').addEventListener('click', startNewQuiz); //user can restart quiz anytime from navbar
 
 // Get the modal
