@@ -27,7 +27,8 @@ body {
 
 /*NAVBAR*/
 
-#navIndex {
+#navIndex,
+#navError {
     background-color: rgba(0, 28, 59, 0.7);
     padding: 15px 4%;
     position: fixed;
