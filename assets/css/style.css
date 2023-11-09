@@ -377,7 +377,7 @@ footer {
 }
 
 #questionSet {
-    margin: 25vh auto 0;
+    margin: 20vh auto 0;
     width: 100%;
 }
 
@@ -390,7 +390,7 @@ footer {
     font-weight: 400;
     line-height: 1.6;
     width: 70%;
-    margin: auto auto;
+    margin: auto;
     border-top-right-radius: 50px;
     border-top-left-radius: 50px;
     border: 3px outset aquamarine;
@@ -802,6 +802,11 @@ attribution to: Responsive Navigation based on Malia Havlicek's codepen: https:/
         top: 95px;
     }
 
+    #questionSet {
+        margin: 120px auto 0;
+        width: 100%;
+    }    
+
     #question {
         width: 95%;
     }
@@ -861,14 +866,7 @@ attribution to: Responsive Navigation based on Malia Havlicek's codepen: https:/
         opacity: 0;
         visibility: hidden;
         height: 25px;
-    }
-
-    .slider {
-        /* for it to be centered vertically in nav*/
-            /* top: -28px;
-            bottom: 28px; */
-          }
-    
+    }    
 
     header {
         min-height: 75vh;
@@ -895,13 +893,13 @@ attribution to: Responsive Navigation based on Malia Havlicek's codepen: https:/
         padding: 20vh 4%;
     }
 
-    #errorPage h1 {
+    #errorPage header h1 {
         display: inline-flex;
         font-size: 2rem;
         margin: auto 0;
     }
 
-    #errorPage p {
+    #errorPage header p {
         font-size: 200%;
     }
 
@@ -910,6 +908,11 @@ attribution to: Responsive Navigation based on Malia Havlicek's codepen: https:/
         right: 4%;
         top: 25px;
     }
+
+    #questionSet {
+        margin: 120px auto 0;
+        width: 100%;
+    }    
 
     #question {
         width: 95%;
