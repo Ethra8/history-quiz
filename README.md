@@ -339,12 +339,15 @@ All the social-media icons have the same hover effect, which is the same from th
        transition: color 0.5s linear;
 
 - **SWITCH MODE TOGGLE** - It has a very slight transition to make its change of state less abrupt:  
+
        transition: .4s;
 
 - **BUTTONS** - All buttons have the following transition to make they hover effect sightly progressive:  
+
        transition: all 0.5s;
 
 - **FOOTER ICONS** - All social-media icons have the following transition to make their hover effect sightly progressive:  
+
        transition: all 0.15s linear;
 
 # FEATURES
