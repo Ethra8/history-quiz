@@ -94,6 +94,7 @@ EDNA TORRES MUNILL
   - [Implemented Features](#implemented-features)
 
     - [Responsiveness](#responsiveness)
+    - [Accessibility](#accessibility)
     - [Navigation Bar Features](#navigation-bar-features)
     - [Header Features](#header-features)
     - [Footer Features](#footer-features)
