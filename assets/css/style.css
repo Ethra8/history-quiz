@@ -46,7 +46,7 @@ body {
 }
 
 #navError {
-    display: block;
+    display: flex;
 }
 
 #logo { /*only shows on devices max.767px, but width is specified here so is only reduced in @media max-width 280px and doesn't conflic with max-767px as rest of code is set*/
@@ -194,7 +194,7 @@ footer {
     height: 50vh;
 }
 
-.fa-regular {
+.sunMoonIcons {
     color: whitesmoke;
     margin: 5px;
 }
