@@ -350,13 +350,30 @@ All the social-media icons have the same hover effect, which is the same from th
 
        transition: .4s;
 
-- **BUTTONS** - All buttons have the following transition to make they hover effect sightly progressive:  
+### BUTTONS
+All buttons of the site (home page, quiz and error page) have the following transition to make they hover effect sightly progressive:  
 
        transition: all 0.5s;
 
-- **FOOTER ICONS** - All social-media icons have the following transition to make their hover effect sightly progressive:  
+### FOOTER TRANSITIONS
+All social-media icons have the following transition to make their hover effect sightly progressive:  
 
        transition: all 0.15s linear;
+
+## ANIMATIONS
+The site has the following animations:
+### NAVIGATION BAR AND HOME PAGE ANIMATIONS
+- **'Quiz' Word** next to the logo (on the navigation bar), and as part of the title header (on the home page) has the following animation:
+       transform: rotate(-5deg);
+- **Swith Mode Toggle** has the following animation:
+       -webkit-transform: translateX(26px);
+       -ms-transform: translateX(26px);
+       transform: translateX(26px);
+
+### FOOTER ANIMATIONS
+The footer icons have the followng animations when the user hovers through them, so that they become a bit bigger, and they present a sliht rotation to the left:
+       transform: scale(1.1);
+       transform: rotate(-7deg);
 
 # FEATURES
 ## IMPLEMENTED FEATURES
