@@ -96,10 +96,9 @@ EDNA TORRES MUNILL
     - [Responsiveness](#responsiveness)
     - [Accessibility](#accessibility)
     - [Navigation Bar Features](#navigation-bar-features)
-    - [Header Features](#header-features)
     - [Footer Features](#footer-features)
     - [Home Page Features](#home-page-features)
-    - [404 Page Features](#404-error-page-features)
+    - [404 Error Page Features](#404-error-page-features)
 
   - [Future Features](#future-features)
     - [Add Different Quizzes](#add-different-quizzes)
@@ -369,7 +368,7 @@ This site id WCSG 2.1 compliant.
 - This site has an optional **light mode**, apart from the default dark mode. The user can easily switch between modes at any time throughout the quiz, by just clicking on the switch placed on the fixed navigation bar.
 - This site has also been scanned for general accessibility arrors, and contrast, and no errors have been found. Refer to the **EqualWeb Accessibility Checker** report [here](#general-wcag-2.1-report).
 
-### DARK AND LIGHT MODES 
+#### DARK AND LIGHT MODES 
 By clicking on the switch placed on the navigation bar, the user can toggle between the default dark mode, and the light mode, all through the quiz:
 -
 
@@ -395,6 +394,21 @@ Que quiz features 10 randomized questions, each with three optional answers. Qui
 
 ### FOOTER FEATURES
 The footer includes a total of four icons. Three of them are from social media (Instagram, Facebook and Twitter), and the fourth icon is an envelope. Once the user clicks on any of the social media icons, the site's profile from the correspondent media opens in a new tab. When the user clicks on the envelope icon, the default emailing provider initiates and the user can seamlessly send an email to the admin.
+
+### HOME PAGE FEATURES
+Has a Milky Way image covering all the background, a header with the title of the page, a call-to-action button placed in the middle to "Start Quiz", and the footer placed at the bottom.
+
+### 404 ERROR PAGE FEATURES
+The page has the same style as the home page, for a seamless experience. The header states it is the 404 error page". The navigation bar is displayed, allowing the user to interact with all its features. Placed in the middle, there is also the "go to home page" button allowing the user to redirect to the home page, and the footer is also displayed at the bottom, allowing the user to interact with different social-media platforms, or to send an email to the admin.
+
+## FUTURE FEATURES
+The following features have not yet been implemented due to constraints, but will very likely be implemented in a near future as to boost this site's purpose and user UX.
+### INCLUDE DIFFERENT TOPICS CATEGORIES
+On the home page, different topic categories will be offered to users. The "Start Quiz" button will therefore be replace by different buttons representing the different topics available (e.g. "History", "Climate", "Biology", etc.). Users who are still not members will be able to access one quiz from each of the available categories.
+### MEMBERSHIP BY MONTHLY SUBSCRIPTION
+Users will be able to create an account, by a symbolic monthly subscription that will allow them to create and save their own quiz, and access all the other quizzes posted from different subjects.
+### USER CAN CREATE OWN QUIZ
+Members will be able to create their own quiz by completing a series of inputs which values will be stored as variables. This new quizzes will be stored in the user's account, and a link created so the user will be able to easily access them and/or share.
 
 # TESTING
 The following code validators have been undertaken to test all the code of this this
