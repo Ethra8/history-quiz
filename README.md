@@ -325,9 +325,9 @@ All the social-media icons have the same hover effect, which is the same from th
 
 ### NAVIGATION BAR TRANSITIONS
 - **COLLAPSED NAVIGATION BAR ELEMENT**
-    * When the navigation bar is collapsed on portrait tablets and phones, the following transition is applied to the collapsable navigation bar (on id menuToggle), so that it displays with a slight progression when page is loaded:
+    * When the navigation bar is collapsed on portrait tablets and phones, the following transition is applied to the collapsable navigation bar (on id menuToggle), so that it displays with a slight progression when page is loaded:  
          transition: all .7s linear;
-    * Once the user click on the bars-icon to uncollapse the navigation bar on smamer devices (max. 767px.), the list of features displays with the following transition, so that it is less abrupt:
+    * Once the user click on the bars-icon to uncollapse the navigation bar on smamer devices (max. 767px.), the list of features displays with the following transition, so that it is less abrupt:  
          transition: height .3s linear;
 
 - **AUDIO ICONS** - Have the following transition, to make the hover effect less abrupt:  
