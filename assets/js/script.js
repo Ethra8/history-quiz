@@ -94,7 +94,7 @@ const newArraysOfArray = []; // Empty array to include all randomized questions 
 
 //trigers getRandomArrayWithoutRepeats() as many times as arrays (questions) the initial "questions" array has.
 function randomizeQuizRestartQuizButton() {
-    
+    let b;
     for (b=0; b<questions.length; b++) {
         getRandomArrayWithoutRepeats(questions, newArraysOfArray);  
 
@@ -117,7 +117,7 @@ if (bgBody === "bgLightMode"){
     toggleMode.ckecked = false;
 } else {
     toggleMode.checked = true;
-};
+}
 
 toggleMode.addEventListener('click', changeMode);
 // gearIcon.addEventListener('click', changeMode); // to change from dark/light mode
@@ -139,21 +139,28 @@ faPlay.addEventListener('click', function (){
 });
 
 document.getElementById("fa-pause").addEventListener("click", stopAudio);
-document.getElementById('startQuizBtn').addEventListener('click', displayQuestion); //Once user clicks on "Start Quiz" button, function displayQuestion is triggered to show 1st question of quiz
+
+try {
+    document.getElementById('startQuizBtn').addEventListener('click', displayQuestion); //Once user clicks on "Start Quiz" button, function displayQuestion is triggered to show 1st question of quiz
+} catch (error) {
+    // do nothing, just prevent error from showing in console for 404 page
+}
+
 document.getElementById('navRestartBtn').addEventListener('click', startNewQuiz); //user can restart quiz anytime from navbar
+
 
 // Get the modal
 var modal = document.getElementById("myModal");
 
-// Get the button that opens the modal
-var btn = document.getElementById("btnCheckAnswer");
+// // Get the button that opens the modal
+// var btn = document.getElementById("btnCheckAnswer");
 
 // When the user clicks anywhere outside of the modal, don't close it
 window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "block";
   }
-}
+};
 
 /**
  * Once button 'start Quiz' is clicked, 1st question is displayed, and
@@ -210,6 +217,7 @@ function getId(id){
 }
 
 
+
 /**
  * Checks if correctAnswer radio btn was selected
  * returns boolean, and triggers function addCorrectAnswerToCounter().
@@ -237,7 +245,7 @@ function displayRadioValue() {
                 </div>
                 </div>
                 `;
-                
+
                 btnNextQuestion.addEventListener('click', function() {
                     modal.style.display = "none";
                });
@@ -268,6 +276,26 @@ function displayRadioValue() {
                 addIncorrectAnswerToCounter();
             }
         }
+    }
+}
+
+function addIncorrectAnswerToCounter() {
+
+    let oldScore = parseInt(document.getElementById('incorrect').innerText); // also .textContent
+    document.getElementById('incorrect').innerText = ++oldScore;// also oldScore + 1 -> putting the ++ incrementse by 1, but after the variable doesn't let user see increment, putting ++ before the variable, shows the increment to the user
+    
+    let btnNextQuestion = document.getElementById('btnNextQuestion');
+    btnNextQuestion.addEventListener('click', displayNextQuestion);// Once "Next Question" btn is clicked, function displayNextQuestion() is triggered
+    
+
+    let btnCheckAnswer = document.getElementById('btnCheckAnswer');
+    btnCheckAnswer.disabled = "true";//disables btn to check answer, avoiding users to hit it a second time and get more points for same correct answer
+    btnCheckAnswer.style.cursor = "auto";//changes cursor:pointer which implies an action to the user, to "auto" (default mouse arrow)
+
+    btnNextQuestion.style.display = "inline-block";//displays button "Next Question", and activates it
+   
+    if(i === 9){
+        btnNextQuestion.innerText = "Final Results";
     }
 }
 
@@ -376,25 +404,6 @@ function displayNextQuestion() {
 }
 
 
-function addIncorrectAnswerToCounter() {
-
-    let oldScore = parseInt(document.getElementById('incorrect').innerText); // also .textContent
-    document.getElementById('incorrect').innerText = ++oldScore;// also oldScore + 1 -> putting the ++ incrementse by 1, but after the variable doesn't let user see increment, putting ++ before the variable, shows the increment to the user
-    
-    let btnNextQuestion = document.getElementById('btnNextQuestion');
-    btnNextQuestion.addEventListener('click', displayNextQuestion);// Once "Next Question" btn is clicked, function displayNextQuestion() is triggered
-    
-
-    let btnCheckAnswer = document.getElementById('btnCheckAnswer');
-    btnCheckAnswer.disabled = "true";//disables btn to check answer, avoiding users to hit it a second time and get more points for same correct answer
-    btnCheckAnswer.style.cursor = "auto";//changes cursor:pointer which implies an action to the user, to "auto" (default mouse arrow)
-
-    btnNextQuestion.style.display = "inline-block";//displays button "Next Question", and activates it
-   
-    if(i === 9){
-        btnNextQuestion.innerText = "Final Results";
-    }
-}
 
 /**
  * resets scores to 0 and displays 1st question to restart quiz
@@ -531,16 +540,6 @@ function saveMode(){
             li.style.color = "rgb(57, 63, 68)";
         }
     }
-}
-
-
-/**
- * Hides Navbar
- */
-function hideNav() {
-    let nav = document.getElementsByTagName('nav')[0];
-    nav.style.visibility = "invisible";
-    nav.style.display = "none"; 
 }
 
 
