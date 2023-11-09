@@ -27,8 +27,7 @@ body {
 
 /*NAVBAR*/
 
-#navIndex,
-#navContact {
+#navIndex {
     background-color: rgba(0, 28, 59, 0.7);
     padding: 15px 4%;
     position: fixed;
@@ -43,13 +42,6 @@ body {
 #navIndex {
     display: none;
     visibility: hidden;
-}
-
-#navContact {
-    display: flex;
-    position: fixed;
-    visibility: visible;
-    width: 100%;
 }
 
 #logo { /*only shows on devices max.767px, but width is specified here so is only reduced in @media max-width 280px and doesn't conflic with max-767px as rest of code is set*/
@@ -197,15 +189,6 @@ footer {
     height: 50vh;
 }
 
-p#contactUs {
-    display: inline-flex;
-    color: aquamarine;
-    font-size: 1.8rem;
-    font-weight: 400;
-    font-family: 'Lobster', cursive;
-    transform: rotate(0);
-}
-
 .fa-regular {
     color: whitesmoke;
     margin: 5px;
@@ -230,31 +213,6 @@ p#contactUs {
 #fa-pause:hover {
     cursor: pointer;
     color: rgb(223, 255, 244);
-}
-
-#contactPage {
-    padding-top: 80px; /* nav height**/
-}
-
-#contactPage header {
-    max-height: 25vh !important;
-    background-color: rgba(0, 28, 59, 0.8);
-    padding: 50px 4%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    text-align: center;
-}
-
-#contactPage header p {
-    transform: rotate(0);
-    color: whitesmoke;
-    text-shadow: 2px 2px #001c3b;
-    font-family: 'Lobster', cursive;
-    font-weight: 300;
-    padding-bottom: 0;
-    display: flex;
 }
 
 #settings {
@@ -649,23 +607,6 @@ footer .social_media {
 }
 
 
-/****** CONTACT PAGE ********/
-
-.whatsapp {
-    background-color: whitesmoke;
-    width: 70px;
-    height: 70px;
-    text-align: center;
-    margin: auto auto;
-    border-radius: 50px;
-    padding: 12px 10px;
-}
-
-.whatsapp img {
-    width: 45px;
-}
-
-
 /**** 404 ERROR PAGE *****/
 
 #errorPage header {
@@ -833,26 +774,6 @@ attribution to: Responsive Navigation based on Malia Havlicek's codepen: https:/
 
     #index header {
         min-height: 70vh;
-    }
-
-    #contactPage header {
-        height: 40vh !important;
-        padding: 100px 4% 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        align-content: center;
-        text-align: center;
-    }
-
-    #contactPage header p {
-        transform: rotate(0);
-        color: whitesmoke;
-        text-shadow: 2px 2px #001c3b;
-        font-family: 'Lobster', cursive;
-        font-weight: 300;
-        padding-bottom: 0;
-        display: flex;
     }
 
     #errorPage header {
