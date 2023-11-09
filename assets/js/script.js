@@ -112,15 +112,6 @@ const audio = new Audio("./assets/media/music.mp3");
 // const gearIcon = document.getElementById("fa-gear");
 const toggleMode = document.getElementById('switchMode');
 
-if (toggleMode.ckecked === true){
-    let bgBody = body.getAttribute("class");
-    bgBody = "bgDarkMode";
-}
-
-if (toggleMode.checked === false) {
-    let bgBody = body.getAttribute("class");
-    bgBody = "bgLightMode";
-}
 
 toggleMode.addEventListener('click', changeMode);
 // gearIcon.addEventListener('click', changeMode); // to change from dark/light mode
@@ -165,11 +156,17 @@ window.onclick = function(event) {
  * to check whether the correct answer was selected through radio btn.
  */
 function displayQuestion() {
-    
-    
+    let bgBody = body.getAttribute("class");
     let nav = document.getElementsByTagName('nav')[0];
     nav.style.visibility = "visible";
     nav.style.display = "flex";
+
+    if (bgBody === "bgDarkMode"){
+        toggleMode.ckecked = true;
+    } else {
+        toggleMode.checked = false;
+    };
+
 
     document.getElementsByTagName('button')[1].style.display = "none";//hides "Start Quiz" button
     document.getElementsByClassName("startQuiz")[0].style.display = "none";//hides parent div of "Start Quiz" button, to avoid it taking space
