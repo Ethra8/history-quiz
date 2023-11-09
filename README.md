@@ -464,8 +464,10 @@ The quiz functionality has been manually tested and works seamlessly in both mod
 
 ## DEFECT TRACKING
 ### GITHUB ISSUES
+All the following issues have been solved, and closed in Github by the creator of this site.
 - Nav anchor link to contact page is underlined.
 - Navbar content does not show in width:768px (1px defect).
+- When EqualWeb Accessibility Checker is activated, default mode is light, and switch toggle displays "checked" at the moon (darkmode)
 ## DEFECTS OF NOTE
 No defects of note have been detencted on this site.
 ## OUTSTANDING DEFECTS
