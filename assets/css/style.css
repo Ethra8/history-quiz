@@ -286,7 +286,6 @@ p#contactUs {
   .slider {
     position: absolute;
     cursor: pointer;
-/* for it to be centered vertically in nav*/
     top: 0;
     left: 0;
     right: 0;
@@ -735,11 +734,6 @@ attribution to: Responsive Navigation based on Malia Havlicek's codepen: https:/
         vertical-align: middle;
         margin-top: -10px;
         margin-left: 0;
-        transition: all 0.15s linear;
-    }
-
-    #logo:hover {
-        transform: scale(1.05);
     }
 
     .toggle {

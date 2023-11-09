@@ -112,6 +112,16 @@ const audio = new Audio("./assets/media/music.mp3");
 // const gearIcon = document.getElementById("fa-gear");
 const toggleMode = document.getElementById('switchMode');
 
+if (toggleMode.ckecked === true){
+    let bgBody = body.getAttribute("class");
+    bgBody = "bgDarkMode";
+}
+
+if (toggleMode.checked === false) {
+    let bgBody = body.getAttribute("class");
+    bgBody = "bgLightMode";
+}
+
 toggleMode.addEventListener('click', changeMode);
 // gearIcon.addEventListener('click', changeMode); // to change from dark/light mode
 
