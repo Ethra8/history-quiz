@@ -44,7 +44,6 @@ EDNA TORRES MUNILL
   - [UI - Home Page](#ui---home-page)
   - [UI - Quiz](#ui---quiz)
   - [UI - Footer](#ui---footer)
-  - [UI - Contact Page](#ui---contact-page)
 
 - [DESIGN CHOICES](#design-choices)
 
@@ -254,10 +253,6 @@ This project aims to entertain and test the users' knowledge on general history 
   ![image](https://github.com/Ethra8/history-quiz/assets/80659091/0c26fefe-afc1-420d-9e24-64848618f50e)
 
 
-## UI - CONTACT PAGE
-- The contact page gices two options by which the user is able to communicate with the admin:
-1. Through a simple form
-2. Through the admin's Whatsapp chat, using the **Whatsapp API embedded url** linked to the Whatsapp icon displayed.
 
 # DESIGN CHOICES
 
