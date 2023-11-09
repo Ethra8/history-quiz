@@ -352,16 +352,22 @@ All the social-media icons have the same hover effect, which is the same from th
        transition: all 0.15s linear;
 
 # FEATURES
-
-## RESPONSIVENESS
+## IMPLEMENTED FEATURES
+### RESPONSIVENESS
 This site is fully responsive on all device sizes. Please refer to [Test Recordings and Results](#test-recordings-and-results).
 
-## ACCESSIBILITY
+### ACCESSIBILITY
 This site id WCSG 2.1 compliant.
 - This site has an optional **light mode**, apart from the default dark mode. The user can easily switch between modes at any time throughout the quiz, by just clicking on the switch placed on the fixed navigation bar.
 - This site has also been scanned for general accessibility arrors, and contrast, and no errors have been found. Refer to the **EqualWeb Accessibility Checker** report [here](#general-wcag-2.1-report).
 
-## NAVIGATION BAR FEATURES
+### DARK AND LIGHT MODES 
+By clicking on the switch placed on the navigation bar, the user can toggle between the default dark mode, and the light mode, all through the quiz:
+-
+
+![image](https://github.com/Ethra8/history-quiz/assets/80659091/455f2fb6-4126-44f0-92e9-38f877fa6dbe)
+
+### NAVIGATION BAR FEATURES
 Is fully responsive, and is fixed at the top, to allow the user to access its functionalities even when scrolling down. Its background has a slight transparency, so that it's visually not so intrusive. As the navigation bar passed the accessibility audits, its colors stay the same both in the light and dark modes. Its functionalities are the following:
 - **LOGO** - By clicking on it, the user gets to the landing page, before the questsions are displayed.
 - **SETTINGS** - On smaller devices these are placed underneath the logo. The site's settings are the following:
@@ -371,13 +377,16 @@ Is fully responsive, and is fixed at the top, to allow the user to access its fu
         + **PAUSE ICON** - By clicking on the ***pause*** icon, the user pauses the audio file, which can be continued by clickg again on the play icon.
 - **RESTART-QUIZ BUTTON** - By clicking on the button, the user can restart the quiz at anytime. The 1st question is automatically displayed, and the counters are set to 0.
 
-## DARK AND LIGHT MODES 
-By clicking on the gear icon placed on the navigation bar, the user can toggle between the default dark mode, and the light mode, all through the quiz:
--
+### QUIZ FEATURES
+Que quiz features 10 randomized questions, each with three optional answers. Quiz features are the following:
+- **RANDOMIZED QUESTIONS** : Every time the user restarts the quiz, the questions are displayed in a randomized order, so it appears to be a different quiz.
+- **RADIO BUTTONS** : Each question has three optional answers with can be selected by clicking on the radio button beside each of the options.
+- **BUTTONS** : The question container has a "Check Answer" button, and the modal has a "Next Question" button. Once the user gets to the final question, the text on the latter changes from "next question" to "final results".
+- **MODAL** : Once the user has selected one of the optional answers and clicks on the "Check Answer" button, a modal appears as a pop-up with a conditional message and the "Next Question" button. If the answer was right, the message congratulates the user, if the answer was wrong, an encouragement message appears, together with the correct answer, so the user can learn from their mistakes.
+- **SCORES** : At the bottom of the question container, the scores display. One score for the "correct answers", and another for the "incorrect answers". Those scores are automatically updated when the user clicks on the "Check Answer" button. The scores are also displayed on the "final results" container (same style as the question container, but with a title styled in "lobster" font.
 
-![image](https://github.com/Ethra8/history-quiz/assets/80659091/455f2fb6-4126-44f0-92e9-38f877fa6dbe)
-
-
+### FOOTER FEATURES
+The footer includes a total of four icons. Three of them are from social media (Instagram, Facebook and Twitter), and the fourth icon is an envelope. Once the user clicks on any of the social media icons, the site's profile from the correspondent media opens in a new tab. When the user clicks on the envelope icon, the default emailing provider initiates and the user can seamlessly send an email to the admin.
 
 # TESTING
 The following code validators have been undertaken to test all the code of this this
