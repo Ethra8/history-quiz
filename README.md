@@ -74,6 +74,11 @@ EDNA TORRES MUNILL
 
   - [Design Elements](#design-elements)
     - [Icons](#icons)
+    - [Sound](#sound)
+    - [Switch Toggle](#switch-toggle)
+    - [Buttons](#buttons)
+    - [Radio Buttons](#radio-buttons)
+    - [Modal](#modal)
 
 - [STRUCTURE](#structure)
 
