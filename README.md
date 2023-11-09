@@ -35,7 +35,7 @@ EDNA TORRES MUNILL
 - [UX](#ux)
 
   - [Target Audience](#target-audience)
-  - [Project Goals](#project-goal)
+  - [Project Goals](#project-goals)
   - [User Stories](#user-stories)
   - [User Profiles](#user-profiles)
 
