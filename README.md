@@ -181,9 +181,11 @@ This project aims to entertain and test the users' knowledge on general history 
 ## USER PROFILES
 1. Malia is a history teacher at secondary level, and continuously researches for new technologies and websites to test her students' knowledge.
 2. Josh is an English teacher, and continuously researches for new technologies and websites for her students to practice comprehension skills on any general topic, including history.
-3. Sarah is interested in history, and wants to learn more.
-4. Brian enjoys any kind of quiz which will test his knowledge on general topics, such as general history facts. He's keen to employ some of his leisure time researching new cultural entertainment to do at home, or on the train on his way to work.
-5. Kate and Paul are parents who enjoy doing cultural activities at home on bad-weather weekends with their teen children, such as playing Trivia, or... taking online quizzes.
+3. Leo and Catherine are secondary students who want the check their general knowledge on history subject.
+4. Raúl and Desirée are students of English as a second language who want to get some extra practice on comprehension and use of language in an entertaining and different way.
+5. Sarah is interested in history, and wants to learn more.
+6. Brian enjoys any kind of quiz which will test his knowledge on general topics, such as general history facts. He's keen to employ some of his leisure time researching new cultural entertainment to do at home, or on the train on his way to work.
+7. Kate and Paul are parents who enjoy doing cultural activities at home on bad-weather weekends with their teen children, such as playing Trivia, or... taking online quizzes.
 
 # UI
 ## UI - FIXED NAVIGATION BAR
