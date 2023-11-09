@@ -617,11 +617,6 @@ footer .social_media {
     text-align: center;
 }
 
-#errorPage nav {
-    display: block;
-    visibility: visible;
-}
-
 #errorPage h1 {
     display: inline-flex;
     font-size: 3rem;
