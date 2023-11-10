@@ -718,7 +718,6 @@ The extension ***Chrome Vox Reader*** has been tested, and can read this site.
   - [Github](https://github.com) - To deploy the site online, and Github desktop app to link _Visual Studio Code_ to Github.com
   - [Coolors](https://coolors.co) - To insert colors selected previously directly through visual studio code, but used this tool to display the palette beautifully, and insert it in this readme file.
   - [Amiresponsive](https://ui.dev/amiresponsive) - To display the site in all types of devices simultaneously.
-  - [Balsamiq](https://balsamiq.com/wireframes/desktop/#) - To created wireframes reflecting each page's structure, on all devices.
   - [EqualWeb Accessibility Checker](https://chrome.google.com/webstore/detail/equalweb-accessibility-ch/imemciokfejbnonkkinhcdfigdilcllg/related?utm_source=chrome-ntp-icon) - Google Chrome extension to check general errors and contract errors for optimal accessibility.
   - **Chrome Vox Reader** - This Chrome extension has been downloaded and used for accessibility testing, and to be sure all users are able to use the site, regardless of their current situations.
   - [Browser Stack](https://browserstack.com) - Used for compatibility and responsiveness testing purposes.
