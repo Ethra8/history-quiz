@@ -450,8 +450,13 @@ The following code validators have been undertaken to test all the code of this 
 ### HTML5
 - No errors nor warnings were returned when passing the HTML Validation Test.
 - Used [HTML Validator](https://validator.w3.org/) to validate all this website pages, as follows:
+- **INDEX.HTML**  
 
 ![image](https://github.com/Ethra8/history-quiz/assets/80659091/0732ee40-d6fe-40c1-b72f-55f3175d076e)
+
+- **404 ERROR PAGE**
+
+![image](https://github.com/Ethra8/history-quiz/assets/80659091/ccce4487-5207-4e34-918e-c5e56e742bd2)
 
 ### CSS3
 - No errors nor warnings were returned when passing the CSS Validation Test.
