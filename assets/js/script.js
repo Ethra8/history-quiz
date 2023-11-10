@@ -344,12 +344,9 @@ function displayNextQuestion() {
     if (i === newArraysOfArray.length) {
         let bgBody = body.getAttribute("class");
         document.getElementsByClassName('switch')[0].style.display = "none";
-        let sunIcon = document.getElementsByClassName('sunMoonIcons')[0];
-        let moonIcon = document.getElementsByClassName('sunMoonIcons')[1];
-        sunIcon.style.display = "none";
-        sunIcon.style.visibility = "hidden";
-        moonIcon.style.display = "none";
-        moonIcon.style.visibility = "hidden";
+        let switchModesIcon = document.getElementsByClassName('switchModesIcon')[0];
+        switchModesIcon.style.display = "none";
+        switchModesIcon.style.visibility = "hidden";
         
 
         var questionDiv = document.getElementById('question');
@@ -431,12 +428,10 @@ function startNewQuiz() {
 
     document.getElementsByClassName('switch')[0].style.display = "inline-flex";
 
-    let sunIcon = document.getElementsByClassName('sunMoonIcons')[0];
-    let moonIcon = document.getElementsByClassName('sunMoonIcons')[1];
-    sunIcon.style.display = "inline";
-    sunIcon.style.visibility = "visible";
-    moonIcon.style.display = "inline";
-    moonIcon.style.visibility = "visible";
+    let switchModesIcon = document.getElementsByClassName('switchModesIcon')[0];
+    
+    switchModesIcon.style.display = "inline";
+    switchModesIcon.style.visibility = "visible";
 
 
     displayQuestion();
