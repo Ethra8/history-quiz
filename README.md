@@ -682,8 +682,20 @@ This website is compliant with all international standards, as proved after ***E
 
 
 ### KEYBOARD NAVIGATION
+All functionalities of this site can be accessed through keyboard navigation, and quiz can be completed, and restarted as many times as the user desires. The dark and light modes can also be swtched once the user reaches the switch (refer to second video below). There seem to be one exeption, and apparently the sound icon can't be reached through the keyboard, so the only feature that remains unaccesible throught keyboard navigation is the sound. This will be fixed in future debugging.
+
+
+
+https://github.com/Ethra8/history-quiz/assets/80659091/f33a2ef7-ce08-4f80-b981-5f856d9cbfbd
+
+
+
+
+https://github.com/Ethra8/history-quiz/assets/80659091/6b5b2210-d8c5-4e41-a186-ac0c2b35e68d
+
 
 ### CHROME VOX READER
+The extension ***Chrome Vox Reader*** has been tested, and can read this site.
 
 # TECHNOLOGIES USED
 
