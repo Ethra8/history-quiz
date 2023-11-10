@@ -180,7 +180,7 @@ This project aims to entertain and test the users' knowledge on general history 
 # UI
 ## UI - FIXED NAVIGATION BAR
 **The fixed navigation bar appears once the user clicks on the cta button "Start Quiz" on the middle of the landing page.**  
-![image](https://github.com/Ethra8/history-quiz/assets/80659091/bd517cdf-2953-4585-a068-63915349c98a)
+![image](https://github.com/Ethra8/history-quiz/assets/80659091/e2a72685-c778-4f27-ba60-b15a20a6b6bd)
 
 - The user is able to interact with the responsive navigation bar, fixed to the top while completing the quiz, on the contact page, and the 404 error page. So, even when scrolling down, the user can change the settings at any time. The navigation bar includes the following:
     * **LOGO** allows user to go to landing page when clicked.
@@ -358,7 +358,7 @@ The site has the following animations:
        transform: translateX(26px);  
 
 ### FOOTER ANIMATIONS
-The footer icons have the followng animations when the user hovers through them, so that they become a bit bigger, and they present a sliht rotation to the left:  
+The footer icons have the following animations when the user hovers through them, so that they become a bit bigger while slightly rotating to the left:  
        transform: scale(1.1);
        transform: rotate(-7deg);  
 
@@ -368,7 +368,7 @@ All icons present in the navigation bar and the footer have been taken from ***F
 ### AUDIO
 There is music available, and it can be played or paused at any time throught the quiz by clicking on the "audio on"/"audio off" icons that appear in the navigation, one at a time depending whether the music is playing or is paused.
 ### SWITCH TOGGLE
-The switch toggle on the navigation bar allows the user to switch between the default ***dark mode*** and the ***light mode*** at anytime during the quiz, and as many times as the user wishes.
+The switch toggle on the navigation bar allows the user to switch between the default ***dark mode*** and the ***light mode*** at anytime during the quiz, and as many times as the user wishes. To its left, and icon representing "brightness" is displayed, so that the user immediately knows what the switch is for.
 ### BUTTONS
 Buttons are present along the site. To start quiz from the home page, to restart quiz anytime (button placed in the navigation bar), to check the selected answer on each question, to move to next question, and to go to final results.
 ### RADIO BUTTONS
