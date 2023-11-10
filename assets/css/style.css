@@ -17,11 +17,11 @@ body {
 }
 
 .bgDarkMode {
-    background: url('../images/bgDarkMode.jpg') center fixed;
+    background: url('../images/bgDarkMode.jpg') center fixed repeat-y;
 }
 
 .bgLightMode {
-    background: url('../images/bgLightMode.jpg') center fixed;
+    background: url('../images/bgLightMode.jpg') center fixed repeat-y;
 }
 
 
