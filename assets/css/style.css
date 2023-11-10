@@ -744,7 +744,7 @@ attribution to: Responsive Navigation based on Malia Havlicek's codepen: https:/
 
 /* X-SMALL & SMALL MOBILE ****/
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 375.99px) {
 
 
     #logo {
