@@ -854,6 +854,7 @@ attribution to: Responsive Navigation based on Malia Havlicek's codepen: https:/
 }
 
 
+
 /* MEDIUM to LARGE MOBILE *****/
 
 @media only screen and (min-width: 376px) and (max-width: 576px) {
@@ -865,7 +866,7 @@ attribution to: Responsive Navigation based on Malia Havlicek's codepen: https:/
         width: 100%;
         opacity: 0;
         visibility: hidden;
-        height: 25px;
+        height: 65px;
     }    
 
     header {
@@ -905,8 +906,8 @@ attribution to: Responsive Navigation based on Malia Havlicek's codepen: https:/
 
     #navRestartBtn {
         position: absolute;
-        right: 4%;
-        top: 25px;
+        left: 25px;
+        top: 95px;
     }
 
     #questionSet {
@@ -973,7 +974,7 @@ attribution to: Responsive Navigation based on Malia Havlicek's codepen: https:/
         width: 100%;
         opacity: 0;
         visibility: hidden;
-        height: 25px;
+        /* height: 25px; */
     }
 
     #navRestartBtn {

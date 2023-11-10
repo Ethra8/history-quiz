@@ -142,18 +142,16 @@ document.getElementById("fa-pause").addEventListener("click", stopAudio);
 
 try {
     document.getElementById('startQuizBtn').addEventListener('click', displayQuestion); //Once user clicks on "Start Quiz" button, function displayQuestion is triggered to show 1st question of quiz
+    document.getElementById('navRestartBtn').addEventListener('click', startNewQuiz); //user can restart quiz anytime from navbar
+
 } catch (error) {
     // do nothing, just prevent error from showing in console for 404 page
 }
-
-document.getElementById('navRestartBtn').addEventListener('click', startNewQuiz); //user can restart quiz anytime from navbar
 
 
 // Get the modal
 var modal = document.getElementById("myModal");
 
-// // Get the button that opens the modal
-// var btn = document.getElementById("btnCheckAnswer");
 
 // When the user clicks anywhere outside of the modal, don't close it
 window.onclick = function(event) {
@@ -174,6 +172,11 @@ function displayQuestion() {
     nav.style.visibility = "visible";
     nav.style.display = "flex";
     
+    if (bgBody === "bgLightMode"){
+        toggleMode.ckecked = false;
+    } else {
+        toggleMode.checked = true;
+    }
     document.getElementsByTagName('button')[1].style.display = "none";//hides "Start Quiz" button
     document.getElementsByClassName("startQuiz")[0].style.display = "none";//hides parent div of "Start Quiz" button, to avoid it taking space
     document.getElementsByTagName("header")[0].style.display = "none";
@@ -226,6 +229,7 @@ function displayRadioValue() {
     let option = document.getElementsByName('option'); //gets radio elements by attribute name=option
     let correctAnswerPosition = newArraysOfArray[i].correctAnswerPosition;//gets hard-coded value of the correct "answer" position inside array of options
     let a = correctAnswerPosition; //simplified 
+    
 
     let correctAnswer = newArraysOfArray[i].options[a];// the atring of the correct "answer"
     //for loop to get radio button checked by user, and check if it is the correct "asnwer"
@@ -339,6 +343,14 @@ function displayNextQuestion() {
     
     if (i === newArraysOfArray.length) {
         let bgBody = body.getAttribute("class");
+        document.getElementsByClassName('switch')[0].style.display = "none";
+        let sunIcon = document.getElementsByClassName('sunMoonIcons')[0];
+        let moonIcon = document.getElementsByClassName('sunMoonIcons')[1];
+        sunIcon.style.display = "none";
+        sunIcon.style.visibility = "hidden";
+        moonIcon.style.display = "none";
+        moonIcon.style.visibility = "hidden";
+        
 
         var questionDiv = document.getElementById('question');
         questionDiv.style.display = "block";//displays "question"
@@ -399,7 +411,7 @@ function displayNextQuestion() {
         
             }
         }
-        // document.getElementById("fa-gear").style.display = "none"; // hides icon to change mode once final msg w. final results is shown
+        // document.getElementById("switchMode").style.display = "none"; // hides icon to change mode once final msg w. final results is shown
     }
 }
 
@@ -416,19 +428,18 @@ function startNewQuiz() {
 
     document.getElementById('correct').innerHTML = "0";
     document.getElementById('incorrect').innerHTML = "0";
-    // gearIcon.style.display = "inline-flex";
+
+    document.getElementsByClassName('switch')[0].style.display = "inline-flex";
+
+    let sunIcon = document.getElementsByClassName('sunMoonIcons')[0];
+    let moonIcon = document.getElementsByClassName('sunMoonIcons')[1];
+    sunIcon.style.display = "inline";
+    sunIcon.style.visibility = "visible";
+    moonIcon.style.display = "inline";
+    moonIcon.style.visibility = "visible";
+
 
     displayQuestion();
-}
-
-
-/**
- * displays nav on 404.html
- */
-function displayNav() {
-    let nav = document.getElementsByTagName('nav')[0];
-    nav.style.visibility = "visible";
-    nav.style.display = "flex"; 
 }
 
 
