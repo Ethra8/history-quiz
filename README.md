@@ -772,7 +772,7 @@ You can download the code to your computer, making a copy of the code at the exa
 
 ## IMAGERY
 
-- [Milky Way](https://pixabay.com/photos/milky-way-stars-night-sky-2695569/) by <a href="https://pixabay.com/users/felixmittermeier-4397258/" target=_blank >FelixMittermeier</a> from <a href="https://pixabay.com">Pixabay</a>.
+- [Milky Way](https://pixabay.com/photos/milky-way-stars-night-sky-2695569/) by <a href="https://pixabay.com/users/felixmittermeier-4397258/" target=_blank >FelixMittermeier</a> at <a href="https://pixabay.com">Pixabay</a>.
 - [Tropical sea](https://www.freepik.com/free-photo/lagoon-white-ocean-summer-sand_1044629.htm) by [mrsiraphol](https://www.freepik.com/author/mrsiraphol) at [Freepik](www.freepik.com).
 
 ## MEDIA
