@@ -681,9 +681,9 @@ This website is compliant with all international standards, as proved after ***E
 
 ## LANGUAGES
 
-- HTML5
-- CSS3
-- JS6
+- **HTML5**
+- **CSS3**
+- **JS ES6**
 
 ## FRAMEWORKS, LIBRARIES AND PROGRAMS USED
 
