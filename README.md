@@ -119,8 +119,8 @@ EDNA TORRES MUNILL
 
   - [Compatibility and Responsive Testing](#compatibility-and-responsive-testing)
 
-    - [Preselection of Testing Targets](#preselection-of-testing-targets)
-    - [Testing Targets Table](#testing-targets-table)
+    - [Pre-selection of Testing Targets](#pre-selection-of-testing-targets)
+    - [Table of Testing Targets](#table-of-testing-targets)
     - [Test Recordings and Results](#test-recordings-and-results)
 
   - [Manual Testing](#manual-testing)
@@ -474,7 +474,7 @@ The following code validators have been undertaken to test all the code of this 
 
 ## COMPATIBILITY and RESPONSIVE TESTING
 
-### Pre-selection of Testing Targets
+### PRE-SELECTION OF TESTING TARGETS
 - To meaningful testing of site, [Stat Counter](https://gs.statcounter.com) has been used, in order to get an insight of the following:
     
     * **BROWSER MARKET SHARE** - Most commonly used browsers worldwide:
@@ -498,7 +498,7 @@ The following code validators have been undertaken to test all the code of this 
     ![image](https://github.com/Ethra8/history_beyond_myth/assets/80659091/3b4fd7bf-c127-4323-a8d0-efb71b547417)
 
    
-### TABLE for Testing Targets
+### TABLE OF TESTING TARGETS
 Following all the above information, compatibility and responsive testing has been done on the most common *browser versions*, *OS*, and *screen resolution* combinations, by using [Browser Stack](https://chrome.google.com/webstore/detail/browserstack/nkihdmlheodkdfojglpcjjmioefjahjb) Chrome extension, which has been downloaded, the *Chrome Dev tool's emulator*, and real devices owned by me. 
 
 Please find the correspondent **compatibility and responsive testing** reflected in the following table:
@@ -522,15 +522,30 @@ Please find the correspondent **compatibility and responsive testing** reflected
 #### TEST no. 1
 
 
-https://github.com/Ethra8/history-quiz/assets/80659091/626ec2fc-b6c6-4808-b128-be8e402e1c86
+https://github.com/Ethra8/history-quiz/assets/80659091/b703ece7-ed61-4a85-ac2b-dd0b720317e6
 
 
 #### TEST no. 2
 
+#### TEST no. 3
 
-https://github.com/Ethra8/history-quiz/assets/80659091/7e1b5607-8e57-4b42-978f-839fef9e7d70
+#### TEST no. 4
 
+#### TEST no. 5
 
+#### TEST no. 6
+
+#### TEST no. 7
+
+#### TEST no. 8
+
+#### TEST no. 9
+
+#### TEST no. 10
+
+#### TEST no. 11
+
+#### TEST no. 12
 
 ## MANUAL TESTING
 ### QUIZ
