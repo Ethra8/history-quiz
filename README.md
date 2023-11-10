@@ -472,7 +472,7 @@ The following code validators have been undertaken to test all the code of this 
 
 
 
-## COMPATIBILITY and RESPONSIVE TESTING
+## COMPATIBILITY AND RESPONSIVE TESTING
 
 ### PRE-SELECTION OF TESTING TARGETS
 - To meaningful testing of site, [Stat Counter](https://gs.statcounter.com) has been used, in order to get an insight of the following:
@@ -506,17 +506,16 @@ Please find the correspondent **compatibility and responsive testing** reflected
 | TEST no.| TOOL               | DEVICE               | BROWSER            | OS              | VIEWPORT width x height (px) |
 |---------|--------------------|----------------------|--------------------|-----------------|------------------------------|
 | 1       | BrowserStack       | Samsung Galaxy S20   | Chrome 117         |Windows 10       |360 x 800                     | 
-| 3       | BrowserStack       | Samsung Galaxy S22   | Edge               |Android 11.0     |360 x 780                     |
-| 4       | BrowserStack       | iPhone 12 Mini       | Safari             | iOS 16.0        |360 x 780                     |
-| 5       | Blisk              | iPhone SE 2022       | Chrome             | iOS             |375 x 667                     |
-| 6       | REAL mobile device | Samsung Galaxy A22 5G| Chrome             | Android 13.0    |384 x 857                     |
-| 7       | BrowserStack       | iPhone 13            | Safari 17.0        | iOS             |390 x 844                     |
-| 8       | BrowserStack       | iPhone 14 Pro        | Safari 16.3        | iOS             |393 x 852                     |
-| 9       | REAL Laptop Device | PC Notebook HP -15-bs013ns| Chrome 117    |Windows 10 -64bit|1366 x 768                    |
-| 10      | Blisk              | MacBook Pro          | Chrome 117         | macOS           |1440 x 900                    |
-| 11      | BrowserStack       | Asus ZenBook UX305   | Edge               |Windows 11       |1920 x 1080                   |
-| 12      | BrowserStack       | Asus ZenBook UX305   | Firefox 117        |Windows 11       |1920 x 1080                   |
-| 13      | BrowserStack       | MacBook              | Safari 16.5        | OS X Ventura    |1920 x 1080                   |
+| 2       | BrowserStack       | Samsung Galaxy S22   | Edge               |Android 12.0     |360 x 780                     |
+| 3       | BrowserStack       | iPhone 12 Mini       | Safari             | iOS 16.0        |360 x 780                     |
+| 4       | BrowserStack       | iPhone SE 2022       | Chrome             | iOS             |375 x 667                     |
+| 5       | REAL mobile device | Samsung Galaxy A22 5G| Chrome             | Android 13.0    |384 x 857                     |
+| 6       | BrowserStack       | iPhone 13            | Safari 17.0        | iOS             |390 x 844                     |
+| 7       | REAL Laptop Device | PC Notebook HP -15-bs013ns| Chrome 117    |Windows 10 -64bit|1366 x 768                    |
+| 8       | BrowserStack       | MacBook Pro          | Chrome 117         | macOS           |1440 x 900                    |
+| 9       | BrowserStack       | Asus ZenBook UX305   | Edge               |Windows 11       |1920 x 1080                   |
+| 10      | BrowserStack       | Asus ZenBook UX305   | Firefox 117        |Windows 11       |1920 x 1080                   |
+| 12      | BrowserStack       | MacBook              | Safari 16.5        | OS X Ventura    |1920 x 1080                   |
 
 ### Test Recordings and Results
 #### TEST no. 1
@@ -527,15 +526,39 @@ https://github.com/Ethra8/history-quiz/assets/80659091/b703ece7-ed61-4a85-ac2b-d
 
 #### TEST no. 2
 
+
+https://github.com/Ethra8/history-quiz/assets/80659091/a32f184a-bbb8-4484-9852-c265e3434ac3
+
+
 #### TEST no. 3
+
+
+https://github.com/Ethra8/history-quiz/assets/80659091/b5166770-8e34-4cd6-a8e6-3d1b2566912c
+
 
 #### TEST no. 4
 
+
+https://github.com/Ethra8/history-quiz/assets/80659091/b5f811b8-a4ee-4d9f-a2c6-6b73bf55d3fc
+
+
 #### TEST no. 5
+
+
+https://github.com/Ethra8/history-quiz/assets/80659091/51475dfe-2c20-49b0-8c6f-4d422ce1a646
+
 
 #### TEST no. 6
 
+
+https://github.com/Ethra8/history-quiz/assets/80659091/1e057617-9c89-468b-b698-8c21e49fd674
+
+
 #### TEST no. 7
+
+
+https://github.com/Ethra8/history-quiz/assets/80659091/48b57706-cccb-456a-9247-ebc3f9b64e2e
+
 
 #### TEST no. 8
 
