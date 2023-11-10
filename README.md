@@ -380,9 +380,9 @@ The footer icons have the followng animations when the user hovers through them,
 ### ICONS
 All icons present in the navigation bar and the footer have been taken from ***Font Awesome***, and have been styled  with the colors of the site. They are all in ***aquamarine***, and turn to ***whitesmoke*** when the user hovers on them.
 ### AUDIO
-There is music availale, and it can be played or paused at any time throught the quiz by clicking on the "audio on"/"audio off" icons that appear in the navigation, one at a time depending whether the music is playing or is paused.
+There is music available, and it can be played or paused at any time throught the quiz by clicking on the "audio on"/"audio off" icons that appear in the navigation, one at a time depending whether the music is playing or is paused.
 ### SWITCH TOGGLE
-The switch toggle on the navigation bar allows the user to switch between the default ***dark mode*** and the ***light mode*** at anytime during the quiz, and as many times the user wishes.
+The switch toggle on the navigation bar allows the user to switch between the default ***dark mode*** and the ***light mode*** at anytime during the quiz, and as many times as the user wishes.
 ### BUTTONS
 Buttons are present along the site. To start quiz from the home page, to restart quiz anytime (button placed in the navigation bar), to check the selected answer on each question, to move to next question, and to go to final results.
 ### RADIO BUTTONS
@@ -511,11 +511,11 @@ Please find the correspondent **compatibility and responsive testing** reflected
 | 4       | BrowserStack       | iPhone SE 2022       | Chrome             | iOS             |375 x 667                     |
 | 5       | REAL mobile device | Samsung Galaxy A22 5G| Chrome             | Android 13.0    |384 x 857                     |
 | 6       | BrowserStack       | iPhone 13            | Safari 17.0        | iOS             |390 x 844                     |
-| 7       | REAL Laptop Device | PC Notebook HP -15-bs013ns| Chrome 117    |Windows 10 -64bit|1366 x 768                    |
-| 8       | BrowserStack       | MacBook Pro          | Chrome 117         | macOS           |1440 x 900                    |
-| 9       | BrowserStack       | Asus ZenBook UX305   | Edge               |Windows 11       |1920 x 1080                   |
-| 10      | BrowserStack       | Asus ZenBook UX305   | Firefox 117        |Windows 11       |1920 x 1080                   |
-| 12      | BrowserStack       | MacBook              | Safari 16.5        | OS X Ventura    |1920 x 1080                   |
+| 7       | REAL Laptop Device | PC Notebook HP -15-bs013ns| Chrome 119    |Windows 10 -64bit|1366 x 768                    |
+| 8       | BrowserStack       | MacBook Air 11-inch  | Safari             | macOS           |1366 x 768                    |
+| 9       | BrowserStack       | Apple iMac 21.5-inch | Safari             | macOS           |1920 x 1080                   |
+| 10      | BrowserStack       | Asus ZenBook UX305   | Firefox 118        | Windows 11      |1920 x 1080                   |
+| 11      | BrowserStack       | Asus ZenBook UX305   | Chrome 119         | Windows 10      |1920 x 1080                   |
 
 ### Test Recordings and Results
 #### TEST no. 1
@@ -561,25 +561,63 @@ https://github.com/Ethra8/history-quiz/assets/80659091/48b57706-cccb-456a-9247-e
 
 
 #### TEST no. 8
+![image](https://github.com/Ethra8/history-quiz/assets/80659091/22f3819c-3a7e-4435-8201-799de2177bc7)
+
+
+
+https://github.com/Ethra8/history-quiz/assets/80659091/ea6e982f-22ea-4442-aba8-0250d3d16c72
+
 
 #### TEST no. 9
 
+
+
+https://github.com/Ethra8/history-quiz/assets/80659091/241fc253-2066-4605-9c56-ed14a8dcc800
+
+
 #### TEST no. 10
+
+
+https://github.com/Ethra8/history-quiz/assets/80659091/226708c6-5242-4ee7-948c-c8e5cdb1c190
+
 
 #### TEST no. 11
 
-#### TEST no. 12
+
+
+https://github.com/Ethra8/history-quiz/assets/80659091/fc82f998-9c9d-4262-a7fd-f9332f7478d4
+
+
 
 ## MANUAL TESTING
+
+### BUTTONS, SWITCH AND ICONS
+All buttons of this site have been tested, and work exactly as expected:
+1. **"Start Quiz" button** on home page, starts the quiz by displaying 1st question.
+2. **"Restart Quiz" button** on the navigation bar restarts quiz anytime the user clicks on it, displying a randomized 1st question, and setting the counters to zero.
+3. **"Check Question" button** displays the modal with a message to the user whether it was a correct/incoorect answers, and the correct answer gets displayed if the user clicked of the incorrect answer, so that the user can learn from his/her mistakes
+4. **"Next Question" button** on the modal displayes the net randomi zed question of the quiz once the user clicks on it.
+5. **Radio Buttons** for the three optional answers. Only one radio button can be clicked at a time, and user has to click one of them to proceed with the quiz. In case the user clicks on the "Check Answer" button without having previously selected a radio button corresponding to an answer, the quiz will not advance.
+6. **Sound Icons** on the navigation bar only display one at a time. When sound is off, the "sound on" icon displays, and once the user clicks on it, the music starts playing, and the icon is changed for a "sound off" icon, and so on.
+ 
 ### QUIZ
 The quiz functionality has been manually tested and works seamlessly in both modes (dark and light), even allowing the user to change mode settings at each question, if desired. Please refer to the following table, and video:
+[x] Questions are randomized
+[x] Correct and incorrect answers are successfully added to the correspondent scores.
+[x] User can switch from dark mode to light mode anytime throughout the quiz without affecting the question content nor the scores.
+[x] Only one radio button can be clicked at a time, and one must be clicked as for the "Check Answer" button to proceed, by displaying the modal.
+[x] User can learn from mistakes, and is he/she picked an incorrect answer, the modal displays the correct answer along an encouragement message.
+[x] Once the user clicks on "Next Question" button placed at the bottom of the modal, next randomized question displays.
+[x] Once the user gets to the last question on the quiz, the text from the "Next Question" changes to "Final Results".
+[x] The final results coontainer displays a conditional message based on the user's score, together with the total score (correct answers) out of /10.
+[x] The user can then estart quiz by clicking on the "Restart Quiz" button in the navbar.
 
 ## DEFECT TRACKING
 ### GITHUB ISSUES
 All the following issues have been solved, and closed in Github by the creator of this site.
 - Nav anchor link to contact page is underlined.
 - Navbar content does not show in width:768px (1px defect).
-- When EqualWeb Accessibility Checker is activated, default mode is light, and switch toggle displays "checked" at the moon (darkmode)
+- When EqualWeb Accessibility Checker is activated, default mode is light, and switch toggle displays "checked" at the moon (darkmode).
 ## DEFECTS OF NOTE
 No defects of note have been detencted on this site.
 ## OUTSTANDING DEFECTS
