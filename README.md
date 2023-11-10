@@ -505,8 +505,8 @@ Please find the correspondent **compatibility and responsive testing** reflected
 
 | TEST no.| TOOL               | DEVICE               | BROWSER            | OS              | VIEWPORT width x height (px) |
 |---------|--------------------|----------------------|--------------------|-----------------|------------------------------|
-| 1       | Chrome Dev emulator| Samsung Galaxy S20   | Chrome 117         |Windows 10       |360 x 800                     | 
-| 3       | BrowserStack       | Samsung Galaxy S22   | Edge               |Android 12.0     |360 x 780                     |
+| 1       | BrowserStack       | Samsung Galaxy S20   | Chrome 117         |Windows 10       |360 x 800                     | 
+| 3       | BrowserStack       | Samsung Galaxy S22   | Edge               |Android 11.0     |360 x 780                     |
 | 4       | BrowserStack       | iPhone 12 Mini       | Safari             | iOS 16.0        |360 x 780                     |
 | 5       | Blisk              | iPhone SE 2022       | Chrome             | iOS             |375 x 667                     |
 | 6       | REAL mobile device | Samsung Galaxy A22 5G| Chrome             | Android 13.0    |384 x 857                     |
@@ -520,6 +520,11 @@ Please find the correspondent **compatibility and responsive testing** reflected
 
 ### Test Recordings and Results
 #### TEST no. 1
+
+
+https://github.com/Ethra8/history-quiz/assets/80659091/626ec2fc-b6c6-4808-b128-be8e402e1c86
+
+
 #### TEST no. 2
 
 
