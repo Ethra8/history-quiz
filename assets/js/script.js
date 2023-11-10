@@ -172,11 +172,6 @@ function displayQuestion() {
     nav.style.visibility = "visible";
     nav.style.display = "flex";
     
-    if (bgBody === "bgLightMode"){
-        toggleMode.ckecked = false;
-    } else {
-        toggleMode.checked = true;
-    }
     document.getElementsByTagName('button')[1].style.display = "none";//hides "Start Quiz" button
     document.getElementsByClassName("startQuiz")[0].style.display = "none";//hides parent div of "Start Quiz" button, to avoid it taking space
     document.getElementsByTagName("header")[0].style.display = "none";
