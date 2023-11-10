@@ -463,7 +463,8 @@ The following code validators have been undertaken to test all the code of this 
 - No errors nor warnings were returned when passing the JS Validation Test.
 - Used JS (ES6) Validator at [JShint](https://jshint.com/)
 
-![image](https://github.com/Ethra8/history-quiz/assets/80659091/2769f08d-bcbe-4c70-9e52-739bf3490909)
+![image](https://github.com/Ethra8/history-quiz/assets/80659091/e1d6b0d2-b3d5-4df9-9005-ae999e00995c)
+
 
 
 ## COMPATIBILITY and RESPONSIVE TESTING
