@@ -79,15 +79,6 @@ EDNA TORRES MUNILL
     - [Radio Buttons](#radio-buttons)
     - [Modal](#modal)
 
-- [STRUCTURE](#structure)
-
-  - [Content Structure](#content-structure)
-
-    - [Navigation Bar Structure](#navigation-bar-structure)
-    - [Footer Structure](#footer-structure)
-    - [Home Page Structure](#home-page-structure)
-    - [404 Page Structure](#404-page-structure)
-
 - [FEATURES](#features)
 
   - [Implemented Features](#implemented-features)
