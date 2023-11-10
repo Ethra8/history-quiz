@@ -460,7 +460,7 @@ The following code validators have been undertaken to test all the code of this 
 ![image](https://github.com/Ethra8/history-quiz/assets/80659091/a51633de-0383-482d-a6ce-73206a501ab2)
 
 ### JS ES6
-- No errors nor warnings were returned when passing the JS Validation Test.
+- No errors were returned when passing the JS Validation Test.
 - Used JS (ES6) Validator at [JShint](https://jshint.com/)
 
 ![image](https://github.com/Ethra8/history-quiz/assets/80659091/e1d6b0d2-b3d5-4df9-9005-ae999e00995c)
