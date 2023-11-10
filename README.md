@@ -427,6 +427,15 @@ Has a Milky Way image covering all the background, a header with the title of th
 
 ### 404 ERROR PAGE FEATURES
 The page has the same style as the home page, for a seamless experience. The header states it is the 404 error page". The navigation bar is displayed, allowing the user to interact with all its features. Placed in the middle, there is also the "go to home page" button allowing the user to redirect to the home page, and the footer is also displayed at the bottom, allowing the user to interact with different social-media platforms, or to send an email to the admin.
+- **PHONES**
+![image](https://github.com/Ethra8/history-quiz/assets/80659091/acf327c9-4555-4ef4-adcf-7c21f328b926)  
+
+- **TABLETS**
+![image](https://github.com/Ethra8/history-quiz/assets/80659091/1c1563d7-2892-412d-9476-bca00320559c)
+
+- **LAPTOPS AND DESKTOPS**
+![image](https://github.com/Ethra8/history-quiz/assets/80659091/7b7238f8-8543-4b60-a7b7-9412f0e05202)
+
 
 ## FUTURE FEATURES
 The following features have not yet been implemented due to constraints, but will very likely be implemented in a near future as to boost this site's purpose and user UX.
@@ -438,7 +447,7 @@ Users will be able to create an account, by a symbolic monthly subscription that
 Members will be able to create their own quiz by completing a series of inputs which values will be stored as variables. This new quizzes will be stored in the user's account, and a link created so the user will be able to easily access them and/or share.
 
 # TESTING
-The following code validators have been undertaken to test all the code of this this
+The following code validators have been undertaken to test all the code of this site, as follows:
 -
 ## VALIDATION TESTING
 
